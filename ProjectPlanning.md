@@ -2,7 +2,7 @@
 
 Idea 1: What to eat?
 
-1) Strategy
+## 1) Strategy
 
 Target Audience:
     - Consumers (general public and foodie)
@@ -15,7 +15,7 @@ format: as a (what), I want (goal) so that (benefit)
     As a non-foodie, I want to <find out the nearest place to eat around me> so that I don't have to spend time researching.
 
 
-2) Scope
+## 2) Scope
 
 Functional
     a) Features
@@ -28,4 +28,14 @@ Non-functional
 
 
 
+## 3) Structure
 
+
+
+
+## 4) Skeleton
+
+
+
+
+## 5) Surface
