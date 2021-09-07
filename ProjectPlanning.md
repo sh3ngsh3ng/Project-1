@@ -31,14 +31,15 @@ Idea 1: What to eat?
 ## 2) Scope
 
 ### Functional
-    - Features
-        - 
+<!-- - Search Function
+    - For 
+- Distance Input
+- Category
+- Drop Ping
+- Recommended food -->
 
-    - Content
-
-
-Non-functional
-
+### Non-functional
+- 
 
 
 ## 3) Structure
