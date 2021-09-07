@@ -4,7 +4,7 @@ Idea 1: What to eat?
 
 ## 1) Strategy
 
-#### Target Audience:
+### Target Audience:
 - Consumers
     - The General Public
     - Foodie (a person with a particular interest in food)
@@ -21,7 +21,7 @@ Idea 1: What to eat?
         - Certain Type of Food: Chicken rice, Laksa, etc
     - Recommendations of good food around user's location
 
-#### The User Stories:
+### The User Stories:
 <!-- format: as a (what), I want (goal) so that (benefit) -->
 - As a foodie, I want to <find out what are the nice food/interesting places to eat> so that I can try them out!
 - As a non-foodie, I want <convenience when searching for food> so that I don't have to spend time researching and worrying about what to eat!
