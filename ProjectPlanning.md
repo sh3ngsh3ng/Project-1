@@ -6,15 +6,15 @@
 - Phase 5: UI Planning
 - Phase 6: Design Web Application
 - Phase 7: Responsiveness
-- Phase 7: Deploy!
+- Final Phase: Deploy!
+
+## Phase 1: Research on available data
 
 
+## Phase 2: Experiment with Tech to use
 
 
-
-
-
-## Phase 5: UX Planning
+## Phase 3: UX Planning
 ### 1) Strategy
 
 #### Target Audience:
@@ -65,3 +65,11 @@
 
 ### 5) Surface
 
+
+
+
+## Phase 4: Functionality
+## Phase 5: UI Planning
+## Phase 6: Design Web Application
+## Phase 7: Responsiveness
+## Final Phase: Deploy!
