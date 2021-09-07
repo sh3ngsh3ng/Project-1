@@ -4,7 +4,7 @@ Idea 1: What to eat?
 
 ## 1) Strategy
 
-Target Audience:
+### Target Audience:
     - Consumers (general public and foodie)
     - Age + IT Literacy: Younger audience who are more tech savvy
     - Needs: Provide convenience for locating places to eat. Provide recommendations of what to eat.
