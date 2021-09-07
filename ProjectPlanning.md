@@ -1,10 +1,20 @@
 # Project Planning (Project Title-WIP)
+- Phase 1: Research on available data
+- Phase 2: Experiment with Technology to use
+- Phase 3: UX Planning
+- Phase 4: Functionality (make sure it works as intended)
+- Phase 5: UI Planning
+- Phase 6: Design Web Application
+- Phase 7: Responsiveness
+- Phase 7: Deploy!
 
 
 
 
 
-## UX Planning
+
+
+## Phase 5: UX Planning
 ### 1) Strategy
 
 #### Target Audience:
@@ -54,3 +64,4 @@
 
 
 ### 5) Surface
+
