@@ -9,6 +9,16 @@
 - Final Phase: Deploy!
 
 ## Phase 1: Research on available data
+APIs:
+- Hawker Centres: https://data.gov.sg/dataset/hawker-centres
+- Restaurants & Cafes: https://developer.foursquare.com/docs/build-with-foursquare/categories/
+- Nightlife: https://developer.foursquare.com/docs/build-with-foursquare/categories/
+- Hawker Centres Closure Dates: https://data.gov.sg/dataset/dates-of-hawker-centres-closure
+- Weather Forecast: https://data.gov.sg/dataset/weather-forecast
+- Routing: https://www.onemap.gov.sg/docs/#route\
+- Michelin Restaurants: https://www.kaggle.com/jackywang529/michelin-restaurants
+- Healthy Eateries (KML files): https://data.gov.sg/dataset/healthier-eateries
+
 
 
 ## Phase 2: Experiment with Tech to use
@@ -16,7 +26,6 @@
 
 ## Phase 3: UX Planning
 ### 1) Strategy
-
 #### Target Audience:
 - Consumers
     - The General Public
@@ -33,14 +42,11 @@
         - Dietary: Halal, vegetarian, etc
         - Certain Type of Food: Chicken rice, Laksa, etc
     - Recommendations of good food around user's location
-
 #### The User Stories:
 <!-- format: as a (what), I want (goal) so that (benefit) -->
 - As a foodie, I want to **find out what are the nice food/interesting places to eat** so that I can try them out!
 - As a non-foodie, I want **convenience when searching for food** so that I don't have to spend time researching and worrying about what to eat!
-
 ### 2) Scope
-
 #### Functional
 <!-- - Search Function
     - For 
@@ -48,26 +54,10 @@
 - Category
 - Drop Ping
 - Recommended food -->
-
 #### Non-functional
-- 
-
-
 ### 3) Structure
-
-
-
-
 ### 4) Skeleton
-
-
-
-
 ### 5) Surface
-
-
-
-
 ## Phase 4: Functionality
 ## Phase 5: UI Planning
 ## Phase 6: Design Web Application
