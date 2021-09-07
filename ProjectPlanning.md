@@ -23,18 +23,18 @@ Idea 1: What to eat?
 
 ### The User Stories:
 <!-- format: as a (what), I want (goal) so that (benefit) -->
-- As a foodie, I want to <find out what are the nice food/interesting places to eat> so that I can try them out!
-- As a non-foodie, I want <convenience when searching for food> so that I don't have to spend time researching and worrying about what to eat!
+- As a foodie, I want to **find out what are the nice food/interesting places to eat** so that I can try them out!
+- As a non-foodie, I want **convenience when searching for food** so that I don't have to spend time researching and worrying about what to eat!
 
 
 
 ## 2) Scope
 
-Functional
-    a) Features
+### Functional
+    - Features
+        - 
 
-
-    b) Content
+    - Content
 
 
 Non-functional
