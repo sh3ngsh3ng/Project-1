@@ -61,8 +61,28 @@ APIs:
 ### 3) Structure
 ### 4) Skeleton
 ### 5) Surface
+
+
 ## Phase 4: Functionality
-- Retrieving user's location
+
+### Location:
+- ~~Retrieving user's location + Fly to~~
+- Handling error cases when retrieving user's location
+- Can consider making it auto instead of button clicking? I.e. window DOMcontentloaded
+
+### Food search
+- Set-up Foursquare API to search for food
+
+### Layers for Cafe, restaurant, hawkers
+
+
+### Food recommendation
+- Recommendations for food
+
+
+### Routing
+- (Least Priority) Routing API to find route there
+
 
 
 
