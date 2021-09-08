@@ -50,17 +50,22 @@ APIs:
 - As a non-foodie, I want **convenience when searching for food** so that I don't have to spend time researching and worrying about what to eat!
 ### 2) Scope
 #### Functional
-<!-- - Search Function
-    - For 
-- Distance Input
-- Category
-- Drop Ping
-- Recommended food -->
+- Search food near me
+- Recommendations for food near me
+- Adjusting Distance for search
+- Options/filters
+    - restaurants, hawkers, nightlife, etc
+- Drop ping
+
 #### Non-functional
 ### 3) Structure
 ### 4) Skeleton
 ### 5) Surface
 ## Phase 4: Functionality
+- Retrieving user's location
+
+
+
 ## Phase 5: UI Planning
 ## Phase 6: Design Web Application
 ## Phase 7: Responsiveness
