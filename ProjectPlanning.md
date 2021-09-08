@@ -69,6 +69,8 @@ APIs:
 - ~~Retrieving user's location + Fly to~~
 - Handling error cases when retrieving user's location
 - Can consider making it auto instead of button clicking? I.e. window DOMcontentloaded
+- Dropping Ping instead
+- Changing Location Markers 
 
 ### Food search
 - Set-up Foursquare API to search for food
