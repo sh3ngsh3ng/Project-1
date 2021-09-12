@@ -65,6 +65,7 @@ APIs:
 
 ## Phase 4: Functionality
 
+
 ### Current Location:
 - ~~Retrieving user's location + Fly to~~
 - ~~Can consider making it auto instead of button clicking? I.e. window DOMcontentloaded~~
@@ -88,12 +89,15 @@ APIs:
 - Dropping Ping instead
 - Changing Location Markers 
 
-### Layers for Cafe, restaurant, hawkers
-
+### Cafe Hopping
+- Single Web Application
+- Function to add to itinerary
 
 ### Food recommendation
-- Recommendations for food
+- Recommendations for food (4square API?)
 
+### Filtering Function
+- Restaurants, cafe, hawkers, etc
 
 ### Routing
 - (Least Priority) Routing API to find route there
