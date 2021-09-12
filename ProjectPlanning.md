@@ -74,6 +74,9 @@ APIs:
 
 ### Food search
 - Set-up Foursquare API to search for food
+- Link user's input to search function
+- Add in range of distance for food search function
+- Add in details for search results
 
 ### Layers for Cafe, restaurant, hawkers
 
