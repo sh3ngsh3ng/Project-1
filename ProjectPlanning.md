@@ -65,12 +65,10 @@ APIs:
 
 ## Phase 4: Functionality
 
-### Location:
+### Current Location:
 - ~~Retrieving user's location + Fly to~~
-- Handling error cases when retrieving user's location
 - ~~Can consider making it auto instead of button clicking? I.e. window DOMcontentloaded~~
-- Dropping Ping instead
-- Changing Location Markers 
+
 
 ### Food search
 - ~~Set-up Foursquare API to search for food~~
@@ -82,6 +80,13 @@ APIs:
     - Distance(?)
 - ~~(Issues) Getting location repeatedly keeps placing markers~~
 
+### Radius Slider Bar
+- Display results within specified radius (max walking dist = 500m)
+- (Issues) Displays markers even when nothing is typed in search bar
+
+### Ping Drop 
+- Dropping Ping instead
+- Changing Location Markers 
 
 ### Layers for Cafe, restaurant, hawkers
 
