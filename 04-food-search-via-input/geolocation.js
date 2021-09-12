@@ -1,5 +1,5 @@
 
-let currentCoords = []
+let currentCoords = 0
 
 document.querySelector("#btn").addEventListener("click", function() {
     geo = navigator.geolocation
