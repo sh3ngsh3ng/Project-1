@@ -69,7 +69,6 @@ APIs:
 - ~~Retrieving user's location + Fly to~~
 - ~~Can consider making it auto instead of button clicking? I.e. window DOMcontentloaded~~
 
-
 ### Food search
 - ~~Set-up Foursquare API to search for food~~
 - ~~Link user's input to search function~~
@@ -82,6 +81,7 @@ APIs:
 
 ### Radius Slider Bar
 - Display results within specified radius (max walking dist = 500m)
+- Adding Distance Display when radius slide button changes (https://stackoverflow.com/questions/10004723/html5-input-type-range-show-range-value)
 - (Issues) Displays markers even when nothing is typed in search bar
 
 ### Ping Drop 
