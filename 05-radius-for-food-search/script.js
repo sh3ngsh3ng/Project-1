@@ -29,8 +29,6 @@ window.addEventListener('DOMContentLoaded', function() {
 })
 
 
-
-
 // user's food search event
 let searchBtn = document.querySelector("#search-food-btn")
 searchBtn.addEventListener('click', async function () {

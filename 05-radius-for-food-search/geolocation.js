@@ -1,5 +1,5 @@
 
-let currentCoords = 0
+let currentCoords = 0 // global variable for access to DOM event
 
 // function to fly to current location
 function flyToCurrentLocation() {
