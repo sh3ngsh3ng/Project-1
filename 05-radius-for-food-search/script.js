@@ -1,7 +1,7 @@
 // setting up foursquare API
 const fourSq_API_BASE_URL = "https://api.foursquare.com/v2/"
 
-// search food function (returns venues)
+// search food function (user's input)
 async function searchFood(lat, lng, radius, query) {
     let ll = lat + "," + lng
     let response = await axios.get(fourSq_API_BASE_URL + "venues/search", {
@@ -14,10 +14,10 @@ async function searchFood(lat, lng, radius, query) {
             'query': query
         }
     })
-    return response.data.response.venues
+    return response.data.response.venues // returns all venues
 }
 
-// get radius based on slider
+// get radius function (user's input)
 function getRadius() {
     let userDistanceInput = parseInt(document.querySelector('#distance').value)
     return userDistanceInput * 50 + 250
@@ -72,6 +72,9 @@ document.querySelector("#distance").addEventListener('change', async function() 
         marker.addTo(foodSearchLayer)
     }
 })
+
+
+
 
 
 

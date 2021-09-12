@@ -15,3 +15,8 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 // search results layers
 let foodSearchLayer = L.layerGroup()
 foodSearchLayer.addTo(map)
+
+
+// location layer
+let currentLocationLayer = L.layerGroup()
+currentLocationLayer.addTo(map)
