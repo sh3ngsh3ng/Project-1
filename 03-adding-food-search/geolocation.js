@@ -1,5 +1,5 @@
 
-
+let currentCoords = []
 
 document.querySelector("#btn").addEventListener("click", function() {
     geo = navigator.geolocation
@@ -8,7 +8,7 @@ document.querySelector("#btn").addEventListener("click", function() {
         // get user's current coords
         let currentLat = position.coords.latitude
         let currentLng = position.coords.longitude
-        let currentCoords = [currentLat, currentLng]
+        currentCoords = [currentLat, currentLng]
 
 
         // set marker based on current coords and move map over to marker
