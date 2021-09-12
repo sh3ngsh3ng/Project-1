@@ -23,6 +23,12 @@ function getRadius() {
     return userDistanceInput * 50 + 250
 }
 
+// default view
+window.addEventListener('DOMContentLoaded', function() {
+    flyToCurrentLocation()
+})
+
+
 
 
 // user's food search

@@ -77,6 +77,8 @@ APIs:
 - Link user's input to search function
 - Add in range of distance for food search function
 - Add in details for search results
+- (Debug) getting location repeatedly keeps placing markers
+- 
 
 ### Layers for Cafe, restaurant, hawkers
 
