@@ -1,5 +1,3 @@
-Test VSC
-
 # Project Planning (Project Title-WIP)
 
 - Phase 1: Research on available data
