@@ -1,6 +1,30 @@
 // setting up foursquare API
 const fourSq_API_BASE_URL = "https://api.foursquare.com/v2/"
 
+// search food function (returns venues)
+async function searchFood(lat, lng, radius, query) {
+    let ll = lat + "," + lng
+    let response = await axios.get(fourSq_API_BASE_URL + "venues/search", {
+        params: {
+            'll': ll,
+            'client_id': 'NUBBEVNCBV5IKER4ZEHEEH3XLVNCK3JTYSOBEPUTQOLAYCEZ',
+            'client_secret': 'HTWZDJEZBZYK2CE1BBTFPGU3JWSIBJNNTDEPNDADXAS4ROKL',
+            'v': '20210912',
+            'radius': radius,
+            'query': query
+        }
+    })
+    return response.data.response.venues
+}
+
+// get radius based on slider
+function getRadius() {
+    let userDistanceInput = parseInt(document.querySelector('#distance').value)
+    return userDistanceInput * 50 + 250
+}
+
+
+
 // user's food search
 let searchBtn = document.querySelector("#search-food-btn")
 searchBtn.addEventListener('click', async function () {
@@ -44,26 +68,5 @@ document.querySelector("#distance").addEventListener('change', async function() 
 })
 
 
-// search food function (returns venues)
-async function searchFood(lat, lng, radius, query) {
-    let ll = lat + "," + lng
-    let response = await axios.get(fourSq_API_BASE_URL + "venues/search", {
-        params: {
-            'll': ll,
-            'client_id': 'NUBBEVNCBV5IKER4ZEHEEH3XLVNCK3JTYSOBEPUTQOLAYCEZ',
-            'client_secret': 'HTWZDJEZBZYK2CE1BBTFPGU3JWSIBJNNTDEPNDADXAS4ROKL',
-            'v': '20210912',
-            'radius': radius,
-            'query': query
-        }
-    })
-    return response.data.response.venues
-}
-
-// get radius based on slider
-function getRadius() {
-    let userDistanceInput = parseInt(document.querySelector('#distance').value)
-    return userDistanceInput * 50 + 250
-}
 
 
