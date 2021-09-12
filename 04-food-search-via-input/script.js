@@ -4,6 +4,7 @@ const fourSq_API_BASE_URL = "https://api.foursquare.com/v2/"
 // user's food search
 let searchBtn = document.querySelector("#search-food-btn")
 searchBtn.addEventListener('click', async function () {
+    foodSearchLayer.clearLayers()
     let userInput = document.querySelector("#search-food-input").value
     let lat = currentCoords[0]
     let lng = currentCoords[1]
@@ -12,13 +13,15 @@ searchBtn.addEventListener('click', async function () {
 
     // add markers based on food search results
     for (let i of eachVenue) {
+
         let venueName = i.name
         let venueLat = i.location.lat
         let venueLng = i.location.lng
 
         let marker = L.marker([venueLat, venueLng])
-        console.log(marker)
-        marker.addTo(map)
+        marker.bindPopup(`${venueName}`)
+
+        marker.addTo(foodSearchLayer)
     }
 
 })
