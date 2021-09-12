@@ -9,7 +9,6 @@ searchBtn.addEventListener('click', async function () {
     let lat = currentCoords[0]
     let lng = currentCoords[1]
     let radius = getRadius()
-    console.log(radius)
     let eachVenue = await (searchFood(lat, lng, radius, userInput))
 
     // add markers based on food search results
@@ -23,6 +22,26 @@ searchBtn.addEventListener('click', async function () {
     }
 })
 
+
+// detect change in radius slider
+document.querySelector("#distance").addEventListener('change', async function() {
+    foodSearchLayer.clearLayers()
+    let userInput = document.querySelector("#search-food-input").value
+    let lat = currentCoords[0]
+    let lng = currentCoords[1]
+    let radius = getRadius()
+    let eachVenue = await (searchFood(lat, lng, radius, userInput))
+
+    // add markers based on food search results
+    for (let i of eachVenue) {
+        let venueName = i.name
+        let venueLat = i.location.lat
+        let venueLng = i.location.lng
+        let marker = L.marker([venueLat, venueLng])
+        marker.bindPopup(`${venueName}`)
+        marker.addTo(foodSearchLayer)
+    }
+})
 
 
 // search food function (returns venues)
@@ -41,7 +60,7 @@ async function searchFood(lat, lng, radius, query) {
     return response.data.response.venues
 }
 
-
+// get radius based on slider
 function getRadius() {
     let userDistanceInput = parseInt(document.querySelector('#distance').value)
     return userDistanceInput * 50 + 250
