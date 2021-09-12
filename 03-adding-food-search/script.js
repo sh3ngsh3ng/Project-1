@@ -1,6 +1,8 @@
+
 // setting up foursquare API
 const fourSq_API_BASE_URL = "https://api.foursquare.com/v2/"
 
+// searchFood function
 async function searchFood(lat, lng, query) {
     let ll = lat + "," + lng
     let response = await axios.get(fourSq_API_BASE_URL + "venues/search", {
@@ -12,6 +14,5 @@ async function searchFood(lat, lng, query) {
             'query': query
         }
     })
-    console.log(response.data)
     return response.data
 }
