@@ -31,24 +31,29 @@ window.addEventListener('DOMContentLoaded', function() {
 
 
 
-// user's food search
+// user's food search event
 let searchBtn = document.querySelector("#search-food-btn")
 searchBtn.addEventListener('click', async function () {
     foodSearchLayer.clearLayers()
     let userInput = document.querySelector("#search-food-input").value
-    let lat = currentCoords[0]
-    let lng = currentCoords[1]
-    let radius = getRadius()
-    let eachVenue = await (searchFood(lat, lng, radius, userInput))
 
-    // add markers based on food search results
-    for (let i of eachVenue) {
-        let venueName = i.name
-        let venueLat = i.location.lat
-        let venueLng = i.location.lng
-        let marker = L.marker([venueLat, venueLng])
-        marker.bindPopup(`${venueName}`)
-        marker.addTo(foodSearchLayer)
+    if (userInput) {
+        let lat = currentCoords[0]
+        let lng = currentCoords[1]
+        let radius = getRadius()
+        let eachVenue = await (searchFood(lat, lng, radius, userInput))
+    
+        // add markers based on food search results
+        for (let i of eachVenue) {
+            let venueName = i.name
+            let venueLat = i.location.lat
+            let venueLng = i.location.lng
+            let marker = L.marker([venueLat, venueLng])
+            marker.bindPopup(`${venueName}`)
+            marker.addTo(foodSearchLayer)
+        }
+    } else {
+        alert("Please let us know what you want to eat!!")
     }
 })
 
@@ -57,20 +62,26 @@ searchBtn.addEventListener('click', async function () {
 document.querySelector("#distance").addEventListener('change', async function() {
     foodSearchLayer.clearLayers()
     let userInput = document.querySelector("#search-food-input").value
-    let lat = currentCoords[0]
-    let lng = currentCoords[1]
-    let radius = getRadius()
-    let eachVenue = await (searchFood(lat, lng, radius, userInput))
-
-    // add markers based on food search results
-    for (let i of eachVenue) {
-        let venueName = i.name
-        let venueLat = i.location.lat
-        let venueLng = i.location.lng
-        let marker = L.marker([venueLat, venueLng])
-        marker.bindPopup(`${venueName}`)
-        marker.addTo(foodSearchLayer)
+    
+    if (userInput) {
+        let lat = currentCoords[0]
+        let lng = currentCoords[1]
+        let radius = getRadius()
+        let eachVenue = await (searchFood(lat, lng, radius, userInput))
+    
+        // add markers based on food search results
+        for (let i of eachVenue) {
+            let venueName = i.name
+            let venueLat = i.location.lat
+            let venueLng = i.location.lng
+            let marker = L.marker([venueLat, venueLng])
+            marker.bindPopup(`${venueName}`)
+            marker.addTo(foodSearchLayer)
+        }
+    } else {
+        alert("Enter your food choice first!")
     }
+
 })
 
 
