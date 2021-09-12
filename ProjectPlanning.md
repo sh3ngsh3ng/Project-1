@@ -68,17 +68,20 @@ APIs:
 ### Location:
 - ~~Retrieving user's location + Fly to~~
 - Handling error cases when retrieving user's location
-- Can consider making it auto instead of button clicking? I.e. window DOMcontentloaded
+- ~~Can consider making it auto instead of button clicking? I.e. window DOMcontentloaded~~
 - Dropping Ping instead
 - Changing Location Markers 
 
 ### Food search
 - ~~Set-up Foursquare API to search for food~~
-- Link user's input to search function
-- Add in range of distance for food search function
-- Add in details for search results
-- (Issues) Getting location repeatedly keeps placing markers
-- 
+- ~~Link user's input to search function~~
+- ~~Add in range of distance for food search function~~
+- Add in details for search results:
+    - Name
+    - Address
+    - Distance(?)
+- ~~(Issues) Getting location repeatedly keeps placing markers~~
+
 
 ### Layers for Cafe, restaurant, hawkers
 
