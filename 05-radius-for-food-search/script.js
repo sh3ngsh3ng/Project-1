@@ -8,7 +8,9 @@ searchBtn.addEventListener('click', async function () {
     let userInput = document.querySelector("#search-food-input").value
     let lat = currentCoords[0]
     let lng = currentCoords[1]
-    let eachVenue = await (searchFood(lat, lng, userInput))
+    let radius = getRadius()
+    console.log(radius)
+    let eachVenue = await (searchFood(lat, lng, radius, userInput))
 
     // add markers based on food search results
     for (let i of eachVenue) {
@@ -22,8 +24,9 @@ searchBtn.addEventListener('click', async function () {
 })
 
 
+
 // search food function (returns venues)
-async function searchFood(lat, lng, query) {
+async function searchFood(lat, lng, radius, query) {
     let ll = lat + "," + lng
     let response = await axios.get(fourSq_API_BASE_URL + "venues/search", {
         params: {
@@ -31,8 +34,17 @@ async function searchFood(lat, lng, query) {
             'client_id': 'NUBBEVNCBV5IKER4ZEHEEH3XLVNCK3JTYSOBEPUTQOLAYCEZ',
             'client_secret': 'HTWZDJEZBZYK2CE1BBTFPGU3JWSIBJNNTDEPNDADXAS4ROKL',
             'v': '20210912',
+            'radius': radius,
             'query': query
         }
     })
     return response.data.response.venues
 }
+
+
+function getRadius() {
+    let userDistanceInput = parseInt(document.querySelector('#distance').value)
+    return userDistanceInput * 50 + 250
+}
+
+
