@@ -106,6 +106,7 @@ searchBtn.addEventListener('click', async function () {
 let recoBtn = document.querySelector("#recommend-btn")
 recoBtn.addEventListener('click', async function() {
     foodSearchLayer.clearLayers()
+    document.querySelector('#search-food-input').value = ""
     foodRecoMarkers()
 })
 
@@ -118,8 +119,7 @@ document.querySelector("#distance").addEventListener('change', async function() 
     
     if (userInput) {
         searchResultMarkers()
-    }
-    if (foodSearchLayer) {
+    } else {
         foodRecoMarkers()
     }
 })
