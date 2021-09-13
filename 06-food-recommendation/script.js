@@ -41,6 +41,7 @@ async function recoFood(lat, lng, radius) {
 }
 
 
+
 // plot markers for search results
 async function searchResultMarkers() {
     let lat = currentCoords[0]
@@ -108,7 +109,6 @@ recoBtn.addEventListener('click', async function() {
     document.querySelector('#search-food-input').value = ""
     foodRecoMarkers()
 })
-
 
 
 // detect change in radius slider event

@@ -83,7 +83,7 @@ APIs:
 
 - ~~Retrieving user's location + Fly to~~
 - ~~Can consider making it auto instead of button clicking? I.e. window DOMcontentloaded~~
-- Ping Drop (if user block location)
+- Ping Drop (if user blocks location)
   - Dropping Ping instead
   - Changing Location Markers
 
