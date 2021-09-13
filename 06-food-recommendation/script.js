@@ -33,7 +33,7 @@ async function recoFood(lat, lng, radius) {
             'client_id': 'NUBBEVNCBV5IKER4ZEHEEH3XLVNCK3JTYSOBEPUTQOLAYCEZ',
             'client_secret': 'HTWZDJEZBZYK2CE1BBTFPGU3JWSIBJNNTDEPNDADXAS4ROKL',
             'v': '20210912',
-            'section': 'food, topPicks', 
+            'section': 'food', 
             'radius': radius
         }
     })
@@ -68,12 +68,14 @@ async function foodRecoMarkers() {
     let recommendedFood = await recoFood(lat,lng,radius)
     for (let i = 0; i < recommendedFood.length; i++) {
         let eachVenue = recommendedFood[i].venue
+        let venueName = eachVenue.name
         let venueLat = eachVenue.location.labeledLatLngs[0].lat
         let venueLng = eachVenue.location.labeledLatLngs[0].lng
         let venueCoords = [venueLat, venueLng]
 
         // add markers based on recommendation results
         let marker = L.marker(venueCoords)
+        marker.bindPopup(`${venueName}`)
         marker.addTo(foodSearchLayer)
     }
 }
