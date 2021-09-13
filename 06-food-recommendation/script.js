@@ -81,7 +81,6 @@ async function foodRecoMarkers() {
 }
 
 
-
 // default view
 window.addEventListener('DOMContentLoaded', function() {
     flyToCurrentLocation()
