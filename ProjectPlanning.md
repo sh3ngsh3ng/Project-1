@@ -22,6 +22,7 @@ APIs:
 - Healthy Eateries (KML files): https://data.gov.sg/dataset/healthier-eateries
 - Tourism: https://tih-dev.stb.gov.sg/getting-started
 - Geolocation API
+- TripGo API
 
 ## Phase 2: Experiment with Tech to use
 
