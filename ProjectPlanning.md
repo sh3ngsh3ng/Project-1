@@ -1,4 +1,4 @@
-testing vsc# Project Planning (Project Title-WIP)
+# Project Planning (Project Title-WIP)
 
 - Phase 1: Research on available data
 - Phase 2: Experiment with Technology to use
@@ -66,6 +66,7 @@ APIs:
 - Adjusting Distance for search
 - Options/filters
   - restaurants, hawkers, nightlife, etc
+  - food, drinks, etc
 - Drop ping
 
 #### Non-functional
@@ -82,6 +83,9 @@ APIs:
 
 - ~~Retrieving user's location + Fly to~~
 - ~~Can consider making it auto instead of button clicking? I.e. window DOMcontentloaded~~
+- Ping Drop (if user block location)
+  - Dropping Ping instead
+  - Changing Location Markers
 
 ### Food search
 
@@ -103,10 +107,7 @@ APIs:
 - Adding Distance Display when radius slide button changes (https://stackoverflow.com/questions/10004723/html5-input-type-range-show-range-value)
 - ~~(Issues) Displays markers even when nothing is typed in search bar~~
 
-### Ping Drop
 
-- Dropping Ping instead
-- Changing Location Markers
 
 ### Cafe Hopping
 
