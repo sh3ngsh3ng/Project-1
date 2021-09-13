@@ -1,6 +1,12 @@
 // setting up foursquare API
 const fourSq_API_BASE_URL = "https://api.foursquare.com/v2/"
 
+// get radius function (user's input)
+function getRadius() {
+    let userDistanceInput = parseInt(document.querySelector('#distance').value)
+    return userDistanceInput * 50 + 250
+}
+
 // search food function (user's input)
 async function searchFood(lat, lng, radius, query) {
     let ll = lat + "," + lng
@@ -14,14 +20,27 @@ async function searchFood(lat, lng, radius, query) {
             'query': query
         }
     })
-    return response.data.response.venues // returns all venues
+    return response.data.response.venues // returns array of venues
 }
 
-// get radius function (user's input)
-function getRadius() {
-    let userDistanceInput = parseInt(document.querySelector('#distance').value)
-    return userDistanceInput * 50 + 250
+
+// recommend food function
+async function recoFood(lat, lng, radius) {
+    let ll = lat + "," + lng
+    let response = await axios.get(fourSq_API_BASE_URL + "venues/explore", {
+        params: {
+            'll': ll,
+            'client_id': 'NUBBEVNCBV5IKER4ZEHEEH3XLVNCK3JTYSOBEPUTQOLAYCEZ',
+            'client_secret': 'HTWZDJEZBZYK2CE1BBTFPGU3JWSIBJNNTDEPNDADXAS4ROKL',
+            'v': '20210912',
+            'section': 'food, topPicks', 
+            'radius': radius
+        }
+    })
+    return response.data.response.groups[0].items // returns array of recommendations
 }
+
+
 
 // default view
 window.addEventListener('DOMContentLoaded', function() {
@@ -56,6 +75,29 @@ searchBtn.addEventListener('click', async function () {
 })
 
 
+// recommend food search
+let recoBtn = document.querySelector("#recommend-btn")
+recoBtn.addEventListener('click', async function() {
+    let lat = currentCoords[0]
+    let lng = currentCoords[1]
+    let radius = getRadius()
+    let recommendedFood = await recoFood(lat,lng,radius)
+    for (let i = 0; i < recommendedFood.length; i++) {
+        let eachVenue = recommendedFood[i].venue
+        let venueLat = eachVenue.location.labeledLatLngs[0].lat
+        let venueLng = eachVenue.location.labeledLatLngs[0].lng
+        let venueCoords = [venueLat, venueLng]
+
+        // add markers based on recommendation results
+        let marker = L.marker(venueCoords)
+        marker.addTo(foodSearchLayer)
+    }
+})
+
+
+
+
+
 // detect change in radius slider
 document.querySelector("#distance").addEventListener('change', async function() {
     foodSearchLayer.clearLayers()
@@ -81,7 +123,6 @@ document.querySelector("#distance").addEventListener('change', async function() 
     }
 
 })
-
 
 
 
