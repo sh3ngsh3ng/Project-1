@@ -1,3 +1,4 @@
+testing vsc
 # Project Planning (Project Title-WIP)
 
 - Phase 1: Research on available data
@@ -12,7 +13,6 @@
 ## Phase 1: Research on available data
 
 APIs:
-
 - Hawker Centres: https://data.gov.sg/dataset/hawker-centres
 - Restaurants & Cafes: https://developer.foursquare.com/docs/build-with-foursquare/categories/
 - Nightlife: https://developer.foursquare.com/docs/build-with-foursquare/categories/
