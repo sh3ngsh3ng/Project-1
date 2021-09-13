@@ -117,6 +117,7 @@ document.querySelector("#distance").addEventListener('change', async function() 
     if (userInput) {
         searchResultMarkers()
     }
-
-
+    if (foodSearchLayer) {
+        foodRecoMarkers()
+    }
 })
