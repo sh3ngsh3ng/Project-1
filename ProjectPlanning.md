@@ -92,12 +92,14 @@ APIs:
   - Name
   - Address
   - Distance(?)
+  - Filter category (e.g. food, drinks, etc)
 - (Suggestion) Filter by category (food, drinks, etc)
 - ~~(Issues) Getting location repeatedly keeps placing markers~~
 
 ### Radius Slider Bar
 
-- Display results within specified radius (max walking dist = 500m)
+- ~~Display search results within specified radius (max walking dist = 500m)~~
+- ~~Display recommended results within specified radius~~
 - Adding Distance Display when radius slide button changes (https://stackoverflow.com/questions/10004723/html5-input-type-range-show-range-value)
 - ~~(Issues) Displays markers even when nothing is typed in search bar~~
 
@@ -113,7 +115,7 @@ APIs:
 
 ### Food recommendation
 
-- Recommendations for food (4square API?)
+- ~~Recommendations for food~~
 
 ### Filtering Function
 
