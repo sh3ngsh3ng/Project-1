@@ -1,5 +1,4 @@
-testing vsc
-# Project Planning (Project Title-WIP)
+testing vsc# Project Planning (Project Title-WIP)
 
 - Phase 1: Research on available data
 - Phase 2: Experiment with Technology to use
