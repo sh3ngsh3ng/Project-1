@@ -7,7 +7,7 @@ function getRadius() {
     return userDistanceInput * 50 + 250
 }
 
-// search food function (user's input)
+// API: search food function (user's input)
 async function searchFood(lat, lng, radius, query) {
     let ll = lat + "," + lng
     let response = await axios.get(fourSq_API_BASE_URL + "venues/search", {
@@ -23,11 +23,30 @@ async function searchFood(lat, lng, radius, query) {
     return response.data.response.venues // returns array of venues
 }
 
-// plot markers for searchResults
-function searchResultMarkers() {
+
+// API: recommend food function (based on radius)
+async function recoFood(lat, lng, radius) {
+    let ll = lat + "," + lng
+    let response = await axios.get(fourSq_API_BASE_URL + "venues/explore", {
+        params: {
+            'll': ll,
+            'client_id': 'NUBBEVNCBV5IKER4ZEHEEH3XLVNCK3JTYSOBEPUTQOLAYCEZ',
+            'client_secret': 'HTWZDJEZBZYK2CE1BBTFPGU3JWSIBJNNTDEPNDADXAS4ROKL',
+            'v': '20210912',
+            'section': 'food, topPicks', 
+            'radius': radius
+        }
+    })
+    return response.data.response.groups[0].items // returns array of recommendations
+}
+
+
+// plot markers for search results
+async function searchResultMarkers() {
     let lat = currentCoords[0]
     let lng = currentCoords[1]
     let radius = getRadius()
+    let userInput = document.querySelector("#search-food-input").value
     let eachVenue = await (searchFood(lat, lng, radius, userInput))
 
     // add markers based on food search results
@@ -41,7 +60,7 @@ function searchResultMarkers() {
 }}
 
 
-// plot markers for recommendations
+// plot markers for recommendations results
 async function foodRecoMarkers() {
     let lat = currentCoords[0]
     let lng = currentCoords[1]
@@ -57,23 +76,6 @@ async function foodRecoMarkers() {
         let marker = L.marker(venueCoords)
         marker.addTo(foodSearchLayer)
     }
-}
-
-
-// recommend food function
-async function recoFood(lat, lng, radius) {
-    let ll = lat + "," + lng
-    let response = await axios.get(fourSq_API_BASE_URL + "venues/explore", {
-        params: {
-            'll': ll,
-            'client_id': 'NUBBEVNCBV5IKER4ZEHEEH3XLVNCK3JTYSOBEPUTQOLAYCEZ',
-            'client_secret': 'HTWZDJEZBZYK2CE1BBTFPGU3JWSIBJNNTDEPNDADXAS4ROKL',
-            'v': '20210912',
-            'section': 'food, topPicks', 
-            'radius': radius
-        }
-    })
-    return response.data.response.groups[0].items // returns array of recommendations
 }
 
 
@@ -98,7 +100,7 @@ searchBtn.addEventListener('click', async function () {
 })
 
 
-// recommend food search
+// user's recommend food event
 let recoBtn = document.querySelector("#recommend-btn")
 recoBtn.addEventListener('click', async function() {
     foodSearchLayer.clearLayers()
@@ -107,27 +109,14 @@ recoBtn.addEventListener('click', async function() {
 
 
 
-
-
-// detect change in radius slider
+// detect change in radius slider event
 document.querySelector("#distance").addEventListener('change', async function() {
     foodSearchLayer.clearLayers()
     let userInput = document.querySelector("#search-food-input").value
     
     if (userInput) {
-        let lat = currentCoords[0]
-        let lng = currentCoords[1]
-        let radius = getRadius()
-        let eachVenue = await (searchFood(lat, lng, radius, userInput))
-    
-        // add markers based on food search results
-        for (let i of eachVenue) {
-            let venueName = i.name
-            let venueLat = i.location.lat
-            let venueLng = i.location.lng
-            let marker = L.marker([venueLat, venueLng])
-            marker.bindPopup(`${venueName}`)
-            marker.addTo(foodSearchLayer)
-        }
+        searchResultMarkers()
     }
+
+
 })
