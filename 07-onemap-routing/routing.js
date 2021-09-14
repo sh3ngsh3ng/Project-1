@@ -32,8 +32,6 @@ async function getToken() {
     return response.access_token
 }
 
-let x = getToken()
-
 
 async function getRouting() {
     let response = await axios.get(oneMap_API_BASE_URL + "/privateapi/routingsvc/route", {
@@ -41,7 +39,7 @@ async function getRouting() {
             'start': "1.3328572,103.74355220000007",
             'end':  "1.32283828324684,103.936051543997",
             'routeType': "walk",
-            'token': x,
+            'token': getToken(),
         }
     })
     console.log(response)
