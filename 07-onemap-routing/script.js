@@ -126,9 +126,6 @@ document.querySelector("#distance").addEventListener('change', async function() 
 
 // test button for routing
 document.querySelector('#test-btn').addEventListener('click', async function(){
-    let rawLine = await getRouting()
-    let encodedLine = cleanStr(rawLine) // to remove escape sequnce from the string
-    let arrayLatLngs = L.PolylineUtil.decode(encodedLine)
-    let polyline = L.polyline(arrayLatLngs, {color:'red'}).addTo(map)
+    getRouting()
 })
 
