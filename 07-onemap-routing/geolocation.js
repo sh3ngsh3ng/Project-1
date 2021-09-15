@@ -15,6 +15,7 @@ function flyToCurrentLocation() {
         // set marker based on current coords and move map over to marker
         let currentLocationMarker = L.marker(currentCoords)
         currentLocationMarker.addTo(currentLocationLayer)
+        console.log(currentCoords)
         map.flyTo(currentCoords, 16)
     })
 }
