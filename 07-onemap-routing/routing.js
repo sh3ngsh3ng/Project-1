@@ -1,7 +1,7 @@
 let oneMap_API_BASE_URL = "https://developers.onemap.sg"
 
 
-// get token API
+// function to get token API
 async function getToken() {
     var settings = {
         "url"  : oneMap_API_BASE_URL + "/privateapi/auth/post/getToken", 
@@ -17,7 +17,7 @@ async function getToken() {
     return response.access_token
 }
 
-// get routing api
+// function to get routing api
 async function getRouting() {
     let response = await axios.get(oneMap_API_BASE_URL + "/privateapi/routingsvc/route", {
         params: {
@@ -27,13 +27,15 @@ async function getRouting() {
             'token': "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjc5MzQsInVzZXJfaWQiOjc5MzQsImVtYWlsIjoibGVld2VpeGcyMDAxQHlhaG9vLmNvbSIsImZvcmV2ZXIiOmZhbHNlLCJpc3MiOiJodHRwOlwvXC9vbTIuZGZlLm9uZW1hcC5zZ1wvYXBpXC92MlwvdXNlclwvc2Vzc2lvbiIsImlhdCI6MTYzMTYyMDc3NywiZXhwIjoxNjMyMDUyNzc3LCJuYmYiOjE2MzE2MjA3NzcsImp0aSI6ImU3YTFjMTMzNmJiNDZlYmI3MjYwZDMyNGE5ZTk2ZTBlIn0.BhaTlFrA5vRDhcepdrXTkd9cB9gJpNOzxiDKUYeXWNw",
         }
     })
-    console.log(response.data.route_geometry)
     return response.data.route_geometry
-} // function returns encoded google polyline
+} // returns encoded google polyline
 
 
-// step 1: decode polyline
+// function to clean encoded string (removes backslash)
+function cleanStr(x) {
+    a = x.split('\\')
+    b = a.join('\\\\')
+    return b
+}
 
 
-
-// step 2: from decoded (coordinates) to geoJSON

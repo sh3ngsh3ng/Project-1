@@ -128,8 +128,10 @@ document.querySelector("#distance").addEventListener('change', async function() 
 
 // test button
 document.querySelector('#test-btn').addEventListener('click', async function(){
-    let encodedLine = await getRouting()
-    
+    let rawLine = await getRouting()
+    let encodedLine = cleanStr(rawLine) // to remove escape sequnce from the string
+    let array = L.PolylineUtil.decode(encodedLine)
+    console.log(array)
 })
 
 
