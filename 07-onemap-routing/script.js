@@ -42,7 +42,6 @@ async function recoFood(lat, lng, radius) {
 }
 
 
-
 // plot markers for search results
 async function searchResultMarkers() {
     let lat = currentCoords[0]
@@ -125,13 +124,11 @@ document.querySelector("#distance").addEventListener('change', async function() 
 })
 
 
-
-// test button
+// test button for routing
 document.querySelector('#test-btn').addEventListener('click', async function(){
     let rawLine = await getRouting()
     let encodedLine = cleanStr(rawLine) // to remove escape sequnce from the string
-    let array = L.PolylineUtil.decode(encodedLine)
-    console.log(array)
+    let arrayLatLngs = L.PolylineUtil.decode(encodedLine)
+    let polyline = L.polyline(arrayLatLngs, {color:'red'}).addTo(map)
 })
-
 
