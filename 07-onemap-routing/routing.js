@@ -25,11 +25,11 @@ async function getToken() {
 
 // function to get plot route (walk)
 // startpoint and endpoint have to be coordinates and string
-async function getRouting() {
+async function getRouting(startpoint, endpoint) {
     let response = await axios.get(oneMap_API_BASE_URL + "/privateapi/routingsvc/route", {
         params: {
-            'start': '1.306123, 103.883223',   // '1.307812,103.8810721',
-            'end': '1.397423, 103.747423',     // '1.32283,103.936051',
+            'start': startpoint.toString(),   // '1.307812,103.8810721',
+            'end': endpoint.toString(),     // '1.32283,103.936051',
             'routeType': "walk",
             'token': "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjc5MzQsInVzZXJfaWQiOjc5MzQsImVtYWlsIjoibGVld2VpeGcyMDAxQHlhaG9vLmNvbSIsImZvcmV2ZXIiOmZhbHNlLCJpc3MiOiJodHRwOlwvXC9vbTIuZGZlLm9uZW1hcC5zZ1wvYXBpXC92MlwvdXNlclwvc2Vzc2lvbiIsImlhdCI6MTYzMTYyMDc3NywiZXhwIjoxNjMyMDUyNzc3LCJuYmYiOjE2MzE2MjA3NzcsImp0aSI6ImU3YTFjMTMzNmJiNDZlYmI3MjYwZDMyNGE5ZTk2ZTBlIn0.BhaTlFrA5vRDhcepdrXTkd9cB9gJpNOzxiDKUYeXWNw",
         }

@@ -76,7 +76,7 @@ async function foodRecoMarkers() {
 
         // add markers based on recommendation results
         let marker = L.marker(venueCoords)
-        marker.bindPopup(`${venueName}`)
+        marker.bindPopup(`${venueName}, ${venueCoords}`)
         marker.addTo(foodSearchLayer)
     }
 }
@@ -124,8 +124,8 @@ document.querySelector("#distance").addEventListener('change', async function() 
 })
 
 
-// test button for routing
-document.querySelector('#test-btn').addEventListener('click', async function(){
-    getRouting()
+// button for routing
+document.querySelector('#route-btn').addEventListener('click', async function(){
+    getRouting(currentCoords, '1.30993,103.883878')
 })
 
