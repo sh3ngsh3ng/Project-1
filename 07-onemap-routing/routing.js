@@ -38,7 +38,7 @@ async function getRouting(startpoint, endpoint) {
     let encodedLine = cleanStr(routeGeometry)
     let arrayLatLngs = L.PolylineUtil.decode(encodedLine)
     console.log(arrayLatLngs)
-    let polyline = L.polyline(arrayLatLngs, {color:'green'}).addTo(map)
+    let polyline = L.polyline(arrayLatLngs, {color:'green'}).addTo(routingLayer)
 } 
 
 

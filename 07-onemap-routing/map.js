@@ -20,3 +20,8 @@ foodSearchLayer.addTo(map)
 // location layer
 let currentLocationLayer = L.layerGroup()
 currentLocationLayer.addTo(map)
+
+
+// routing layer
+let routingLayer = L.layerGroup()
+routingLayer.addTo(map)
