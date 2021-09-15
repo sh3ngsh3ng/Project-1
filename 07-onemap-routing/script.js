@@ -123,3 +123,13 @@ document.querySelector("#distance").addEventListener('change', async function() 
         foodRecoMarkers()
     }
 })
+
+
+
+// test button
+document.querySelector('#test-btn').addEventListener('click', async function(){
+    let encodedLine = await getRouting()
+    
+})
+
+
