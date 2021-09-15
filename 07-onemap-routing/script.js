@@ -113,6 +113,7 @@ recoBtn.addEventListener('click', async function() {
     foodSearchLayer.clearLayers()
     document.querySelector('#search-food-input').value = ""
     foodRecoMarkers()
+    
 })
 
 
@@ -134,6 +135,8 @@ document.querySelector("#distance").addEventListener('change', async function() 
 //     getRouting(currentCoords, '1.30993,103.883878')
 // })
 
-document.querySelector(`.${venueCoords}`).addEventListener('click', function() {
-    getRouting(currentCoords, venueCoords)
-})
+
+// not working at all
+// document.querySelector(`.${venueCoords}`).addEventListener('click', function() {
+//     getRouting(currentCoords, venueCoords)
+// })
