@@ -80,7 +80,7 @@ async function foodRecoMarkers() {
         marker.bindPopup(`
         <div>${venueName}</div> 
         <div>${venueCoords}</div>
-        <button class="to-plot">EatHere</button>
+        <button id="${venueCoords}">Eat Here</button>
         `)
         marker.addTo(foodSearchLayer)
     }
@@ -134,3 +134,6 @@ document.querySelector("#distance").addEventListener('change', async function() 
 //     getRouting(currentCoords, '1.30993,103.883878')
 // })
 
+document.querySelector(`.${venueCoords}`).addEventListener('click', function() {
+    getRouting(currentCoords, venueCoords)
+})
