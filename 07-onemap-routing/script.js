@@ -55,8 +55,9 @@ async function searchResultMarkers() {
         let venueName = i.name
         let venueLat = i.location.lat
         let venueLng = i.location.lng
-        let marker = L.marker([venueLat, venueLng])
-        marker.bindPopup(`${venueName}`)
+        let venueCoords = [venueLat, venueLng]
+        let marker = L.marker(venueCoords)
+        marker.bindPopup(`${venueName}, ${venueCoords}`)
         marker.addTo(foodSearchLayer)
 }}
 
