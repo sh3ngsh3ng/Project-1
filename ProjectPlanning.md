@@ -124,8 +124,9 @@ APIs:
 
 ### Routing
 - ~~(Least Priority) Routing API to find route there~~
-- To add distance and time for polyline
+- ~~To time for polyline~~
 - To add link to google directions for more specific directions.
+- Set a minimum time (close locations will give 0 minutes because of math.floor)
 
 ## Phase 5: UI Planning
 
