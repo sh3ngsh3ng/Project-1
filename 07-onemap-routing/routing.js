@@ -39,6 +39,7 @@ async function getRouting(startpoint, endpoint) {
     let encodedLine = cleanStr(routeGeometry)
     let arrayLatLngs = L.PolylineUtil.decode(encodedLine)
     let polyline = L.polyline(arrayLatLngs, {color:'green'}).addTo(routingLayer)
+    console.log(response.data.route_summary.total_time)
 } 
 
 

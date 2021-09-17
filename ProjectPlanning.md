@@ -123,8 +123,8 @@ APIs:
 - Restaurants, cafe, hawkers, etc
 
 ### Routing
-
-- (Least Priority) Routing API to find route there
+- ~~(Least Priority) Routing API to find route there~~
+- To add distance and time for polyline
 
 ## Phase 5: UI Planning
 
