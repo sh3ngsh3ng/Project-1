@@ -107,7 +107,11 @@ APIs:
 - Adding Distance Display when radius slide button changes (https://stackoverflow.com/questions/10004723/html5-input-type-range-show-range-value)
 - ~~(Issues) Displays markers even when nothing is typed in search bar~~
 
-
+### Routing
+- ~~Routing API to find route there~~
+- ~~To time for polyline~~
+- To add link to google directions for more specific directions.
+- Set a minimum time (close locations will give 0 minutes because of math.floor)
 
 ### Cafe Hopping
 
@@ -122,11 +126,6 @@ APIs:
 
 - Restaurants, cafe, hawkers, etc
 
-### Routing
-- ~~(Least Priority) Routing API to find route there~~
-- ~~To time for polyline~~
-- To add link to google directions for more specific directions.
-- Set a minimum time (close locations will give 0 minutes because of math.floor)
 
 ## Phase 5: UI Planning
 
