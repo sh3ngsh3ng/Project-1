@@ -54,8 +54,6 @@ async function recoFood(lat, lng, radius) {
     return response.data.response.groups[0].items // returns array of recommendations
 }
 
-
-
 // geolocation success function
 function success(position) {
     let currentLat = position.coords.latitude
