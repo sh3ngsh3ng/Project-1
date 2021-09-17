@@ -29,16 +29,17 @@ async function getRouting(startpoint, endpoint) {
     routingLayer.clearLayers()
     let response = await axios.get(oneMap_API_BASE_URL + "/privateapi/routingsvc/route", {
         params: {
-            'start': startpoint.toString(),   // '1.307812,103.8810721',
-            'end': endpoint.toString(),     // '1.32283,103.936051',
+            'start': startpoint.toString(),   // start & end coordinates have to be strings
+            'end': endpoint.toString(),     
             'routeType': "walk",
             'token': "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjc5MzQsInVzZXJfaWQiOjc5MzQsImVtYWlsIjoibGVld2VpeGcyMDAxQHlhaG9vLmNvbSIsImZvcmV2ZXIiOmZhbHNlLCJpc3MiOiJodHRwOlwvXC9vbTIuZGZlLm9uZW1hcC5zZ1wvYXBpXC92MlwvdXNlclwvc2Vzc2lvbiIsImlhdCI6MTYzMTYyMDc3NywiZXhwIjoxNjMyMDUyNzc3LCJuYmYiOjE2MzE2MjA3NzcsImp0aSI6ImU3YTFjMTMzNmJiNDZlYmI3MjYwZDMyNGE5ZTk2ZTBlIn0.BhaTlFrA5vRDhcepdrXTkd9cB9gJpNOzxiDKUYeXWNw",
         }
     })
     let routeGeometry = response.data.route_geometry
-    let encodedLine = cleanStr(routeGeometry)
-    let arrayLatLngs = L.PolylineUtil.decode(encodedLine)
+    let encodedLine = cleanStr(routeGeometry) // to remove escape sequence
+    let arrayLatLngs = L.PolylineUtil.decode(encodedLine) // decode google polyline to get arrays of coordinates
     let polyline = L.polyline(arrayLatLngs, {color:'green'}).addTo(routingLayer)
+    polyline.bindPopup("hi")
     console.log(response.data.route_summary.total_time)
 } 
 

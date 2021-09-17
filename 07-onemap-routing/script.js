@@ -38,13 +38,5 @@ document.querySelector("#distance").addEventListener('change', async function() 
 })
 
 
-//test button for routing
-// document.querySelector('#route-btn').addEventListener('click', async function(){
-//     getRouting(currentCoords, '1.30993,103.883878')
-// })
 
 
-// not working at all
-// document.querySelector(`.${venueCoords}`).addEventListener('click', function() {
-//     getRouting(currentCoords, venueCoords)
-// })
