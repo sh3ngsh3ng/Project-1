@@ -6,6 +6,8 @@ window.addEventListener('DOMContentLoaded', function() {
 // fly to current location event
 document.querySelector("#btn").addEventListener("click", function() {
     currentLocationLayer.clearLayers()
+    foodSearchLayer.clearLayers()
+    routingLayer.clearLayers()
     flyToCurrentLocation()
 })
 
