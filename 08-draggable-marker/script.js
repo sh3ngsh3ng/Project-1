@@ -45,6 +45,7 @@ document.querySelector("#distance").addEventListener('change', async function() 
 })
 
 // place marker when clicked on the map
+
 map.on('click', function(e){
     currentLocationLayer.clearLayers()
     foodSearchLayer.clearLayers()
