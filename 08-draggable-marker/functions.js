@@ -168,6 +168,3 @@ async function getRouting(startpoint, endpoint) {
 
 
 
-map.on('click', function(e){
-    var marker = new L.marker(e.latlng).addTo(map);
-});
