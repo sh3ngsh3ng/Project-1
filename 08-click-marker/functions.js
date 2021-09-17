@@ -55,25 +55,29 @@ async function recoFood(lat, lng, radius) {
 }
 
 
-// function to fly to current location
-let currentCoords = 0 // set as global variable for access
-function flyToCurrentLocation() {
-    geo = navigator.geolocation
-    geo.getCurrentPosition(function(position) {
-        
-        // get user's current coords
-        let currentLat = position.coords.latitude
-        let currentLng = position.coords.longitude
-        currentCoords = [currentLat, currentLng]
 
-
-        // set marker based on current coords and move map over to marker
-        let currentLocationMarker = L.marker(currentCoords)
-        currentLocationMarker.addTo(currentLocationLayer)
-        map.flyTo(currentCoords, 16)
-    })
+// geolocation success function
+function success(position) {
+    let currentLat = position.coords.latitude
+    let currentLng = position.coords.longitude
+    currentCoords = [currentLat,currentLng]
+  
+    let currentLocationMarker = L.marker(currentCoords).addTo(currentLocationLayer)
+  
+    map.flyTo(currentCoords, 16)
 }
 
+// geolocation error function
+function error() {
+    alert("Please click on the map to start")
+    coordsFlag = false // to act as flag
+}
+
+// fly to location function
+function flyToCurrentLocation() {
+    map.flyTo(currentCoords, 16)
+}
+  
 
 // get radius function (user's input)
 function getRadius() {

@@ -1,6 +1,9 @@
-// default view
+let currentCoords = 0
+let coordsFlag = true
+
+// default view based on geolocation
 window.addEventListener('DOMContentLoaded', function() {
-    flyToCurrentLocation()
+    navigator.geolocation.getCurrentPosition(success, error)
 })
 
 // fly to current location event
@@ -45,14 +48,14 @@ document.querySelector("#distance").addEventListener('change', async function() 
 })
 
 // place marker when clicked on the map
-
 map.on('click', function(e){
-    currentLocationLayer.clearLayers()
-    foodSearchLayer.clearLayers()
-    routingLayer.clearLayers()
-    let lat = e.latlng.lat
-    let lng = e.latlng.lng
-    currentCoords = [lat, lng]
-    let marker = L.marker(currentCoords).addTo(currentLocationLayer)
-    map.flyTo(currentCoords, 16)
-});
+        currentLocationLayer.clearLayers()
+        foodSearchLayer.clearLayers()
+        routingLayer.clearLayers()
+        let lat = e.latlng.lat
+        let lng = e.latlng.lng
+        currentCoords = [lat, lng]
+        let marker = L.marker(currentCoords).addTo(currentLocationLayer)
+        map.flyTo(currentCoords, 16)
+    });
+
