@@ -9,7 +9,6 @@ let searchBtn = document.querySelector("#search-food-btn")
 searchBtn.addEventListener('click', async function () {
     foodSearchLayer.clearLayers()
     let userInput = document.querySelector("#search-food-input").value
-
     if (userInput) {
         searchResultMarkers()
     } else {
@@ -24,7 +23,6 @@ recoBtn.addEventListener('click', async function() {
     foodSearchLayer.clearLayers()
     document.querySelector('#search-food-input').value = ""
     foodRecoMarkers()
-    
 })
 
 
@@ -32,7 +30,6 @@ recoBtn.addEventListener('click', async function() {
 document.querySelector("#distance").addEventListener('change', async function() {
     foodSearchLayer.clearLayers()
     let userInput = document.querySelector("#search-food-input").value
-    
     if (userInput) {
         searchResultMarkers()
     } else {
@@ -42,9 +39,9 @@ document.querySelector("#distance").addEventListener('change', async function() 
 
 
 //test button for routing
-document.querySelector('#route-btn').addEventListener('click', async function(){
-    getRouting(currentCoords, '1.30993,103.883878')
-})
+// document.querySelector('#route-btn').addEventListener('click', async function(){
+//     getRouting(currentCoords, '1.30993,103.883878')
+// })
 
 
 // not working at all

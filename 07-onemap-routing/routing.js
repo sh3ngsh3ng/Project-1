@@ -26,6 +26,7 @@ async function getToken() {
 // function to get plot route (walk)
 // startpoint and endpoint have to be coordinates and string
 async function getRouting(startpoint, endpoint) {
+    routingLayer.clearLayers()
     let response = await axios.get(oneMap_API_BASE_URL + "/privateapi/routingsvc/route", {
         params: {
             'start': startpoint.toString(),   // '1.307812,103.8810721',
@@ -37,7 +38,6 @@ async function getRouting(startpoint, endpoint) {
     let routeGeometry = response.data.route_geometry
     let encodedLine = cleanStr(routeGeometry)
     let arrayLatLngs = L.PolylineUtil.decode(encodedLine)
-    console.log(arrayLatLngs)
     let polyline = L.polyline(arrayLatLngs, {color:'green'}).addTo(routingLayer)
 } 
 
