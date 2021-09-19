@@ -1,15 +1,13 @@
 # Project Planning (Project Title-WIP)
 
-- Phase 1: Research on available data
-- Phase 2: Experiment with Technology to use
-- Phase 3: UX Planning
-- Phase 4: Functionality (make sure it works as intended)
-- Phase 5: UI Planning
-- Phase 6: Design Web Application
-- Phase 7: Responsiveness
+- Phase 1: Research on available data & technology
+- Phase 2: UI/UX Planning
+- Phase 3: Functionality (make sure it works as intended)
+- Phase 4: Structuring & Styling
+- Phase 5: Responsiveness
 - Final Phase: Deploy!
 
-## Phase 1: Research on available data
+## Phase 1: Research on available data & technology
 
 APIs:
 - Hawker Centres: https://data.gov.sg/dataset/hawker-centres
@@ -24,11 +22,9 @@ APIs:
 - Geolocation API
 - TripGo API
 
-## Phase 2: Experiment with Tech to use
 
-- Leaflet
-
-## Phase 3: UX Planning
+## Phase 2: UI/UX Planning
+- 5 planes of UI/UX
 
 ### 1) Strategy
 
@@ -68,74 +64,65 @@ APIs:
   - restaurants, hawkers, nightlife, etc
   - food, drinks, etc
 - Drop ping
+- Routing
 
 #### Non-functional
+- Mobile responsive
 
-### 3) Structure
 
-### 4) Skeleton
+### 3 & 4) Structure & Skeleton
+- https://docs.google.com/presentation/d/1Q_DtTH2Zh-jjWc5D-Z_3CdDgQJ6-Hh-VSp72L-VMTmg/edit?usp=sharing
+
 
 ### 5) Surface
+- On hold
 
-## Phase 4: Functionality
-
-### Current Location:
-
+## Phase 3: Functionality
+### Geolocation:
 - ~~Retrieving user's location + Fly to~~
 - ~~Can consider making it auto instead of button clicking? I.e. window DOMcontentloaded~~
 - Ping Drop (if user blocks location)
   - ~~Dropping Ping to change Location Marker~~
   - Making drop ping exclusive if location disabled
-
-### Food search
-
-- ~~Set-up Foursquare API to search for food~~
+### Food search function + Recommendation function
+**Returns user's search results**
+- ~~Set-up Foursquare API to search for food + recommendation~~
 - ~~Link user's input to search function~~
-- ~~Add in range of distance for food search function~~
-- Add in details for search results:
+- ~~Add markers for results~~
+- Add in details for search & recommendation results:
   - Name
   - Address
   - Distance(?)
-  - Filter category (e.g. food, drinks, etc)
+### Filtering Function
+**Filter function affects both recommendation and food search results**
 - Add a dropdown to filter by category
   - ~~Categories: cafe, restaurant, bar, etc~~
   - ~~Change the dropdown button to display current selection~~
-  - Link category selection to API call
-  - (issue) changing filter doesn't change already displayed markers
-- ~~(Issues) Getting location repeatedly keeps placing markers~~
-
+  - ~~Link category selection to API call~~
+  - ~~(issue) changing filter doesn't change already displayed markers~~
+  - ~~(issue) Getting location repeatedly keeps placing markers~~
 ### Radius Slider Bar
-
+**Slider bar affects both recommendation and food search results**
 - ~~Display search results within specified radius (max walking dist = 500m)~~
 - ~~Display recommended results within specified radius~~
 - Adding Distance Display when radius slide button changes (https://stackoverflow.com/questions/10004723/html5-input-type-range-show-range-value)
 - ~~(Issues) Displays markers even when nothing is typed in search bar~~
-
 ### Routing
+**Each result should have a routing function**
 - ~~Routing API to find route there~~
 - ~~To add time for polyline~~
 - To add link to google directions for more specific directions.
 - Set a minimum time (close locations will give 0 minutes because of math.floor)
 - (issue) routing does not work sometimes if the coordinates from 4square api doesn't meet requirements for routing api
-
-### Cafe Hopping
-
+### (on hold) Cafe Hopping
 - Single Web Application
 - Function to add to itinerary
 
-### Food recommendation
-
-- ~~Recommendations for food~~
-
-### Filtering Function
-
-- Restaurants, cafe, hawkers, etc
+## Phase 4: Structuring & Styling Webpage
 
 
-## Phase 5: UI Planning
+## Phase 5: Design Web Application
 
-## Phase 6: Design Web Application
-
-## Phase 7: Responsiveness
+## Phase 6: Responsiveness
 
 ## Final Phase: Deploy!
