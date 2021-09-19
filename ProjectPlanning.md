@@ -84,8 +84,8 @@ APIs:
 - ~~Retrieving user's location + Fly to~~
 - ~~Can consider making it auto instead of button clicking? I.e. window DOMcontentloaded~~
 - Ping Drop (if user blocks location)
-  - Dropping Ping instead
-  - Changing Location Markers
+  - ~~Dropping Ping to change Location Marker~~
+  - Making drop ping exclusive if location disabled
 
 ### Food search
 
@@ -97,7 +97,9 @@ APIs:
   - Address
   - Distance(?)
   - Filter category (e.g. food, drinks, etc)
-- (Suggestion) Filter by category (food, drinks, etc)
+- Add a dropdown to filter by category
+  - Categories: cafe, restaurant, nightlife
+  - Change the dropdown button to display current selection
 - ~~(Issues) Getting location repeatedly keeps placing markers~~
 
 ### Radius Slider Bar
