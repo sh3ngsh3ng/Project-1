@@ -54,29 +54,26 @@ async function recoFood(lat, lng, radius) {
     return response.data.response.groups[0].items // returns array of recommendations
 }
 
-// geolocation success function
-function success(position) {
-    let currentLat = position.coords.latitude
-    let currentLng = position.coords.longitude
-    currentCoords = [currentLat,currentLng]
-  
-    let currentLocationMarker = L.marker(currentCoords).addTo(currentLocationLayer)
-  
-    map.flyTo(currentCoords, 16)
-}
-
-// geolocation error function
-function error() {
-    alert("Please click on the map to start")
-    coordsFlag = false // to act as flag
-}
 
 // fly to location function
 function flyToCurrentLocation() {
-    map.flyTo(currentCoords, 16)
+    // geolocation success function
+    function success(position) {
+        let currentLat = position.coords.latitude
+        let currentLng = position.coords.longitude
+        currentCoords = [currentLat,currentLng]
+        let currentLocationMarker = L.marker(currentCoords).addTo(currentLocationLayer)
+    
+        map.flyTo(currentCoords, 16)
+    }
+    // geolocation error function
+    function error() {
+        alert("Please click on the map to start")
+        coordsFlag = true
+    }    
+    navigator.geolocation.getCurrentPosition(success, error)
 }
   
-
 // get radius function (user's input)
 function getRadius() {
     let userDistanceInput = parseInt(document.querySelector('#distance').value)
@@ -138,7 +135,7 @@ function cleanStr(x) {
     return b
 }
 
-// function to plot route (walking) via polyline
+// API + function to plot route (walking) via polyline
 // can be split to getRouting and plotRoute?? consider
 async function getRouting(startpoint, endpoint) {
     routingLayer.clearLayers()
