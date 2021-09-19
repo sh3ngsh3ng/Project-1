@@ -98,8 +98,9 @@ APIs:
   - Distance(?)
   - Filter category (e.g. food, drinks, etc)
 - Add a dropdown to filter by category
-  - Categories: cafe, restaurant, nightlife
-  - Change the dropdown button to display current selection
+  - ~~Categories: cafe, restaurant, bar, etc~~
+  - ~~Change the dropdown button to display current selection~~
+  - link category selection to API call
 - ~~(Issues) Getting location repeatedly keeps placing markers~~
 
 ### Radius Slider Bar

@@ -71,7 +71,7 @@ let categoryObj = {
 }
 let categoryKey = categoryObj.food // default category is food
 
-// dropdown category selection
+// dropdown category selection event
 document.querySelectorAll(".dropdown-item").forEach(item => {
     item.addEventListener('click', function () {
         
