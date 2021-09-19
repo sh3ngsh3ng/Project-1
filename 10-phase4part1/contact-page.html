@@ -79,8 +79,25 @@
 
 
         <!-- start of contact form -->
-        <div class="col d-flex justify-content-center" style="background-color: red;">
-            <div class="box">Enter some text here</div>
+        <div class="col d-flex justify-content-center" style="background-color: lightblue;">
+            <div id="form">
+                <h1>Contact Form</h1>
+                <form>
+                    <div class="mb-3">
+                        <label for="nameInput" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="nameInput">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea" class="form-label">Write Here:</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea" rows="3"></textarea>
+                      </div>
+                </form>
+            </div>
         </div>
         <!-- end of contact form -->
     </div>  
