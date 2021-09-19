@@ -57,5 +57,3 @@ map.on('click', function(e){
     let marker = L.marker(currentCoords).addTo(currentLocationLayer)
     map.flyTo(currentCoords, 16)
 })
-
-
