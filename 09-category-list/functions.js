@@ -29,7 +29,7 @@ async function searchFood(lat, lng, radius, query) {
             'client_id': 'NUBBEVNCBV5IKER4ZEHEEH3XLVNCK3JTYSOBEPUTQOLAYCEZ',
             'client_secret': 'HTWZDJEZBZYK2CE1BBTFPGU3JWSIBJNNTDEPNDADXAS4ROKL',
             'v': '20210912',
-            'categoryId': '4d4b7105d754a06374d81259',
+            'categoryId': `${categoryKey}`,
             'radius': radius,
             'query': query
         }
@@ -47,7 +47,7 @@ async function recoFood(lat, lng, radius) {
             'client_id': 'NUBBEVNCBV5IKER4ZEHEEH3XLVNCK3JTYSOBEPUTQOLAYCEZ',
             'client_secret': 'HTWZDJEZBZYK2CE1BBTFPGU3JWSIBJNNTDEPNDADXAS4ROKL',
             'v': '20210912',
-            'categoryId': '4d4b7105d754a06374d81259',
+            'categoryId': `${categoryKey}`,
             'radius': radius
         }
     })

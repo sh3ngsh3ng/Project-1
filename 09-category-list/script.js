@@ -13,6 +13,34 @@ document.querySelector("#btn").addEventListener("click", function() {
     flyToCurrentLocation()
 })
 
+
+// category object for holding the api section value
+let categoryObj = {
+    'food': '4d4b7105d754a06374d81259',
+    'cafe': '4bf58dd8d48988d16d941735',
+    'restaurant': '4bf58dd8d48988d1c4941735',
+    'bar': '4bf58dd8d48988d116941735',
+    'coffeeshop': '4bf58dd8d48988d1e0931735',
+    'dessert': '4bf58dd8d48988d1d0941735',
+}
+let categoryKey = categoryObj.food // default category is food
+
+// dropdown category selection event
+document.querySelectorAll(".dropdown-item").forEach(item => {
+    item.addEventListener('click', function () {
+        
+        // function to capitalize first word of letter
+        function capitalizeFirst(string) {
+            return string.charAt(0).toUpperCase() + string.slice(1)
+        }
+
+        let ddBtn = document.querySelector("#dropdownMenuButton")
+        ddBtn.innerHTML = capitalizeFirst(item.id)
+        categoryKey = categoryObj[item.id]
+    })
+})
+
+
 // user's food search event
 let searchBtn = document.querySelector("#search-food-btn")
 searchBtn.addEventListener('click', async function () {
@@ -61,27 +89,3 @@ map.on('click', function(e){
 
 
 
-let categoryObj = {
-    'food': '4d4b7105d754a06374d81259',
-    'cafe': '4bf58dd8d48988d16d941735',
-    'restaurant': '4bf58dd8d48988d1c4941735',
-    'bar': '4bf58dd8d48988d116941735',
-    'coffeeshop': '4bf58dd8d48988d1e0931735',
-    'dessert': '4bf58dd8d48988d1d0941735',
-}
-let categoryKey = categoryObj.food // default category is food
-
-// dropdown category selection event
-document.querySelectorAll(".dropdown-item").forEach(item => {
-    item.addEventListener('click', function () {
-        
-        // function to capitalize first word of letter
-        function capitalizeFirst(string) {
-            return string.charAt(0).toUpperCase() + string.slice(1)
-        }
-
-        let ddBtn = document.querySelector("#dropdownMenuButton")
-        ddBtn.innerHTML = capitalizeFirst(item.id)
-        categoryKey = categoryObj[item.id]
-    })
-})
