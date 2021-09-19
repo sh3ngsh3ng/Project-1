@@ -100,7 +100,8 @@ APIs:
 - Add a dropdown to filter by category
   - ~~Categories: cafe, restaurant, bar, etc~~
   - ~~Change the dropdown button to display current selection~~
-  - link category selection to API call
+  - Link category selection to API call
+  - (issue) changing filter doesn't change already displayed markers
 - ~~(Issues) Getting location repeatedly keeps placing markers~~
 
 ### Radius Slider Bar
@@ -112,9 +113,10 @@ APIs:
 
 ### Routing
 - ~~Routing API to find route there~~
-- ~~To time for polyline~~
+- ~~To add time for polyline~~
 - To add link to google directions for more specific directions.
 - Set a minimum time (close locations will give 0 minutes because of math.floor)
+- (issue) routing does not work sometimes if the coordinates from 4square api doesn't meet requirements for routing api
 
 ### Cafe Hopping
 

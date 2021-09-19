@@ -28,7 +28,8 @@ let categoryKey = categoryObj.food // default category is food
 // dropdown category selection event
 document.querySelectorAll(".dropdown-item").forEach(item => {
     item.addEventListener('click', function () {
-        
+        foodSearchLayer.clearLayers()
+        routingLayer.clearLayers()
         // function to capitalize first word of letter
         function capitalizeFirst(string) {
             return string.charAt(0).toUpperCase() + string.slice(1)
