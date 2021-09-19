@@ -55,7 +55,7 @@ async function recoFood(lat, lng, radius) {
 }
 
 
-// fly to location function
+// geolocation function + flyto
 function flyToCurrentLocation() {
     // geolocation success function
     function success(position) {
@@ -69,7 +69,6 @@ function flyToCurrentLocation() {
     // geolocation error function
     function error() {
         alert("Please click on the map to start")
-        coordsFlag = true
     }    
     navigator.geolocation.getCurrentPosition(success, error)
 }
