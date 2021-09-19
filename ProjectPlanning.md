@@ -119,6 +119,14 @@ APIs:
 - Function to add to itinerary
 
 ## Phase 4: Structuring & Styling Webpage
+### Part 1: Set-up webpage structure
+- Main Page (Single Web)
+- Map Search Mode (SWA)
+- Map Recommendation Mode (SWA)
+- Contact Page
+- Tutorial
+
+Part 2: Style Webpage
 
 
 ## Phase 5: Design Web Application
