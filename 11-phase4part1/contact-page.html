@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <!-- bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- own CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- nav bar -->
+    <div id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid row">
+            <!-- logo icon -->
+            <div class="col-1">
+                <a class="navbar-brand" href="#">To include image</a>
+            </div>
+            <!-- emptydiv for spacing -->
+            <div class="col-8" id="emptydiv"></div>
+            <div class="col-1">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+            </div>
+          <div class="col-1 collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Get Started</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Tutorial</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Contact Us
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Contact Form</a></li>
+                  <li><a class="dropdown-item" href="#">About Me</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    </div>
+
+    <!-- contact main body -->
+    <!-- start of contact foreword -->
+    <div class="container-fluid">
+        <div class="d-flex justify-content-center">
+            <div><h1>Contact us</h1></div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div><h3>Insert More Text here</h3></div>
+        </div>
+    </div>
+    <!-- end of contact foreword -->
+
+    <!-- start of contact details + form body-->
+    <div class= "row" id="contact-body">
+
+
+        <!-- start of contact details -->
+        <div class="col d-flex justify-content-center" style="background-color: green;">
+            <div>
+                <div>Picture here (mail pic)</div>
+                <h1>How Can We Help?</h1>
+                <div>Let us know how we can improve!</div>
+                <div>Reoprt bugs!</div>
+            </div>
+        </div>
+        <!-- end of contact details -->
+
+
+        <!-- start of contact form -->
+        <div class="col d-flex justify-content-center" style="background-color: lightblue;">
+            <div id="form">
+                <h1>Contact Form</h1>
+                <form>
+                    <div class="mb-3">
+                        <label for="nameInput" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="nameInput">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea" class="form-label">Write Here:</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea" rows="3"></textarea>
+                      </div>
+                </form>
+            </div>
+        </div>
+        <!-- end of contact form -->
+    </div>  
+    <!-- end of contact details + form body-->
+
+
+
+    <!-- bootstrap.js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
