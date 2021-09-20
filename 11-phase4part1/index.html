@@ -26,6 +26,7 @@
   <body>
 
     <div id="main-div">
+      <!-- start-page -->
       <div id="start-page" class="container-fluid page show">
         <!-- nav bar -->
         <div id="nav-bar">
@@ -64,12 +65,14 @@
           </div>
       </nav>
         </div>
+        <!-- start-btn -->
         <div class="d-flex justify-content-center align-items-center" id="start-btn" style="height:100vh;">
             <button class="btn btn-primary btn-lg">Start</button>
         </div>
       </div>
- 
+      <!-- map-page -->
       <div id="map-page" class="container-fluid page page-right">
+
         <!-- dropdown button -->
         <div class="dropdown">
           <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
@@ -84,11 +87,13 @@
             <li><a class="dropdown-item" href="#" id="dessert">Dessert</a></li> 
           </ul>
         </div>
+
         <!-- Food search -->
         <div>
           <input type="text" id="search-food-input" value="enter food here" />
           <button id="search-food-btn">Submit</button>
         </div>
+
         <!-- Distance slider -->
         <div>
           <label for="distance" class="form-label">Distance</label>
@@ -101,12 +106,12 @@
             id="distance"
           />
         </div>
+
         <!-- Recommend button -->
         <div>
           <input type="button" value="Recommend me" id="recommend-btn" />
         </div>
-        <!-- routing button -->
-        <button id="route-btn">Route</button>
+        
         <!-- current location button -->
         <button id="btn">Get Current Location</button>
         <div id="map"></div>
