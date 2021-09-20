@@ -19,7 +19,6 @@ async function getToken() {
     let response = await $.post(settings)
     return response.access_token
 }
-// let accessToken = axios.post(oneMap_API_BASE_URL + "/privateapi/auth/post/getToken",  {email: 'swtan001@gmail.com', password: 'Sampass01!'}).then(response => accessToken = response.data.access_token)
 
 
 // API: search food function (user's input)
