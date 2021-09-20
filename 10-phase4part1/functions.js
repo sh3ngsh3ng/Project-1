@@ -10,8 +10,8 @@ async function getToken() {
         "url"  : oneMap_API_BASE_URL + "/privateapi/auth/post/getToken", 
         "data" : 
                 {
-                  "email": "leeweixg2001@yahoo.com", 
-                  "password": "Scatyim777"
+                  "email": "swtan001@gmail.com", 
+                  "password": "Sampass01!"
                 }, 
         "async" : "true"
     }
@@ -19,6 +19,8 @@ async function getToken() {
     let response = await $.post(settings)
     return response.access_token
 }
+// let accessToken = axios.post(oneMap_API_BASE_URL + "/privateapi/auth/post/getToken",  {email: 'swtan001@gmail.com', password: 'Sampass01!'}).then(response => accessToken = response.data.access_token)
+
 
 // API: search food function (user's input)
 async function searchFood(lat, lng, radius, query) {
@@ -143,7 +145,7 @@ async function getRouting(startpoint, endpoint) {
             'start': startpoint.toString(),   // start & end coordinates have to be strings
             'end': endpoint.toString(),     
             'routeType': "walk",
-            'token': "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjc5MzQsInVzZXJfaWQiOjc5MzQsImVtYWlsIjoibGVld2VpeGcyMDAxQHlhaG9vLmNvbSIsImZvcmV2ZXIiOmZhbHNlLCJpc3MiOiJodHRwOlwvXC9vbTIuZGZlLm9uZW1hcC5zZ1wvYXBpXC92MlwvdXNlclwvc2Vzc2lvbiIsImlhdCI6MTYzMTYyMDc3NywiZXhwIjoxNjMyMDUyNzc3LCJuYmYiOjE2MzE2MjA3NzcsImp0aSI6ImU3YTFjMTMzNmJiNDZlYmI3MjYwZDMyNGE5ZTk2ZTBlIn0.BhaTlFrA5vRDhcepdrXTkd9cB9gJpNOzxiDKUYeXWNw",
+            'token': await getToken(),
         }
     })
     let routeGeometry = response.data.route_geometry
