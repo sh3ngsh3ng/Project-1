@@ -1,7 +1,11 @@
 let currentCoords = 0
 
-// default view based on geolocation
-window.addEventListener('DOMContentLoaded', function() {
+// start button transition to map
+document.querySelector("#start-btn").addEventListener('click', function() {
+    document.querySelector("#start-page").classList.add("page-left")
+    document.querySelector("#start-page").classList.remove("show")
+    document.querySelector("#map-page").classList.add("show")
+    document.querySelector("#map-page").classList.remove("page-right")
     flyToCurrentLocation()
 })
 
@@ -86,7 +90,6 @@ map.on('click', function(e){
     let marker = L.marker(currentCoords).addTo(currentLocationLayer)
     map.flyTo(currentCoords, 16)
 })
-
 
 
 

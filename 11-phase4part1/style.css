@@ -19,10 +19,16 @@
 }
 
 .show {
-  transition: transform 1s;
+  transition: 1s;
   transform: translateX(0)
 }
 
-.hidden {
+.page-right {
+  transition: 1s;
   transform: translateX(100%)
+}
+
+.page-left {
+  transition: 1s;
+  transform: translateX(-100%)
 }
