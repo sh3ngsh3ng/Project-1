@@ -9,3 +9,20 @@
   background-color: blue;
   margin: 20px;
 }
+
+#main-div {
+  position: relative;
+}
+
+.page {
+  position: absolute;
+}
+
+.show {
+  transition: transform 1s;
+  transform: translateX(0)
+}
+
+.hidden {
+  transform: translateX(100%)
+}
