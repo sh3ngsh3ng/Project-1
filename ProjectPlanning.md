@@ -121,8 +121,7 @@ APIs:
 ## Phase 4: Structuring & Styling Webpage
 ### Part 1: Set-up webpage structure
 - Main Page (Single Web)
-- Map Search Mode (SWA)
-- Map Recommendation Mode (SWA)
+- Map (SWA) - 2 layers (Search + Recommend)
 - Contact Page
 - Tutorial
 
