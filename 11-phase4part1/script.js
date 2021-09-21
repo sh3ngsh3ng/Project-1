@@ -10,7 +10,7 @@ document.querySelector("#start-btn").addEventListener('click', function() {
 })
 
 // fly to current location event
-document.querySelector("#btn").addEventListener("click", function() {
+document.querySelector("#location-btn").addEventListener("click", function() {
     currentLocationLayer.clearLayers()
     foodSearchLayer.clearLayers()
     routingLayer.clearLayers()
@@ -47,7 +47,7 @@ document.querySelectorAll(".dropdown-item").forEach(item => {
 
 
 // user's food search event
-let searchBtn = document.querySelector("#search-food-btn")
+let searchBtn = document.querySelector("#submit-btn")
 searchBtn.addEventListener('click', async function () {
     foodSearchLayer.clearLayers()
     let userInput = document.querySelector("#search-food-input").value
@@ -60,12 +60,12 @@ searchBtn.addEventListener('click', async function () {
 
 
 // user's recommend food event
-let recoBtn = document.querySelector("#recommend-btn")
-recoBtn.addEventListener('click', async function() {
-    foodSearchLayer.clearLayers()
-    document.querySelector('#search-food-input').value = ""
-    foodRecoMarkers()
-})
+// let recoBtn = document.querySelector("#recommend-btn")
+// recoBtn.addEventListener('click', async function() {
+//     foodSearchLayer.clearLayers()
+//     document.querySelector('#search-food-input').value = ""
+//     foodRecoMarkers()
+// })
 
 
 // detect change in radius slider event
