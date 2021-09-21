@@ -1,5 +1,6 @@
 #map {
   height: 100vh;
+  z-index: 0;
 }
 
 .box {
@@ -56,8 +57,15 @@
 
 /* current location button */
 #location-btn {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 10px;
   background-color: lightgrey;
   border-radius: 10px;
+  z-index: 1253;
   opacity: 0.8;
 }
 
