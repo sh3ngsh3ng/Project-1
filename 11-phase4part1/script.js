@@ -6,6 +6,7 @@ document.querySelector("#start-btn").addEventListener('click', function() {
     document.querySelector("#start-page").classList.remove("show")
     document.querySelector("#map-page").classList.add("show")
     document.querySelector("#map-page").classList.remove("page-right")
+    document.querySelector("#nav-bar").classList.add("nav-up")
     flyToCurrentLocation()
 })
 
