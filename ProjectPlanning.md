@@ -120,12 +120,12 @@ APIs:
 
 ## Phase 4: Structuring & Styling Webpage
 ### Part 1: Set-up webpage structure
-- Main Page (Single Web)
-- Map (SWA) - 2 layers (Search + Recommend)
+- ~~Main Page (Single Web)~~
+- ~~Map (SWA)~
 - Contact Page
 - Tutorial
 
-Part 2: Style Webpage
+### Part 2: Style Webpage
 
 
 ## Phase 5: Design Web Application
