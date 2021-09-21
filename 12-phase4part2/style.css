@@ -49,11 +49,7 @@
   opacity: 0.8;
 }
 
-/* search food button */
-#submit-btn {
-  background-color: #aad89f;
-  border-radius: 10px;
-}
+
 
 /* current location button */
 #location-btn {
@@ -62,7 +58,7 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  margin: 10px;
+  margin: 30px;
   background-color: lightgrey;
   border-radius: 10px;
   z-index: 1253;
@@ -79,10 +75,11 @@
 /* navbar */
 #nav-bar {
   border-radius: 25px;
-  background: rgb(115, 158, 158);
+  background-color: rgb(196, 186, 186)!important;
+  margin-top: 20px !important;
   margin-right: 20px !important;
   margin-left: 20px !important;
-  opacity: 0.8;
+  opacity: 0.5;
 }
 
 /* start page */
@@ -105,9 +102,9 @@
 }
 
 #start-btn {
-  width: 100px;
+  width: 150px;
   border: black solid 3px;
-  background-color: rgb(74, 155, 182);
+  background-color: rgb(29, 211, 99);
   opacity: 0.8;
   border-radius: 20px;
 }
@@ -115,6 +112,19 @@
 #start-btn:hover {
   transition: 0.3s;
   box-shadow: 0px 0px 1px 8px #aaaaaa;
+  background-color: lightgreen!important;
+  cursor: pointer;
+}
+
+/* search food button */
+#submit-btn {
+  background-color: rgb(29, 211, 99);
+  border-radius: 10px;
+}
+
+#submit-btn:hover {
+  transition: 0.3s;
+  box-shadow: 0px 0px 1px 3px #aaaaaa;
   background-color: lightgreen!important;
   cursor: pointer;
 }

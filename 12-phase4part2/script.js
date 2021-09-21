@@ -1,5 +1,7 @@
 let currentCoords = 0
 
+
+
 // start button transition to map
 document.querySelector("#start-btn").addEventListener('click', function() {
     document.querySelector("#start-page").classList.add("page-left")
