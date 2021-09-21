@@ -121,15 +121,27 @@ APIs:
 ## Phase 4: Structuring & Styling Webpage
 ### Part 1: Set-up webpage structure
 - ~~Main Page (Single Web)~~
-- ~~Map (SWA)~
-- Contact Page
-- Tutorial
+- ~~Map (SWA)~~
+- ~~Contact Page~~
+- (On Hold) Tutorial
 
 ### Part 2: Style Webpage
-
+- Style NavBar
+- Style Start-Page
+- Style Map-Page
+  - Current Location Marker Icon
+  - Marker Icons
+  - PopUp
+  - Radius Slider Bar
+- Style Contact Page
 
 ## Phase 5: Design Web Application
 
 ## Phase 6: Responsiveness
 
 ## Final Phase: Deploy!
+
+
+(Issues)
+- Filter animation is chunky
+- Accidental placing of markers when clicking on map-control-panel
