@@ -32,3 +32,34 @@
   transition: 1s;
   transform: translateX(-100%)
 }
+
+/* search bar */
+#search-food-input {
+  margin:0px; 
+  margin-left: 5px; 
+  margin-right: 5px; 
+  width: 45vw; 
+  border-radius: 30px; 
+  background-color: lightgrey; 
+  opacity: 0.8;
+}
+
+/* search food button */
+#submit-btn {
+  background-color: rgb(144, 218, 144); 
+  border-radius: 10px;
+}
+
+/* current location button */
+#location-btn {
+  background-color: lightgrey;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+
+/* dropdown filter */
+#dropdownMenuButton {
+  background-color: lightgrey;
+  color:black;
+  border-radius: 10px;
+}

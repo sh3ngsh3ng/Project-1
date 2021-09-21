@@ -23,17 +23,36 @@
 
   <body>
     <div id="main-div">
-
       <!-- start-page -->
       <div id="start-page" class="container-fluid page show">
         <!-- nav bar -->
         <div id="nav-bar">
-          <nav class="navbar navbar-expand-lg navbar-light text-black bg-secondary mx-auto mt-2 d-flex justify-content-center" style="border-radius:25px;">
+          <nav
+            class="
+              navbar navbar-expand-lg navbar-light
+              text-black
+              bg-secondary
+              mx-auto
+              mt-2
+              d-flex
+              justify-content-center
+            "
+            style="border-radius: 25px"
+          >
             <div class="container row">
               <!-- logo icon -->
-              <div class="col-1 d-flex align-items-center justify-content-center">
+              <div
+                class="col-1 d-flex align-items-center justify-content-center"
+              >
                 <a class="navbar-brand me-0" href="#">
-                  <button type="button" class="btn" style="border:double;"><img src="images/cutlery.png" alt="" width="25" height="25"></button>
+                  <button type="button" class="btn" style="border: double">
+                    <img
+                      src="images/cutlery.png"
+                      alt=""
+                      width="25"
+                      height="25"
+                    />
+                  </button>
                 </a>
               </div>
               <!-- emptydiv for spacing -->
@@ -96,82 +115,111 @@
         </div>
       </div>
 
-
       <!-- map-page -->
 
-
-
       <div id="map-page" class="container-fluid page page-right">
-
-          <div id="map">
-            <!-- map-control-panel -->
-            <div class="container-fluid d-flex justify-content-center">
-                <div style="height:10vh; z-index: 35345; margin-top: 50px;">
-                  <!-- Food search -->
-                  <div>
-                    <button id="btn">Get Current Location</button>
-                    <input type="text" id="search-food-input" value="enter food here" />
-                    <button id="search-food-btn">Submit</button>
-                  </div>
+        <div id="map">
+          <!-- map-control-panel 1 -->
+          <div
+            class="
+              container-fluid
+              d-flex
+              justify-content-center
+              align-items-center
+            "
+          >
+            <div style="z-index: 35345; margin-top: 50px; margin-bottom: 10px">
+              <div class="container d-flex justify-content-center">
+                <!-- current location button -->
+                <button id="location-btn" type="button" class="button">             
+                  <img
+                  src="images/gps-icon.png"
+                  alt=""
+                  width="25"
+                  height="25"
+                /></button>
+                <!-- search bar -->
+                <input
+                  type="text"
+                  id="search-food-input"
+                  value="enter food here"
+                />
+                <!-- dropdown button -->
+                <div class="dropdown" style="margin-right:5px;">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Filter
+                  </button>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="#" id="food"
+                        >Food (default)</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" id="cafe">Cafe</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" id="restaurant"
+                        >Restaurant</a
+                      >
+                    </li>
+                    <li><a class="dropdown-item" href="#" id="bar">Bar</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#" id="coffeeshop"
+                        >Coffeeshop</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" id="dessert">Dessert</a>
+                    </li>
+                  </ul>
                 </div>
+                <!-- submit button -->
+                <button id="submit-btn">Submit</button>
+              </div>
             </div>
           </div>
-
-
-
-
-        <!-- dropdown button -->
-        <!-- <div class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
+          <!-- map-control-panel 2 -->
+          <div
+            class="
+              container-fluid
+              d-flex
+              justify-content-center
+              align-items-center
+            "
           >
-            Filter
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li>
-              <a class="dropdown-item" href="#" id="food">Food (default)</a>
-            </li>
-            <li><a class="dropdown-item" href="#" id="cafe">Cafe</a></li>
-            <li>
-              <a class="dropdown-item" href="#" id="restaurant">Restaurant</a>
-            </li>
-            <li><a class="dropdown-item" href="#" id="bar">Bar</a></li>
-            <li>
-              <a class="dropdown-item" href="#" id="coffeeshop">Coffeeshop</a>
-            </li>
-            <li><a class="dropdown-item" href="#" id="dessert">Dessert</a></li>
-          </ul>
-        </div> -->
+            <div style="z-index: 3532456">
+              <!-- Distance slider -->
+              <div style="width: 30vw">
+                <input
+                  type="range"
+                  class="form-range"
+                  min="0"
+                  max="5"
+                  step="1"
+                  id="distance"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <!-- Distance slider -->
-        <!-- <div>
-          <label for="distance" class="form-label">Distance</label>
-          <input
-            type="range"
-            class="form-range"
-            min="0"
-            max="5"
-            step="1"
-            id="distance"
-          />
-        </div> -->
         <!-- Recommend button -->
         <!-- <div>
           <input type="button" value="Recommend me" id="recommend-btn" />
         </div> -->
 
         <!-- current location button -->
-
-
-
-
       </div>
-
-
     </div>
 
     <!-- axios -->
