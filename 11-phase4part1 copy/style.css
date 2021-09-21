@@ -1,0 +1,131 @@
+#map {
+  height: 100vh;
+  z-index: 0;
+}
+
+.box {
+  width: 100px;
+  height: 10vh;
+  background-color: blue;
+  margin: 20px;
+}
+
+#main-div {
+  position: relative;
+}
+
+.page {
+  position: absolute;
+}
+
+.show {
+  transition: 1s;
+  transform: translateX(0);
+}
+
+.page-right {
+  transition: 1s;
+  transform: translateX(100%);
+}
+
+.page-left {
+  transition: 1s;
+  transform: translateX(-100%);
+}
+
+.nav-up {
+  transition: 2s;
+  transform: translateY(-200px);
+}
+
+/* search bar */
+#search-food-input {
+  margin: 0px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 45vw;
+  border-radius: 30px;
+  background-color: lightgrey;
+  opacity: 0.8;
+}
+
+/* search food button */
+#submit-btn {
+  background-color: #aad89f;
+  border-radius: 10px;
+}
+
+/* current location button */
+#location-btn {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 10px;
+  background-color: lightgrey;
+  border-radius: 10px;
+  z-index: 1253;
+  opacity: 0.9;
+}
+
+/* dropdown filter */
+#dropdownMenuButton {
+  background-color: lightgrey;
+  color: black;
+  border-radius: 10px;
+}
+
+/* navbar */
+#nav-bar {
+  border-radius: 25px;
+  background: rgb(115, 158, 158);
+  margin-right: 20px !important;
+  margin-left: 20px !important;
+  opacity: 0.8;
+}
+
+/* start page */
+#start-page {
+  padding: 0;
+}
+
+/* map page */
+#map-page {
+  padding: 0;
+}
+
+/* background image */
+#bg-image {
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.75;
+}
+
+#start-btn {
+  width: 100px;
+  border: black solid 3px;
+  background-color: rgb(74, 155, 182);
+  opacity: 0.8;
+  border-radius: 20px;
+}
+
+#start-btn:hover {
+  transition: 0.3s;
+  box-shadow: 0px 0px 1px 8px #aaaaaa;
+  background-color: lightgreen!important;
+  cursor: pointer;
+}
+
+
+/* contact page (message icon) */
+#message-icon {
+  width: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+
