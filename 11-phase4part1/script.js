@@ -6,9 +6,7 @@ document.querySelector("#start-btn").addEventListener('click', function() {
     document.querySelector("#start-page").classList.remove("show")
     document.querySelector("#map-page").classList.add("show")
     document.querySelector("#map-page").classList.remove("page-right")
-    document.querySelector("#nav-bar").classList.add("nav-up")
-
-    document.querySelector("#panel-1").classList.add("panel-down")
+    document.querySelector("#nav-bar-div").classList.add("nav-up")
     flyToCurrentLocation()
 })
 
@@ -83,16 +81,16 @@ document.querySelector("#distance").addEventListener('change', async function() 
 })
 
 
-map.on('click', function(e){
-    currentLocationLayer.clearLayers()
-    foodSearchLayer.clearLayers()
-    routingLayer.clearLayers()
-    let lat = e.latlng.lat
-    let lng = e.latlng.lng
-    currentCoords = [lat, lng]
-    let marker = L.marker(currentCoords).addTo(currentLocationLayer)
-    map.flyTo(currentCoords, 16)
-})
+// map.on('click', function(e){
+//     currentLocationLayer.clearLayers()
+//     foodSearchLayer.clearLayers()
+//     routingLayer.clearLayers()
+//     let lat = e.latlng.lat
+//     let lng = e.latlng.lng
+//     currentCoords = [lat, lng]
+//     let marker = L.marker(currentCoords).addTo(currentLocationLayer)
+//     map.flyTo(currentCoords, 16)
+// })
 
 
 

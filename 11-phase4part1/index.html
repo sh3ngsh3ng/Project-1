@@ -24,21 +24,21 @@
   <body style="position: relative">
     <!-- nav bar -->
     <div
-      id="nav-bar"
+      id="nav-bar-div"
       class="container-fluid"
       style="position: absolute; z-index: 23464356"
     >
       <nav
+      id = "nav-bar"
         class="
           navbar navbar-expand-lg navbar-light
           text-black
-          bg-secondary
           mx-auto
           mt-2
           d-flex
           justify-content-center
         "
-        style="border-radius: 25px"
+
       >
         <div class="container row">
           <!-- logo icon -->
@@ -108,7 +108,7 @@
           class="d-flex justify-content-center align-items-center"
           style="height: 100vh"
         >
-          <button class="btn btn-primary btn-lg" id="start-btn">Start</button>
+          <button class="btn btn-success btn-lg" id="start-btn">Start</button>
         </div>
       </div>
 
@@ -124,7 +124,7 @@
               align-items-center
             "
           >
-            <div style="z-index: 345678; margin-top: 30px; margin-bottom: 10px">
+            <div style="z-index: 345678; margin-top: 30px;">
               <div class="container d-flex justify-content-center">
                 <!-- current location button -->
                 <button id="location-btn" type="button" class="button">
@@ -196,7 +196,7 @@
           >
             <div style="z-index: 3532456">
               <!-- Distance slider -->
-              <div style="width: 30vw">
+              <div style="width: 30vw; margin-top: 10px;">
                 <input
                   type="range"
                   class="form-range"

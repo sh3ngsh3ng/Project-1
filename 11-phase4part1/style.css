@@ -35,7 +35,6 @@
 
 .nav-up {
   transition: 1s;
-  transition-delay: 2s;
   transform: translateY(-200px)
 }
 
@@ -69,4 +68,10 @@
   background-color: lightgrey;
   color:black;
   border-radius: 10px;
+}
+
+/* navbar */
+#nav-bar {
+  border-radius: 25px; 
+  background: rgb(219, 189, 132);
 }
