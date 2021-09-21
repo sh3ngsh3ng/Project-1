@@ -23,6 +23,7 @@
 
   <body>
     <div id="main-div">
+
       <!-- start-page -->
       <div id="start-page" class="container-fluid page show">
         <!-- nav bar -->
@@ -94,10 +95,33 @@
           <button class="btn btn-primary btn-lg" id="start-btn">Start</button>
         </div>
       </div>
+
+
       <!-- map-page -->
+
+
+
       <div id="map-page" class="container-fluid page page-right">
+
+          <div id="map">
+            <!-- map-control-panel -->
+            <div class="container-fluid d-flex justify-content-center">
+                <div style="height:10vh; z-index: 35345; margin-top: 50px;">
+                  <!-- Food search -->
+                  <div>
+                    <button id="btn">Get Current Location</button>
+                    <input type="text" id="search-food-input" value="enter food here" />
+                    <button id="search-food-btn">Submit</button>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+
+
+
         <!-- dropdown button -->
-        <div class="dropdown">
+        <!-- <div class="dropdown">
           <button
             class="btn btn-secondary dropdown-toggle"
             type="button"
@@ -121,16 +145,10 @@
             </li>
             <li><a class="dropdown-item" href="#" id="dessert">Dessert</a></li>
           </ul>
-        </div>
-
-        <!-- Food search -->
-        <div>
-          <input type="text" id="search-food-input" value="enter food here" />
-          <button id="search-food-btn">Submit</button>
-        </div>
+        </div> -->
 
         <!-- Distance slider -->
-        <div>
+        <!-- <div>
           <label for="distance" class="form-label">Distance</label>
           <input
             type="range"
@@ -140,17 +158,20 @@
             step="1"
             id="distance"
           />
-        </div>
-
+        </div> -->
         <!-- Recommend button -->
-        <div>
+        <!-- <div>
           <input type="button" value="Recommend me" id="recommend-btn" />
-        </div>
+        </div> -->
 
         <!-- current location button -->
-        <button id="btn">Get Current Location</button>
-        <div id="map"></div>
+
+
+
+
       </div>
+
+
     </div>
 
     <!-- axios -->
