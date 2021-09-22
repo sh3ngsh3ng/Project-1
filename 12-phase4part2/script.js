@@ -11,6 +11,15 @@ document.querySelector("#start-btn").addEventListener('click', function() {
     flyToCurrentLocation()
 })
 
+// back button to transition to start page
+document.querySelector("#back-btn").addEventListener('click', function() {
+    document.querySelector("#start-page").classList.remove("page-up")
+    document.querySelector("#start-page").classList.add("show")
+    document.querySelector("#map-page").classList.add("page-left")
+    document.querySelector("#nav-bar-div").classList.remove("nav-up")
+    document.querySelector("#nav-bar-div").classList.add("show")
+})
+
 // fly to current location event
 document.querySelector("#location-btn").addEventListener("click", function() {
     currentLocationLayer.clearLayers()
