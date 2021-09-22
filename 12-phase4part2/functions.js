@@ -63,7 +63,7 @@ function flyToCurrentLocation() {
         let currentLat = position.coords.latitude
         let currentLng = position.coords.longitude
         currentCoords = [currentLat,currentLng]
-        let currentLocationMarker = L.marker(currentCoords).addTo(currentLocationLayer)
+        let currentLocationMarker = L.marker(currentCoords, {icon: locationMarkerIcon}).addTo(currentLocationLayer)
     
         map.flyTo(currentCoords, 16)
     }
@@ -94,7 +94,7 @@ async function searchResultMarkers() {
         let venueLat = i.location.lat
         let venueLng = i.location.lng
         let venueCoords = [venueLat, venueLng]
-        let marker = L.marker(venueCoords)
+        let marker = L.marker(venueCoords, {icon:foodMarkerIcon})
         marker.bindPopup(`
         <div>${venueName}</div> 
         <div>${venueCoords}</div>

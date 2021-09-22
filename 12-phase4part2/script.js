@@ -83,6 +83,7 @@ document.querySelector("#distance").addEventListener('change', async function() 
 })
 
 
+
 // map.on('click', function(e){
 //     currentLocationLayer.clearLayers()
 //     foodSearchLayer.clearLayers()
@@ -90,7 +91,7 @@ document.querySelector("#distance").addEventListener('change', async function() 
 //     let lat = e.latlng.lat
 //     let lng = e.latlng.lng
 //     currentCoords = [lat, lng]
-//     let marker = L.marker(currentCoords).addTo(currentLocationLayer)
+//     let marker = L.marker(currentCoords, {icon: locationMarkerIcon}).addTo(currentLocationLayer)
 //     map.flyTo(currentCoords, 16)
 // })
 

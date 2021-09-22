@@ -23,3 +23,17 @@ currentLocationLayer.addTo(map)
 // routing layer
 let routingLayer = L.layerGroup()
 routingLayer.addTo(map)
+
+// location icon
+let locationMarkerIcon = L.icon({
+    iconUrl: 'images/location.png',
+    iconSize: [50, 50],
+    iconAnchor: [20, 50],
+})
+
+// food icon
+let foodMarkerIcon = L.icon({
+    iconUrl: 'images/cutlery2.png',
+    iconSize: [30,30],
+
+})
