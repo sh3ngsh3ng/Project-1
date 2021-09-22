@@ -26,14 +26,14 @@ routingLayer.addTo(map)
 
 // location icon
 let locationMarkerIcon = L.icon({
-    iconUrl: 'images/location.png',
-    iconSize: [50, 50],
-    iconAnchor: [20, 50],
+    iconUrl: 'images/location2.png',
+    iconSize: [70, 70],
+    iconAnchor: [35, 70],
 })
 
 // food icon
 let foodMarkerIcon = L.icon({
-    iconUrl: 'images/cutlery2.png',
-    iconSize: [30,30],
+    iconUrl: 'images/food.png',
+    iconSize: [50,50],
 
 })
