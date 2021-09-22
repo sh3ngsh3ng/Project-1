@@ -21,11 +21,7 @@
 .show {
   transition: 1s;
   transform: translateX(0);
-}
-
-.page-right {
-  transition: 1s;
-  transform: translateX(100%);
+  transition-timing-function: ease-in-out;
 }
 
 .page-left {
@@ -33,9 +29,15 @@
   transform: translateX(-100%);
 }
 
+.page-up {
+  transition: 1s;
+  transform: translateY(-100%);
+}
+
 .nav-up {
   transition: 2s;
-  transform: translateY(-200px);
+  transform: translateY(-100%);
+  transition-timing-function: ease;
 }
 
 /* search bar */
@@ -119,9 +121,14 @@
 
 /* search food button */
 #submit-btn {
-  background-color: rgb(29, 211, 99);
-  border-radius: 10px;
+  background-color: rgb(160, 161, 161);
+  border-radius: 30px;
 }
+
+#submit-btn-icon {
+  height: 20px;
+}
+
 
 #submit-btn:hover {
   transition: 0.3s;
@@ -157,4 +164,15 @@
 .pop-up-header {
   font-weight: bold;
   text-align: center;
+}
+
+
+/* distance slider */
+#distance-slider {
+  width: 30vw; 
+  margin-top: 10px;
+  background-color: rgb(129, 176, 218);
+  border-radius: 20px;
+  padding-left: 8px;
+  padding-right: 8px;
 }

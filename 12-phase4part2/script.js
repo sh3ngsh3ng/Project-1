@@ -4,10 +4,9 @@ let currentCoords = 0
 
 // start button transition to map
 document.querySelector("#start-btn").addEventListener('click', function() {
-    document.querySelector("#start-page").classList.add("page-left")
-    document.querySelector("#start-page").classList.remove("show")
+    document.querySelector("#start-page").classList.add("page-up")
+    document.querySelector("#map-page").classList.remove("page-left")
     document.querySelector("#map-page").classList.add("show")
-    document.querySelector("#map-page").classList.remove("page-right")
     document.querySelector("#nav-bar-div").classList.add("nav-up")
     flyToCurrentLocation()
 })
