@@ -1,13 +1,15 @@
+
+/* CSS */
+/*  
+The CSS can be divided into 2 main parts:
+  1) Elements
+  2) Animations
+*/
+
+/* Part 1: ELEMENTS */
 #map {
   height: 100vh;
   z-index: 0;
-}
-
-.box {
-  width: 100px;
-  height: 10vh;
-  background-color: blue;
-  margin: 20px;
 }
 
 #main-div {
@@ -17,41 +19,6 @@
 .page {
   position: absolute;
 }
-
-/* animations */
-.show {
-  transition: 1s;
-  transform: translateX(0);
-  transform: translateY(0);
-  transition-timing-function: ease-in-out;
-}
-
-.page-left {
-  transition: 1s;
-  transform: translateX(-100%);
-}
-
-.page-up {
-  transition: 1s;
-  transform: translateY(-100%);
-}
-
-.nav-up {
-  transition: 2s;
-  transform: translateY(-100%);
-  transition-timing-function: ease;
-}
-
-.search-bar-up {
-  transition: 2s;
-  transform: translateY(-500%)
-}
-
-.search-bar-down {
-  transition:2s;
-  transform: translateY(0)
-}
-
 
 /* search bar */
 #search-food-input {
@@ -63,8 +30,6 @@
   background-color: lightgrey;
   opacity: 0.8;
 }
-
-
 
 /* current location button */
 #location-btn {
@@ -79,6 +44,7 @@
   z-index: 1253;
   opacity: 0.9;
 }
+
 
 /* dropdown filter */
 #dropdownMenuButton {
@@ -98,14 +64,21 @@
   opacity: 0.8;
 }
 
-/* start page */
-#start-page {
-  padding: 0;
+/* search food button */
+#submit-btn {
+  background-color: rgb(160, 161, 161);
+  border-radius: 30px;
 }
 
-/* map page */
-#map-page {
-  padding: 0;
+#submit-btn-icon {
+  height: 20px;
+}
+
+#submit-btn:hover {
+  transition: 0.3s;
+  box-shadow: 0px 0px 1px 3px #aaaaaa;
+  background-color: lightgreen!important;
+  cursor: pointer;
 }
 
 /* background image */
@@ -128,23 +101,6 @@
 #start-btn:hover {
   transition: 0.3s;
   box-shadow: 0px 0px 1px 8px #aaaaaa;
-  background-color: lightgreen!important;
-  cursor: pointer;
-}
-
-/* search food button */
-#submit-btn {
-  background-color: rgb(160, 161, 161);
-  border-radius: 30px;
-}
-
-#submit-btn-icon {
-  height: 20px;
-}
-
-#submit-btn:hover {
-  transition: 0.3s;
-  box-shadow: 0px 0px 1px 3px #aaaaaa;
   background-color: lightgreen!important;
   cursor: pointer;
 }
@@ -175,15 +131,7 @@
   cursor: pointer;
 }
 
-/* contact page (message icon) */
-#message-icon {
-  width: 100px;
-  margin-top: 20px;
-  margin-bottom: 20px;
 
-}
-
-/* pop up */
 /* pop up routing button */
 .routing-btn {
   border-radius: 10px;
@@ -202,6 +150,103 @@
   font-weight: bold;
   text-align: center;
 }
+
+/* recommend btn */
+#recommend-btn {
+  border-radius: 20px;
+  padding: 10px;
+  background-color: lightgreen;
+}
+
+#recommend-btn:hover {
+  transition: 0.3s;
+  box-shadow: 0px 0px 1px 8px #aaaaaa;
+  background-color: lightgreen!important;
+  cursor: pointer;
+}
+
+/* Part 2: ANIMATIONS */
+
+/* animations */
+.show {
+  transition: 1s;
+  transform: translateX(0);
+  transform: translateY(0);
+  transition-timing-function: ease-in-out;
+}
+
+.page-left {
+  transition: 1s;
+  transform: translateX(-100%);
+}
+
+.page-up {
+  transition: 1s;
+  transform: translateY(-100%);
+}
+
+.nav-up {
+  transition: 2s;
+  transform: translateY(-100%);
+  transition-timing-function: ease;
+}
+
+/* search bar animations */
+.search-bar-up {
+  transition: 2s;
+  transform: translateY(-500%)
+}
+
+.search-bar-down {
+  transition:2s;
+  transform: translateY(0)
+}
+
+
+/* recommend btn animations */
+.reco-btn-left {
+  transition: 1s;
+  transform: translateX(-100%)
+}
+
+.reco-btn-show {
+  transition: 1s;
+  transform: translateX(0)
+}
+
+
+
+
+
+
+
+
+/* start page */
+#start-page {
+  padding: 0;
+}
+
+/* map page */
+#map-page {
+  padding: 0;
+}
+
+
+
+
+
+
+
+/* contact page (message icon) */
+#message-icon {
+  width: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+/* pop up */
+
 
 
 /* distance slider + mode switch*/
@@ -241,27 +286,5 @@
   height: 5vh;
 }
 
-/* recommend btn */
-#recommend-btn {
-  border-radius: 20px;
-  padding: 10px;
-  background-color: lightgreen;
-}
 
-#recommend-btn:hover {
-  transition: 0.3s;
-  box-shadow: 0px 0px 1px 8px #aaaaaa;
-  background-color: lightgreen!important;
-  cursor: pointer;
-}
 
-/* recommend btn animations */
-.reco-btn-left {
-  transition: 1s;
-  transform: translateX(-100%)
-}
-
-.reco-btn-show {
-  transition: 1s;
-  transform: translateX(0)
-}
