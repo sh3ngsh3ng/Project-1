@@ -44,7 +44,7 @@
 
 .search-bar-up {
   transition: 2s;
-  transform: translateY(-200%)
+  transform: translateY(-500%)
 }
 
 .search-bar-down {
@@ -230,4 +230,24 @@
   opacity: 0.6;
 }
 
-/*  */
+/* recommend-button-div */
+#recommend-btn-div {
+  z-index: 13432554;
+  bottom: 10%;
+}
+
+/* recommend icon */
+#recommend-icon {
+  height: 20px;
+}
+
+/* recommend btn animations */
+.reco-btn-left {
+  transition: 1s;
+  transform: translateX(-100%)
+}
+
+.reco-btn-show {
+  transition: 1s;
+  transform: translateX(0)
+}

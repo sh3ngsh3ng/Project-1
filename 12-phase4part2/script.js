@@ -71,12 +71,12 @@ searchBtn.addEventListener('click', async function () {
 
 
 // user's recommend food event
-// let recoBtn = document.querySelector("#recommend-btn")
-// recoBtn.addEventListener('click', async function() {
-//     foodSearchLayer.clearLayers()
-//     document.querySelector('#search-food-input').value = ""
-//     foodRecoMarkers()
-// })
+let recoBtn = document.querySelector("#recommend-btn")
+recoBtn.addEventListener('click', async function() {
+    foodSearchLayer.clearLayers()
+    document.querySelector('#search-food-input').value = ""
+    foodRecoMarkers()
+})
 
 
 // detect change in radius slider event
@@ -111,13 +111,17 @@ document.querySelector("#mode-switch").addEventListener("click", function() {
         document.querySelector("#switch-label").innerHTML = "Mode: Search"
         document.querySelector("#search-bar-div").classList.remove("search-bar-up")
         document.querySelector("#search-bar-div").classList.add("search-bar-down")
-        // recommend move up
+        // filter move up
+        document.querySelector("#recommend-btn-div").classList.remove("reco-btn-show")
+        document.querySelector("#recommend-btn-div").classList.add("reco-btn-left")
     }
     if (mode) {
         document.querySelector("#switch-label").innerHTML = 'Mode: Recommend'
         document.querySelector("#search-bar-div").classList.add("search-bar-up")
         document.querySelector("#search-bar-div").classList.remove("search-bar-down")
-        // recommend move down
+        // filter move down
+        document.querySelector("#recommend-btn-div").classList.remove("reco-btn-left")
+        document.querySelector("#recommend-btn-div").classList.add("reco-btn-show")
     }
 })
 
