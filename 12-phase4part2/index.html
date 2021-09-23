@@ -21,15 +21,15 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body >
+  <body>
     <!-- nav bar -->
     <div
       id="nav-bar-div"
       class="container-fluid"
-      style="position: absolute; z-index: 20;"
+      style="position: absolute; z-index: 20"
     >
       <nav
-      id = "nav-bar"
+        id="nav-bar"
         class="
           navbar navbar-expand-lg navbar-light
           text-black
@@ -89,7 +89,9 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <a class="dropdown-item" href="contact-page.html">Contact Form</a>
+                    <a class="dropdown-item" href="contact-page.html"
+                      >Contact Form</a
+                    >
                   </li>
                   <li><a class="dropdown-item" href="#">About Me</a></li>
                 </ul>
@@ -101,52 +103,65 @@
     </div>
 
     <div id="main-div">
-
       <!-- start-page -->
       <div id="start-page" class="container-fluid position-absolute">
-        <img id="bg-image" src="images/food-background3.jpg" alt="">
+        <img id="bg-image" src="images/food-background3.jpg" alt="" />
         <!-- start-btn -->
-        <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <div
+          class="d-flex justify-content-center align-items-center"
+          style="height: 100vh"
+        >
           <a class="btn btn-lg" id="start-btn">Get Started</a>
         </div>
       </div>
 
       <!-- map-page -->
       <div id="map-page" class="container-fluid position-absolute page-left">
-
         <!-- search bar-->
         <div id="search-bar-div" class="position-absolute container-fluid">
-          <div class="container d-flex justify-content-center" style="height:4vh">
+          <div
+            class="container d-flex justify-content-center"
+            style="height: 4vh"
+          >
             <!-- search input -->
-            <input type="text" id="search-food-input" value="chicken rice"/>
+            <input type="text" id="search-food-input" value="chicken rice" />
             <!-- search submit button -->
-            <button id="submit-btn"><img id="submit-btn-icon" src="images/search.png"></button>
+            <button id="submit-btn">
+              <img id="submit-btn-icon" src="images/search.png" />
+            </button>
           </div>
         </div>
 
         <!-- distance slider + mode switch -->
         <div id="dist-mode-div" class="position-absolute container-fluid">
-          <div class="container d-flex justify-content-center" style="height:3vh">
+          <div
+            class="container d-flex justify-content-center"
+            style="height: 3vh"
+          >
             <!-- filter button -->
-            <div id="filter-btn" class="dropdown" style="margin-right: 5px ;z-index: 32452345; display:none">
+            <div
+              id="filter-btn"
+              class="dropdown"
+              style="margin-right: 5px; z-index: 32452345; display: none"
+            >
               <button
-                class="btn btn-secondary dropdown-toggle d-flex align-items-center"
+                class="
+                  btn btn-secondary
+                  dropdown-toggle
+                  d-flex
+                  align-items-center
+                "
                 type="button"
                 id="dropdownMenuButton"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-                style="height:100%;"
+                style="height: 100%"
               >
                 Filter
               </button>
-              <ul
-                class="dropdown-menu"
-                aria-labelledby="dropdownMenuButton"
-              >
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <li>
-                  <a class="dropdown-item" href="#" id="food"
-                    >Food (default)</a
-                  >
+                  <a class="dropdown-item" href="#" id="food">Food (default)</a>
                 </li>
                 <li>
                   <a class="dropdown-item" href="#" id="cafe">Cafe</a>
@@ -168,7 +183,11 @@
               </ul>
             </div>
             <!-- distance slider -->
-            <div id="distance-slider" class="container d-flex justify-content-center align-items-center" style="height:100%; margin-right:10px;">
+            <div
+              id="distance-slider"
+              class="container d-flex justify-content-center align-items-center"
+              style="height: 100%; margin-right: 10px"
+            >
               <input
                 type="range"
                 class="form-range"
@@ -176,37 +195,58 @@
                 max="5"
                 step="1"
                 id="distance"
-                oninput="this.nextElementSibling.value = (this.value * 50 + 250) + 'm'" 
+                oninput="this.nextElementSibling.value = (this.value * 50 + 250) + 'm'"
               />
-              <output style="z-index:1234; margin-left:5px;">400m</output>
+              <output style="z-index: 1234; margin-left: 5px">400m</output>
             </div>
             <!-- switch button -->
-            <div id="mode-switch-div" class=" d-flex align-items-center">
-              <div class="form-check form-switch d-inline d-flex align-items-center">
-                <input id="mode-switch" class="form-check-input bg-warning" type="checkbox" style="margin-top:0; margin-right:5px;">
-                <label id="switch-label"class="form-check-label " for="mode-switch">Mode: Search</label>
+            <div id="mode-switch-div" class="d-flex align-items-center">
+              <div
+                class="
+                  form-check form-switch
+                  d-inline d-flex
+                  align-items-center
+                "
+              >
+                <input
+                  id="mode-switch"
+                  class="form-check-input bg-warning"
+                  type="checkbox"
+                  style="margin-top: 0; margin-right: 5px"
+                />
+                <label
+                  id="switch-label"
+                  class="form-check-label"
+                  for="mode-switch"
+                  >Mode: Search</label
+                >
               </div>
             </div>
           </div>
         </div>
 
         <!-- back button -->
-        <button id="back-btn" class="d-flex justify-content-center align-items-center"><img id="back-btn-icon" src="images/back.png"></button>
+        <button
+          id="back-btn"
+          class="d-flex justify-content-center align-items-center"
+        >
+          <img id="back-btn-icon" src="images/back.png" />
+        </button>
 
         <!-- current location button -->
         <button id="location-btn" type="button" class="button">
-          <img
-            src="images/gps-icon.png"
-            alt=""
-            width="25"
-            height="25"
-          />
+          <img src="images/gps-icon.png" alt="" width="25" height="25" />
         </button>
 
         <!-- recommend button -->
-        <div id="recommend-btn-div" class="container-fluid position-absolute reco-btn-left">
+        <div
+          id="recommend-btn-div"
+          class="container-fluid position-absolute reco-btn-left"
+        >
           <div class="d-flex justify-content-center">
-            <button type="button" id="recommend-btn"><img id="recommend-icon" src="images/thumbsup.png"></button>
+            <button type="button" id="recommend-btn">
+              <img id="recommend-icon" src="images/thumbsup.png" />
+            </button>
           </div>
         </div>
 
@@ -229,30 +269,40 @@
             id="dropdownMenuButton"
             data-bs-toggle="dropdown"
             aria-expanded="false"
-            style="height:100%;"
+            style="height: 100%; background-color:lightgreen"
           >
-            Settings
+            <img
+              id="settings-btn"
+              src="images/settings.png"
+              style="height: 20px"
+            />
           </button>
-          <ul
-            class="dropdown-menu"
-            aria-labelledby="dropdownMenuButton"
-          >
-          <li class="list-group-item">
-            <input class="form-check-input" type="checkbox" value="" aria-label="..." checked>
-            Radius Marker
-          </li>
-          <li class="list-group-item">
-            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-            Choose Location
-          </li>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li class="list-group-item">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                aria-label="..."
+                checked
+              />
+              Radius Marker
+            </li>
+            <li class="list-group-item">
+              <input
+                class="form-check-input me-1"
+                type="checkbox"
+                value=""
+                aria-label="..."
+              />
+              Choose Location
+            </li>
           </ul>
         </div>
 
         <!-- map -->
         <div id="map"></div>
-
       </div>
-      
     </div>
 
     <!-- axios -->
