@@ -117,11 +117,10 @@
 
       <!-- map-page -->
       <div id="map-page" class="container-fluid page page-left">
-        <!-- mode switch -->
-        <div class="position-absolute form-check form-switch" style="z-index:432524362;">
-          <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-          <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
-        </div>
+
+
+
+
         <!-- back button -->
         <button id="back-btn" class="d-flex justify-content-center align-items-center"><img id="back-btn-icon" src="images/back.png"></button>
         <!-- search bar  + search button-->
@@ -144,19 +143,32 @@
             height="25"
           />
         </button>
-        <!-- Distance slider -->
-        <div id="distance-slider" class="position-absolute container-fluid">
-          <div class="container d-flex justify-content-center" style="padding:0;">
-          <input
-            type="range"
-            class="form-range d-flex justify-content-center align-items-center"
-            min="0"
-            max="5"
-            step="1"
-            id="distance"
-          />
+
+
+
+        <!-- distance slider + mode switch -->
+        <div id="dist-mode-div" class="position-absolute container-fluid" style="z-index: 345234523;">
+          <div class="container d-flex justify-content-center">
+            <!-- distance slider -->
+            <div id="distance-slider" class="container" style="padding:0; margin:0">
+              <input
+                type="range"
+                class="form-range d-flex justify-content-center align-items-center"
+                min="0"
+                max="5"
+                step="1"
+                id="distance"
+              />
+            </div>
+            <!-- switch button -->
+            <div class="form-check form-switch d-inline">
+              <input class="form-check-input bg-warning" type="checkbox" id="flexSwitchCheckChecked">
+              <label class="form-check-label" for="flexSwitchCheckChecked">Mode:</label>
+            </div>
           </div>
         </div>
+
+        
         <!-- map -->
         <div id="map"></div>
 

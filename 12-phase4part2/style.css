@@ -172,7 +172,7 @@
 }
 
 /* pop up */
-/* routing button */
+/* pop up routing button */
 .routing-btn {
   border-radius: 10px;
   background-color: rgb(29, 211, 99);
@@ -192,10 +192,8 @@
 }
 
 
-/* distance slider */
+/* distance slider + mode switch*/
 #distance-slider {
-  top: 10%;
-  left:35%;
   width: 30vw; 
   background-color: rgb(99, 141, 175);
   opacity: 0.6;
@@ -203,6 +201,10 @@
   padding-left: 8px;
   padding-right: 8px;
   z-index: 3245234523;
+}
+
+#dist-mode-div {
+  top: 10%;
 }
 
 /* search bar */
@@ -214,3 +216,4 @@
   height: 30px;
   opacity: 0.6;
 }
+
