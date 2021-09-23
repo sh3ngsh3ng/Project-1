@@ -38,7 +38,7 @@ let categoryObj = {
     'coffeeshop': '4bf58dd8d48988d1e0931735',
     'dessert': '4bf58dd8d48988d1d0941735',
 }
-let categoryKey = categoryObj.food // default category is food
+let categoryValue = categoryObj.food // default category is food
 
 // dropdown category selection event
 document.querySelectorAll(".dropdown-item").forEach(item => {
@@ -52,7 +52,7 @@ document.querySelectorAll(".dropdown-item").forEach(item => {
 
         let ddBtn = document.querySelector("#dropdownMenuButton")
         ddBtn.innerHTML = capitalizeFirst(item.id)
-        categoryKey = categoryObj[item.id]
+        categoryValue = categoryObj[item.id]
     })
 })
 
@@ -109,23 +109,27 @@ map.on('click', function(e){
 document.querySelector("#mode-switch").addEventListener("click", function() {
     let mode = this.checked //default = false
     if (!mode) {
-        document.querySelector("#switch-label").innerHTML = "Mode: Search"
         document.querySelector("#search-bar-div").classList.remove("search-bar-up")
         document.querySelector("#search-bar-div").classList.add("search-bar-show")
         document.querySelector("#recommend-btn-div").classList.remove("reco-btn-show")
         document.querySelector("#recommend-btn-div").classList.add("reco-btn-left")
-        $("#filter-btn").hide()
+        $("#filter-btn").hide("slow")
+        $("#switch-label").animate({'opacity':0}, 500, function(){
+            $(this).html('Mode: Search').animate({'opacity':1}, 500)
+        })
         // alternatively:
         // document.querySelector("#filter-btn").style.display = "none"
 
     }
     if (mode) {
-        document.querySelector("#switch-label").innerHTML = 'Mode: Recommend'
         document.querySelector("#search-bar-div").classList.add("search-bar-up")
         document.querySelector("#search-bar-div").classList.remove("search-bar-show")
         document.querySelector("#recommend-btn-div").classList.remove("reco-btn-left")
         document.querySelector("#recommend-btn-div").classList.add("reco-btn-show")
-        $("#filter-btn").show()
+        $("#filter-btn").show("slow")
+        $("#switch-label").animate({'opacity':0}, 500, function(){
+            $(this).html('Mode: Recommend').animate({'opacity':1}, 500)
+        })
         // alternatively:
         // document.querySelector("#filter-btn").style.display = ""
     }

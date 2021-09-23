@@ -35,5 +35,44 @@ let locationMarkerIcon = L.icon({
 let foodMarkerIcon = L.icon({
     iconUrl: 'images/food.png',
     iconSize: [50,50],
-
 })
+
+// cafe icon
+let cafeMarkerIcon = L.icon({
+    iconUrl: 'images/cafe.png',
+    iconSize: [40,40]
+})
+
+// restaurant icon
+let restaurantMarkerIcon = L.icon({
+    iconUrl: 'images/restaurant.png',
+    iconSize: [40,40]
+})
+
+// bar icon
+let barMarkerIcon = L.icon({
+    iconUrl: 'images/bar.png',
+    iconSize: [40,40]
+})
+
+// coffee icon
+let coffeeshopMarkerIcon = L.icon({
+    iconUrl: 'images/coffeeshop.png',
+    iconSize: [40,40]
+})
+
+// dessert icon
+let dessertMarkerIcon = L.icon({
+    iconUrl: 'images/dessert.png',
+    iconSize: [50, 50]
+})
+
+// object of recommendation icons
+let recommendationIcons = {
+    'food': foodMarkerIcon,
+    'cafe': cafeMarkerIcon,
+    'restaurant': restaurantMarkerIcon,
+    'bar': barMarkerIcon,
+    'coffeeshop': coffeeshopMarkerIcon,
+    'dessert': dessertMarkerIcon,
+}

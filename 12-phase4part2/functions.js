@@ -30,7 +30,7 @@ async function searchFood(lat, lng, radius, query) {
             'client_id': 'NUBBEVNCBV5IKER4ZEHEEH3XLVNCK3JTYSOBEPUTQOLAYCEZ',
             'client_secret': 'HTWZDJEZBZYK2CE1BBTFPGU3JWSIBJNNTDEPNDADXAS4ROKL',
             'v': '20210912',
-            'categoryId': `${categoryKey}`,
+            'categoryId': `${categoryValue}`,
             'radius': radius,
             'query': query
         }
@@ -39,7 +39,7 @@ async function searchFood(lat, lng, radius, query) {
 }
 
 
-// API: recommend food function (based on radius)
+// API: recommend food function
 async function recoFood(lat, lng, radius) {
     let ll = lat + "," + lng
     let response = await axios.get(fourSq_API_BASE_URL + "venues/explore", {
@@ -48,7 +48,7 @@ async function recoFood(lat, lng, radius) {
             'client_id': 'NUBBEVNCBV5IKER4ZEHEEH3XLVNCK3JTYSOBEPUTQOLAYCEZ',
             'client_secret': 'HTWZDJEZBZYK2CE1BBTFPGU3JWSIBJNNTDEPNDADXAS4ROKL',
             'v': '20210912',
-            'categoryId': `${categoryKey}`,
+            'categoryId': `${categoryValue}`,
             'radius': radius
         }
     })
@@ -110,6 +110,13 @@ async function searchResultMarkers() {
         marker.addTo(foodSearchLayer)
 }}
 
+// get key in categoryObj with value
+function getCategoryKey() {
+    let keyArray = Object.keys(categoryObj)
+    let objKey = keyArray.find(x => categoryObj[x] === categoryValue)
+    return objKey
+}
+
 // plot markers for recommendations results
 async function foodRecoMarkers() {
     let lat = currentCoords[0]
@@ -124,7 +131,8 @@ async function foodRecoMarkers() {
         let venueCoords = [venueLat, venueLng]
 
         // add markers based on recommendation results
-        let marker = L.marker(venueCoords)
+        let marker = L.marker(venueCoords, 
+                            {icon: recommendationIcons[getCategoryKey()]})
         marker.bindPopup(`
         <div>${venueName}</div> 
         <div>${venueCoords}</div>
