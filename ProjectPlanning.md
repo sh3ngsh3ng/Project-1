@@ -81,9 +81,9 @@ APIs:
 ### Geolocation:
 - ~~Retrieving user's location + Fly to~~
 - ~~Can consider making it auto instead of button clicking? I.e. window DOMcontentloaded~~
-- Ping Drop (if user blocks location)
+- ~~Ping Drop (if user blocks location)~~
   - ~~Dropping Ping to change Location Marker~~
-  - Making drop ping exclusive if location disabled
+  - ~~Making drop ping exclusive if location disabled~~
 ### Food search function + Recommendation function
 **Returns user's search results**
 - ~~Set-up Foursquare API to search for food + recommendation~~
@@ -93,9 +93,10 @@ APIs:
   - Name
   - Address
   - Distance(?)
+- Mode Switch button to toggle between both function
 ### Filtering Function
 **Filter function affects both recommendation and food search results**
-- Add a dropdown to filter by category
+- ~~Add a dropdown to filter by category~~
   - ~~Categories: cafe, restaurant, bar, etc~~
   - ~~Change the dropdown button to display current selection~~
   - ~~Link category selection to API call~~
@@ -105,7 +106,8 @@ APIs:
 **Slider bar affects both recommendation and food search results**
 - ~~Display search results within specified radius (max walking dist = 500m)~~
 - ~~Display recommended results within specified radius~~
-- Adding Distance Display when radius slide button changes (https://stackoverflow.com/questions/10004723/html5-input-type-range-show-range-value)
+- ~~Adding Distance Display when radius slide button changes (https://stackoverflow.com/questions/10004723/html5-input-type-range-show-range-value)~~
+- ~~Added circle marker to display radius visually~~
 - ~~(Issues) Displays markers even when nothing is typed in search bar~~
 ### Routing
 **Each result should have a routing function**
@@ -120,19 +122,29 @@ APIs:
 
 ## Phase 4: Structuring & Styling Webpage
 ### Part 1: Set-up webpage structure
-- ~~Main Page (Single Web)~~
-- ~~Map (SWA)~~
+- ~~Start Page (Single Web)~~
+- ~~Map Page (SWA)~~
 - ~~Contact Page~~
 - (On Hold) Tutorial
 
-### Part 2: Style Webpage
-- Style NavBar
+### Part 2: Style Webpage + Animations
 - Style Start-Page
+  - start-page design
+  - navbar
+  - start button
 - Style Map-Page
-  - Current Location Marker Icon
-  - Marker Icons
+  - ~~Current Location Marker Icon~~
+  - ~~Marker Icons~~
+    - Location Marker
+    - Normal Search Markers
+    - Recommendation Markers
   - PopUp
+    - Search Popups
+    - Recommendation Popups
   - Radius Slider Bar
+  - Mode Switch
+  - Back button
+  - Settings button
 - Style Contact Page
 
 ## Phase 5: Design Web Application
