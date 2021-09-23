@@ -9,13 +9,13 @@ The CSS can be divided into 2 main parts:
 
                                 /* Part 1: ELEMENTS */
 
-                              /* START-PAGE ELEMENTS */
 #main-div {
   position: relative;
 }
-
-.page {
-  position: absolute;
+                              /* START-PAGE ELEMENTS */
+/* start page */
+#start-page {
+  padding: 0;
 }
 
 /* navbar */
@@ -54,33 +54,19 @@ The CSS can be divided into 2 main parts:
   cursor: pointer;
 }
 
-/* start page */
-#start-page {
-  padding: 0;
-}
 
                                 /* MAP-PAGE ELEMENTS*/
-#map {
-  height: 100vh;
-  z-index: 0;
-}
-
-
 /* map page */
 #map-page {
   padding: 0;
 }
 
-/* search bar */
-#search-food-input {
-  margin: 0px;
-  margin-left: 5px;
-  margin-right: 5px;
-  width: 45vw;
-  border-radius: 30px;
-  background-color: lightgrey;
-  opacity: 0.8;
+/* map */
+#map {
+  height: 100vh;
+  z-index: 0;
 }
+
 
 /* current location button */
 #location-btn {
@@ -107,9 +93,13 @@ The CSS can be divided into 2 main parts:
 #search-bar-div {
   top: 5%;
 }
-
 #search-food-input {
-  height: 30px;
+  margin: 0px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 45vw;
+  border-radius: 30px;
+  background-color: lightgrey;
   opacity: 0.6;
 }
 

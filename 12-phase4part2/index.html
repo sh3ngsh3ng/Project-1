@@ -101,45 +101,27 @@
     </div>
 
     <div id="main-div">
-      <!-- start-page -->
-      <div id="start-page" class="container-fluid page">
 
+      <!-- start-page -->
+      <div id="start-page" class="container-fluid position-absolute">
         <img id="bg-image" src="images/food-background3.jpg" alt="">
         <!-- start-btn -->
-        <div
-          class="d-flex justify-content-center align-items-center"
-          style="height: 100vh;"
-        >
+        <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
           <a class="btn btn-lg" id="start-btn">Get Started</a>
         </div>
-
       </div>
 
-      <!-- map-page (search mode)-->
-      <div id="map-page" class="container-fluid page page-left">
-
-        <!-- back button -->
-        <button id="back-btn" class="d-flex justify-content-center align-items-center"><img id="back-btn-icon" src="images/back.png"></button>
-        <!-- search bar  + search button-->
+      <!-- map-page -->
+      <div id="map-page" class="container-fluid position-absolute page-left">
+        <!-- search bar-->
         <div id="search-bar-div" class="position-absolute container-fluid" style="z-index:32452346">
           <div class="container d-flex justify-content-center">
-          <input
-          type="text"
-          id="search-food-input"
-          value="chicken rice"/>
-          <!-- submit button -->
-          <button id="submit-btn"><img id="submit-btn-icon" src="images/search.png"></button>
+            <!-- search input -->
+            <input type="text" id="search-food-input" value="chicken rice"/>
+            <!-- search submit button -->
+            <button id="submit-btn"><img id="submit-btn-icon" src="images/search.png"></button>
           </div>
         </div>
-        <!-- current location button -->
-        <button id="location-btn" type="button" class="button">
-          <img
-            src="images/gps-icon.png"
-            alt=""
-            width="25"
-            height="25"
-          />
-        </button>
         <!-- distance slider + mode switch -->
         <div id="dist-mode-div" class="position-absolute container-fluid" style="z-index: 345234523;">
           <div class="container d-flex justify-content-center">
@@ -164,23 +146,27 @@
           </div>
         </div>
 
+        <!-- back button -->
+        <button id="back-btn" class="d-flex justify-content-center align-items-center"><img id="back-btn-icon" src="images/back.png"></button>
+
+        <!-- current location button -->
+        <button id="location-btn" type="button" class="button">
+          <img
+            src="images/gps-icon.png"
+            alt=""
+            width="25"
+            height="25"
+          />
+        </button>
+
         <!-- Recommend button -->
         <div id="recommend-btn-div" class="container-fluid position-absolute reco-btn-left">
           <div class="d-flex justify-content-center">
             <button type="button" id="recommend-btn"><img id="recommend-icon" src="images/thumbsup.png"></button>
           </div>
         </div>
-
-        <!-- map -->
-        <div id="map"></div>
-
-      </div>
-      
-
-
-
         <!-- Dropdown Button -->
-        <div class="dropdown position-absolute" style="margin-right: 5px">
+        <div class="dropdown position-absolute" style="margin-right: 5px ;z-index: 32452345;">
           <button
             class="btn btn-secondary dropdown-toggle"
             type="button"
@@ -219,7 +205,12 @@
           </ul>
         </div>
 
+
+        <!-- map -->
+        <div id="map"></div>
+
       </div>
+      
     </div>
 
     <!-- axios -->
