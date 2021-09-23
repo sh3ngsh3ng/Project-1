@@ -1,23 +1,74 @@
-
 /* CSS */
 /*  
 The CSS can be divided into 2 main parts:
   1) Elements
+      - start-page
+      - map-page
   2) Animations
 */
 
-/* Part 1: ELEMENTS */
-#map {
-  height: 100vh;
-  z-index: 0;
-}
+                                /* Part 1: ELEMENTS */
 
+                              /* START-PAGE ELEMENTS */
 #main-div {
   position: relative;
 }
 
 .page {
   position: absolute;
+}
+
+/* navbar */
+#nav-bar {
+  box-shadow: 0px 0px 1px 3px #aaaaaa;
+  border-radius: 25px;
+  background-color: rgb(196, 186, 186)!important;
+  margin-top: 20px !important;
+  margin-right: 20px !important;
+  margin-left: 20px !important;
+  opacity: 0.8;
+}
+
+/* background image */
+#bg-image {
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.75;
+}
+
+/* start button */
+#start-btn {
+  width: 150px;
+  border: black solid 3px;
+  background-color: rgb(29, 211, 99);
+  opacity: 0.8;
+  border-radius: 20px;
+}
+
+#start-btn:hover {
+  transition: 0.3s;
+  box-shadow: 0px 0px 1px 8px #aaaaaa;
+  background-color: lightgreen!important;
+  cursor: pointer;
+}
+
+/* start page */
+#start-page {
+  padding: 0;
+}
+
+                                /* MAP-PAGE ELEMENTS*/
+#map {
+  height: 100vh;
+  z-index: 0;
+}
+
+
+/* map page */
+#map-page {
+  padding: 0;
 }
 
 /* search bar */
@@ -45,7 +96,6 @@ The CSS can be divided into 2 main parts:
   opacity: 0.9;
 }
 
-
 /* dropdown filter */
 #dropdownMenuButton {
   background-color: lightgrey;
@@ -53,25 +103,23 @@ The CSS can be divided into 2 main parts:
   border-radius: 10px;
 }
 
-/* navbar */
-#nav-bar {
-  box-shadow: 0px 0px 1px 3px #aaaaaa;
-  border-radius: 25px;
-  background-color: rgb(196, 186, 186)!important;
-  margin-top: 20px !important;
-  margin-right: 20px !important;
-  margin-left: 20px !important;
-  opacity: 0.8;
+/* search bar */
+#search-bar-div {
+  top: 5%;
 }
 
-/* search food button */
-#submit-btn {
-  background-color: rgb(160, 161, 161);
-  border-radius: 30px;
+#search-food-input {
+  height: 30px;
+  opacity: 0.6;
 }
 
 #submit-btn-icon {
   height: 20px;
+}
+
+#submit-btn {
+  background-color: rgb(160, 161, 161);
+  border-radius: 30px;
 }
 
 #submit-btn:hover {
@@ -81,29 +129,6 @@ The CSS can be divided into 2 main parts:
   cursor: pointer;
 }
 
-/* background image */
-#bg-image {
-  position: absolute;
-  z-index: -1;
-  width: 100vw;
-  height: 100vh;
-  opacity: 0.75;
-}
-
-#start-btn {
-  width: 150px;
-  border: black solid 3px;
-  background-color: rgb(29, 211, 99);
-  opacity: 0.8;
-  border-radius: 20px;
-}
-
-#start-btn:hover {
-  transition: 0.3s;
-  box-shadow: 0px 0px 1px 8px #aaaaaa;
-  background-color: lightgreen!important;
-  cursor: pointer;
-}
 
 /* back button */
 #back-btn-icon {
@@ -132,6 +157,31 @@ The CSS can be divided into 2 main parts:
 }
 
 
+/* recommend-button-div */
+#recommend-btn-div {
+  z-index: 13432554;
+  bottom: 10%;
+}
+
+/* recommend btn */
+#recommend-icon {
+  height: 5vh;
+}
+
+#recommend-btn {
+  border-radius: 20px;
+  padding: 10px;
+  background-color: lightgreen;
+}
+
+#recommend-btn:hover {
+  transition: 0.3s;
+  box-shadow: 0px 0px 1px 8px #aaaaaa;
+  background-color: lightgreen!important;
+  cursor: pointer;
+}
+
+
 /* pop up routing button */
 .routing-btn {
   border-radius: 10px;
@@ -151,41 +201,6 @@ The CSS can be divided into 2 main parts:
   text-align: center;
 }
 
-/* recommend btn */
-#recommend-btn {
-  border-radius: 20px;
-  padding: 10px;
-  background-color: lightgreen;
-}
-
-#recommend-btn:hover {
-  transition: 0.3s;
-  box-shadow: 0px 0px 1px 8px #aaaaaa;
-  background-color: lightgreen!important;
-  cursor: pointer;
-}
-
-/* recommend-button-div */
-#recommend-btn-div {
-  z-index: 13432554;
-  bottom: 10%;
-}
-
-/* recommend icon */
-#recommend-icon {
-  height: 5vh;
-}
-
-/* search bar */
-#search-bar-div {
-  top: 5%;
-}
-
-#search-food-input {
-  height: 30px;
-  opacity: 0.6;
-}
-
 /* distance slider + mode switch*/
 #distance-slider {
   margin:0 20px 0 0;
@@ -202,9 +217,14 @@ The CSS can be divided into 2 main parts:
   top: 10%;
 }
 
-/* Part 2: ANIMATIONS */
 
-/* animations */
+
+
+
+
+                              /* Part 2: ANIMATIONS */
+
+/* page animations */
 .show {
   transition: 1s;
   transform: translateX(0);
@@ -222,6 +242,7 @@ The CSS can be divided into 2 main parts:
   transform: translateY(-100%);
 }
 
+/* navbar animations */
 .nav-up {
   transition: 2s;
   transform: translateY(-100%);
@@ -258,15 +279,17 @@ The CSS can be divided into 2 main parts:
 
 
 
-/* start page */
-#start-page {
-  padding: 0;
-}
 
-/* map page */
-#map-page {
-  padding: 0;
-}
+
+
+
+
+
+
+
+
+
+
 
 
 
