@@ -238,7 +238,21 @@
 
 /* recommend icon */
 #recommend-icon {
-  height: 20px;
+  height: 5vh;
+}
+
+/* recommend btn */
+#recommend-btn {
+  border-radius: 20px;
+  padding: 10px;
+  background-color: lightgreen;
+}
+
+#recommend-btn:hover {
+  transition: 0.3s;
+  box-shadow: 0px 0px 1px 8px #aaaaaa;
+  background-color: lightgreen!important;
+  cursor: pointer;
 }
 
 /* recommend btn animations */
