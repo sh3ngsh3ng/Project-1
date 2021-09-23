@@ -112,9 +112,11 @@ document.querySelector("#mode-switch").addEventListener("click", function() {
         document.querySelector("#switch-label").innerHTML = "Mode: Search"
         document.querySelector("#search-bar-div").classList.remove("search-bar-up")
         document.querySelector("#search-bar-div").classList.add("search-bar-show")
-        // filter move up
         document.querySelector("#recommend-btn-div").classList.remove("reco-btn-show")
         document.querySelector("#recommend-btn-div").classList.add("reco-btn-left")
+        $("#filter-btn").hide()
+        // alternatively:
+        // document.querySelector("#filter-btn").style.display = "none"
 
     }
     if (mode) {
@@ -124,7 +126,8 @@ document.querySelector("#mode-switch").addEventListener("click", function() {
         document.querySelector("#recommend-btn-div").classList.remove("reco-btn-left")
         document.querySelector("#recommend-btn-div").classList.add("reco-btn-show")
         $("#filter-btn").show()
-        // document.querySelector("#filter-btn").removeAttribute("display")
+        // alternatively:
+        // document.querySelector("#filter-btn").style.display = ""
     }
 })
 
