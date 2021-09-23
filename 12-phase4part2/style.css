@@ -68,31 +68,12 @@ The CSS can be divided into 2 main parts:
 }
 
 
-/* current location button */
-#location-btn {
-  height: 40px;
-  width: 40px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin: 30px;
-  background-color: lightgrey;
-  border-radius: 10px;
-  z-index: 1253;
-  opacity: 0.9;
-}
-
-/* dropdown filter */
-#dropdownMenuButton {
-  background-color: lightgrey;
-  color: black;
-  border-radius: 10px;
-}
 
 /* search bar */
 #search-bar-div {
   top: 5%;
 }
+
 #search-food-input {
   margin: 0px;
   margin-left: 5px;
@@ -119,6 +100,35 @@ The CSS can be divided into 2 main parts:
   cursor: pointer;
 }
 
+/* distance slider + mode switch*/
+#dist-mode-div {
+  top: 10%;
+}
+
+#distance-slider {
+  margin:0 20px 0 0;
+  width: 30vw; 
+  background-color: rgb(99, 141, 175);
+  opacity: 0.6;
+  border-radius: 20px;
+  padding-left: 8px;
+  padding-right: 8px;
+  z-index: 3245234523;
+}
+
+/* current location button */
+#location-btn {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 30px;
+  background-color: lightgrey;
+  border-radius: 10px;
+  z-index: 1253;
+  opacity: 0.9;
+}
 
 /* back button */
 #back-btn-icon {
@@ -147,13 +157,12 @@ The CSS can be divided into 2 main parts:
 }
 
 
-/* recommend-button-div */
+/* recommend btn */
 #recommend-btn-div {
   z-index: 13432554;
   bottom: 10%;
 }
 
-/* recommend btn */
 #recommend-icon {
   height: 5vh;
 }
@@ -171,6 +180,12 @@ The CSS can be divided into 2 main parts:
   cursor: pointer;
 }
 
+/* start of dropdown filter */
+#dropdownMenuButton {
+  background-color: lightgrey;
+  color: black;
+  border-radius: 10px;
+}
 
 /* pop up routing button */
 .routing-btn {
@@ -191,23 +206,6 @@ The CSS can be divided into 2 main parts:
   text-align: center;
 }
 
-/* distance slider + mode switch*/
-#distance-slider {
-  margin:0 20px 0 0;
-  width: 30vw; 
-  background-color: rgb(99, 141, 175);
-  opacity: 0.6;
-  border-radius: 20px;
-  padding-left: 8px;
-  padding-right: 8px;
-  z-index: 3245234523;
-}
-
-#dist-mode-div {
-  top: 10%;
-}
-
-
 
 
 
@@ -215,7 +213,7 @@ The CSS can be divided into 2 main parts:
                               /* Part 2: ANIMATIONS */
 
 /* page animations */
-.show {
+.page-show {
   transition: 1s;
   transform: translateX(0);
   transform: translateY(0);
@@ -245,11 +243,10 @@ The CSS can be divided into 2 main parts:
   transform: translateY(-500%)
 }
 
-.search-bar-down {
+.search-bar-show {
   transition:2s;
   transform: translateY(0)
 }
-
 
 /* recommend btn animations */
 .reco-btn-left {

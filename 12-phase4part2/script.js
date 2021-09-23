@@ -6,7 +6,7 @@ let geoFlag = false
 document.querySelector("#start-btn").addEventListener('click', function() {
     document.querySelector("#start-page").classList.add("page-up")
     document.querySelector("#map-page").classList.remove("page-left")
-    document.querySelector("#map-page").classList.add("show")
+    document.querySelector("#map-page").classList.add("page-show")
     document.querySelector("#nav-bar-div").classList.add("nav-up")
     flyToCurrentLocation()
 })
@@ -14,10 +14,10 @@ document.querySelector("#start-btn").addEventListener('click', function() {
 // back button to transition to start page
 document.querySelector("#back-btn").addEventListener('click', function() {
     document.querySelector("#start-page").classList.remove("page-up")
-    document.querySelector("#start-page").classList.add("show")
+    document.querySelector("#start-page").classList.add("page-show")
     document.querySelector("#map-page").classList.add("page-left")
     document.querySelector("#nav-bar-div").classList.remove("nav-up")
-    document.querySelector("#nav-bar-div").classList.add("show")
+    document.querySelector("#nav-bar-div").classList.add("page-show")
 })
 
 // fly to current location event
@@ -110,7 +110,7 @@ document.querySelector("#mode-switch").addEventListener("click", function() {
     if (!mode) {
         document.querySelector("#switch-label").innerHTML = "Mode: Search"
         document.querySelector("#search-bar-div").classList.remove("search-bar-up")
-        document.querySelector("#search-bar-div").classList.add("search-bar-down")
+        document.querySelector("#search-bar-div").classList.add("search-bar-show")
         // filter move up
         document.querySelector("#recommend-btn-div").classList.remove("reco-btn-show")
         document.querySelector("#recommend-btn-div").classList.add("reco-btn-left")
@@ -118,7 +118,7 @@ document.querySelector("#mode-switch").addEventListener("click", function() {
     if (mode) {
         document.querySelector("#switch-label").innerHTML = 'Mode: Recommend'
         document.querySelector("#search-bar-div").classList.add("search-bar-up")
-        document.querySelector("#search-bar-div").classList.remove("search-bar-down")
+        document.querySelector("#search-bar-div").classList.remove("search-bar-show")
         // filter move down
         document.querySelector("#recommend-btn-div").classList.remove("reco-btn-left")
         document.querySelector("#recommend-btn-div").classList.add("reco-btn-show")
