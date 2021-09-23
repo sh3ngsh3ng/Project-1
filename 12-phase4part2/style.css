@@ -194,12 +194,15 @@
 
 /* distance slider */
 #distance-slider {
+  top: 15%;
+  left:35%;
   width: 30vw; 
-  margin-top: 10px;
-  background-color: rgb(129, 176, 218);
+  background-color: rgb(99, 141, 175);
+  opacity: 0.6;
   border-radius: 20px;
   padding-left: 8px;
   padding-right: 8px;
+  z-index: 3245234523;
 }
 
 /* search bar */
