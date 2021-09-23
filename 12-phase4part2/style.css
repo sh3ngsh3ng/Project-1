@@ -72,6 +72,7 @@ The CSS can be divided into 2 main parts:
 /* search bar */
 #search-bar-div {
   top: 5%;
+  z-index: 1;
 }
 
 #search-food-input {
@@ -103,6 +104,7 @@ The CSS can be divided into 2 main parts:
 /* distance slider + mode switch*/
 #dist-mode-div {
   top: 10%;
+  z-index: 1;
 }
 
 #distance-slider {
@@ -113,7 +115,6 @@ The CSS can be divided into 2 main parts:
   border-radius: 20px;
   padding-left: 8px;
   padding-right: 8px;
-  z-index: 3245234523;
 }
 
 /* current location button */
@@ -126,7 +127,7 @@ The CSS can be divided into 2 main parts:
   margin: 30px;
   background-color: lightgrey;
   border-radius: 10px;
-  z-index: 1253;
+  z-index: 1;
   opacity: 0.9;
 }
 
@@ -145,7 +146,7 @@ The CSS can be divided into 2 main parts:
   opacity: 0.5;
   bottom: 0;
   margin: 30px;
-  z-index: 2345234523;
+  z-index: 1;
 }
 
 #back-btn:hover {
