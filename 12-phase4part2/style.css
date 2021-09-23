@@ -165,6 +165,43 @@ The CSS can be divided into 2 main parts:
   cursor: pointer;
 }
 
+/* recommend-button-div */
+#recommend-btn-div {
+  z-index: 13432554;
+  bottom: 10%;
+}
+
+/* recommend icon */
+#recommend-icon {
+  height: 5vh;
+}
+
+/* search bar */
+#search-bar-div {
+  top: 5%;
+}
+
+#search-food-input {
+  height: 30px;
+  opacity: 0.6;
+}
+
+/* distance slider + mode switch*/
+#distance-slider {
+  margin:0 20px 0 0;
+  width: 30vw; 
+  background-color: rgb(99, 141, 175);
+  opacity: 0.6;
+  border-radius: 20px;
+  padding-left: 8px;
+  padding-right: 8px;
+  z-index: 3245234523;
+}
+
+#dist-mode-div {
+  top: 10%;
+}
+
 /* Part 2: ANIMATIONS */
 
 /* animations */
@@ -236,55 +273,22 @@ The CSS can be divided into 2 main parts:
 
 
 
-
+/* not priority */
 /* contact page (message icon) */
 #message-icon {
   width: 100px;
   margin-top: 20px;
   margin-bottom: 20px;
-
 }
 
-/* pop up */
 
 
 
-/* distance slider + mode switch*/
-#distance-slider {
-  margin:0 20px 0 0;
-  width: 30vw; 
-  background-color: rgb(99, 141, 175);
-  opacity: 0.6;
-  border-radius: 20px;
-  padding-left: 8px;
-  padding-right: 8px;
-  z-index: 3245234523;
-}
 
-#dist-mode-div {
-  top: 10%;
-}
 
-/* search bar */
-#search-bar-div {
-  top: 5%;
-}
 
-#search-food-input {
-  height: 30px;
-  opacity: 0.6;
-}
 
-/* recommend-button-div */
-#recommend-btn-div {
-  z-index: 13432554;
-  bottom: 10%;
-}
 
-/* recommend icon */
-#recommend-icon {
-  height: 5vh;
-}
 
 
 
