@@ -210,7 +210,43 @@
           </div>
         </div>
 
-
+        <!-- settings -->
+        <!-- <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="color:green"></span>
+          </button>
+        </div>
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-dark p-4">
+            <h5 class="text-white h4">Collapsed content</h5>
+            <span class="text-muted">Toggleable via the navbar brand.</span>
+          </div>
+        </div> -->
+        <div id="settings-btn" class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle d-flex align-items-center"
+            type="button"
+            id="dropdownMenuButton"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            style="height:100%;"
+          >
+            Settings
+          </button>
+          <ul
+            class="dropdown-menu"
+            aria-labelledby="dropdownMenuButton"
+          >
+          <li class="list-group-item">
+            <input class="form-check-input" type="checkbox" value="" aria-label="..." checked>
+            Radius Marker
+          </li>
+          <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+            Choose Location
+          </li>
+          </ul>
+        </div>
 
         <!-- map -->
         <div id="map"></div>
