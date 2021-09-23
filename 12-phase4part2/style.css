@@ -201,3 +201,13 @@
   padding-left: 8px;
   padding-right: 8px;
 }
+
+/* search bar */
+#search-bar-div {
+  top: 10%;
+}
+
+#search-food-input {
+  height: 30px;
+  opacity: 0.6;
+}

@@ -117,112 +117,87 @@
 
       <!-- map-page -->
       <div id="map-page" class="container-fluid page page-left">
-        
-      <!-- back button -->
-      <button id="back-btn" class="d-flex justify-content-center align-items-center"><img id="back-btn-icon" src="images/back.png"></button>
-        
-        
-        
-        <div id="map">
-          <!-- map-control-panel 1 -->
-          <div id="panel-1"
-            class="
-              container-fluid
-              d-flex
-              justify-content-center
-              align-items-center
-            "
-          >
-            <div style="z-index: 345678; margin-top: 30px;">
-              <div class="container d-flex justify-content-center">
-                <!-- dropdown button -->
-                <div class="dropdown" style="margin-right: 5px">
-                  <button
-                    class="btn btn-secondary dropdown-toggle"
-                    type="button"
-                    id="dropdownMenuButton"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Filter
-                  </button>
-                  <ul
-                    class="dropdown-menu"
-                    aria-labelledby="dropdownMenuButton"
-                  >
-                    <li>
-                      <a class="dropdown-item" href="#" id="food"
-                        >Food (default)</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#" id="cafe">Cafe</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#" id="restaurant"
-                        >Restaurant</a
-                      >
-                    </li>
-                    <li><a class="dropdown-item" href="#" id="bar">Bar</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#" id="coffeeshop"
-                        >Coffeeshop</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#" id="dessert">Dessert</a>
-                    </li>
-                  </ul>
-                </div>
-                <!-- search bar -->
-                <input
-                  type="text"
-                  id="search-food-input"
-                  value="chicken rice"
-                />
-                <!-- submit button -->
-                <button id="submit-btn"><img id="submit-btn-icon" src="images/search.png"></button>
-              </div>
-            </div>
+        <!-- back button -->
+        <button id="back-btn" class="d-flex justify-content-center align-items-center"><img id="back-btn-icon" src="images/back.png"></button>
+        <!-- search bar  + search button-->
+        <div id="search-bar-div" class="position-absolute container-fluid" style="z-index:32452346">
+          <div class="container d-flex justify-content-center">
+          <input
+          type="text"
+          id="search-food-input"
+          value="chicken rice"/>
+          <!-- submit button -->
+          <button id="submit-btn"><img id="submit-btn-icon" src="images/search.png"></button>
           </div>
-
-          <!-- map-control-panel 2 -->
-          <div
-            class="
-              container-fluid
-              d-flex
-              justify-content-center
-              align-items-center
-            "
-          >
-            <div style="z-index: 3532456">
-              <!-- Distance slider -->
-              <div id="distance-slider" class="d-flex align-items-center">
-                <input
-                  type="range"
-                  class="form-range"
-                  min="0"
-                  max="5"
-                  step="1"
-                  id="distance"
-                />
-              </div>
-            </div>
-          </div>
-          <!-- current location button -->
-          <button id="location-btn" type="button" class="button">
-            <img
-              src="images/gps-icon.png"
-              alt=""
-              width="25"
-              height="25"
-            />
-          </button>
         </div>
+        <!-- current location button -->
+        <button id="location-btn" type="button" class="button">
+          <img
+            src="images/gps-icon.png"
+            alt=""
+            width="25"
+            height="25"
+          />
+        </button>
+        <!-- Distance slider -->
+        <div id="distance-slider" class="d-flex align-items-center">
+          <input
+            type="range"
+            class="form-range"
+            min="0"
+            max="5"
+            step="1"
+            id="distance"
+          />
+        </div>
+        <!-- map -->
+        <div id="map"></div>
+
+      </div>
 
         <!-- Recommend button -->
         <!-- <div>
           <input type="button" value="Recommend me" id="recommend-btn" />
+        </div> -->
+
+        <!-- Dropdown Button -->
+        <!-- <div class="dropdown" style="margin-right: 5px">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Filter
+          </button>
+          <ul
+            class="dropdown-menu"
+            aria-labelledby="dropdownMenuButton"
+          >
+            <li>
+              <a class="dropdown-item" href="#" id="food"
+                >Food (default)</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="#" id="cafe">Cafe</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#" id="restaurant"
+                >Restaurant</a
+              >
+            </li>
+            <li><a class="dropdown-item" href="#" id="bar">Bar</a></li>
+            <li>
+              <a class="dropdown-item" href="#" id="coffeeshop"
+                >Coffeeshop</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="#" id="dessert">Dessert</a>
+            </li>
+          </ul>
         </div> -->
       </div>
     </div>
