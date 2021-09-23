@@ -116,7 +116,7 @@
 
         <!-- search bar-->
         <div id="search-bar-div" class="position-absolute container-fluid">
-          <div class="container d-flex justify-content-center">
+          <div class="container d-flex justify-content-center" style="height:4vh">
             <!-- search input -->
             <input type="text" id="search-food-input" value="chicken rice"/>
             <!-- search submit button -->
@@ -126,7 +126,7 @@
 
         <!-- distance slider + mode switch -->
         <div id="dist-mode-div" class="position-absolute container-fluid">
-          <div class="container d-flex justify-content-center" style="height:5vh">
+          <div class="container d-flex justify-content-center" style="height:3vh">
             <!-- filter button -->
             <div class="dropdown" style="margin-right: 5px ;z-index: 32452345;">
               <button
@@ -176,7 +176,9 @@
                 max="5"
                 step="1"
                 id="distance"
+                oninput="this.nextElementSibling.value = (this.value * 50 + 250) + 'm'" 
               />
+              <output style="z-index:1234; margin-left:5px;">400m</output>
             </div>
             <!-- switch button -->
             <div id="mode-switch-div" class=" d-flex align-items-center">
