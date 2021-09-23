@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body style="position: relative">
+  <body >
     <!-- nav bar -->
     <div
       id="nav-bar-div"
@@ -115,11 +115,8 @@
 
       </div>
 
-      <!-- map-page -->
+      <!-- map-page (search mode)-->
       <div id="map-page" class="container-fluid page page-left">
-
-
-
 
         <!-- back button -->
         <button id="back-btn" class="d-flex justify-content-center align-items-center"><img id="back-btn-icon" src="images/back.png"></button>
@@ -143,17 +140,14 @@
             height="25"
           />
         </button>
-
-
-
         <!-- distance slider + mode switch -->
         <div id="dist-mode-div" class="position-absolute container-fluid" style="z-index: 345234523;">
           <div class="container d-flex justify-content-center">
             <!-- distance slider -->
-            <div id="distance-slider" class="container" style="padding:0; margin:0">
+            <div id="distance-slider" class="container d-flex align-items-center">
               <input
                 type="range"
-                class="form-range d-flex justify-content-center align-items-center"
+                class="form-range"
                 min="0"
                 max="5"
                 step="1"
@@ -162,16 +156,13 @@
             </div>
             <!-- switch button -->
             <div class="form-check form-switch d-inline">
-              <input class="form-check-input bg-warning" type="checkbox" id="flexSwitchCheckChecked">
-              <label class="form-check-label" for="flexSwitchCheckChecked">Mode:</label>
+              <input class="form-check-input bg-warning" type="checkbox" id="mode-switch">
+              <label id="switch-label"class="form-check-label" for="mode-switch">Mode: Search</label>
             </div>
           </div>
         </div>
-
-        
         <!-- map -->
         <div id="map"></div>
-
 
       </div>
       

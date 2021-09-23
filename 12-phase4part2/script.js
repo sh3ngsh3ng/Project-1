@@ -105,5 +105,19 @@ map.on('click', function(e){
 })
 
 
-
+document.querySelector("#mode-switch").addEventListener("click", function() {
+    let mode = this.checked //default = false
+    if (!mode) {
+        document.querySelector("#switch-label").innerHTML = "Mode: Search"
+        document.querySelector("#search-bar-div").classList.remove("search-bar-up")
+        document.querySelector("#search-bar-div").classList.add("search-bar-down")
+        // recommend move up
+    }
+    if (mode) {
+        document.querySelector("#switch-label").innerHTML = 'Mode: Recommend'
+        document.querySelector("#search-bar-div").classList.add("search-bar-up")
+        document.querySelector("#search-bar-div").classList.remove("search-bar-down")
+        // recommend move down
+    }
+})
 

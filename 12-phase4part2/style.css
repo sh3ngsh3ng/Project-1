@@ -18,6 +18,7 @@
   position: absolute;
 }
 
+/* animations */
 .show {
   transition: 1s;
   transform: translateX(0);
@@ -40,6 +41,17 @@
   transform: translateY(-100%);
   transition-timing-function: ease;
 }
+
+.search-bar-up {
+  transition: 2s;
+  transform: translateY(-200%)
+}
+
+.search-bar-down {
+  transition:2s;
+  transform: translateY(0)
+}
+
 
 /* search bar */
 #search-food-input {
@@ -194,6 +206,7 @@
 
 /* distance slider + mode switch*/
 #distance-slider {
+  margin:0 20px 0 0;
   width: 30vw; 
   background-color: rgb(99, 141, 175);
   opacity: 0.6;
@@ -217,3 +230,4 @@
   opacity: 0.6;
 }
 
+/*  */
