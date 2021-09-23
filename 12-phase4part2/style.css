@@ -194,7 +194,7 @@
 
 /* distance slider */
 #distance-slider {
-  top: 15%;
+  top: 10%;
   left:35%;
   width: 30vw; 
   background-color: rgb(99, 141, 175);
@@ -207,7 +207,7 @@
 
 /* search bar */
 #search-bar-div {
-  top: 10%;
+  top: 5%;
 }
 
 #search-food-input {
