@@ -67,8 +67,6 @@ The CSS can be divided into 2 main parts:
   z-index: 0;
 }
 
-
-
 /* search bar */
 #search-bar-div {
   top: 5%;
@@ -117,6 +115,14 @@ The CSS can be divided into 2 main parts:
   padding-right: 8px;
 }
 
+#mode-switch-div {
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: rgba(90, 108, 187, 0.548);
+  border-radius: 10px;
+}
+
+
 /* current location button */
 #location-btn {
   height: 40px;
@@ -156,7 +162,6 @@ The CSS can be divided into 2 main parts:
   background-color: lightgreen;
   cursor: pointer;
 }
-
 
 /* recommend btn */
 #recommend-btn-div {

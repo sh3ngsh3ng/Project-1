@@ -126,9 +126,49 @@
 
         <!-- distance slider + mode switch -->
         <div id="dist-mode-div" class="position-absolute container-fluid">
-          <div class="container d-flex justify-content-center">
+          <div class="container d-flex justify-content-center" style="height:5vh">
+            <!-- filter button -->
+            <div class="dropdown" style="margin-right: 5px ;z-index: 32452345;">
+              <button
+                class="btn btn-secondary dropdown-toggle d-flex align-items-center"
+                type="button"
+                id="dropdownMenuButton"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="height:100%;"
+              >
+                Filter
+              </button>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="dropdownMenuButton"
+              >
+                <li>
+                  <a class="dropdown-item" href="#" id="food"
+                    >Food (default)</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" id="cafe">Cafe</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" id="restaurant"
+                    >Restaurant</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#" id="bar">Bar</a></li>
+                <li>
+                  <a class="dropdown-item" href="#" id="coffeeshop"
+                    >Coffeeshop</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" id="dessert">Dessert</a>
+                </li>
+              </ul>
+            </div>
             <!-- distance slider -->
-            <div id="distance-slider" class="container d-flex align-items-center">
+            <div id="distance-slider" class="container d-flex justify-content-center align-items-center" style="height:100%; margin-right:10px;">
               <input
                 type="range"
                 class="form-range"
@@ -139,9 +179,11 @@
               />
             </div>
             <!-- switch button -->
-            <div class="form-check form-switch d-inline">
-              <input class="form-check-input bg-warning" type="checkbox" id="mode-switch">
-              <label id="switch-label"class="form-check-label" for="mode-switch">Mode: Search</label>
+            <div id="mode-switch-div" class=" d-flex align-items-center">
+              <div class="form-check form-switch d-inline d-flex align-items-center">
+                <input id="mode-switch" class="form-check-input bg-warning" type="checkbox" style="margin-top:0; margin-right:5px;">
+                <label id="switch-label"class="form-check-label " for="mode-switch">Mode: Search</label>
+              </div>
             </div>
           </div>
         </div>
@@ -159,51 +201,13 @@
           />
         </button>
 
-        <!-- Recommend button -->
+        <!-- recommend button -->
         <div id="recommend-btn-div" class="container-fluid position-absolute reco-btn-left">
           <div class="d-flex justify-content-center">
             <button type="button" id="recommend-btn"><img id="recommend-icon" src="images/thumbsup.png"></button>
           </div>
         </div>
-        <!-- Dropdown Button -->
-        <div class="dropdown position-absolute" style="margin-right: 5px ;z-index: 32452345;">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Filter
-          </button>
-          <ul
-            class="dropdown-menu"
-            aria-labelledby="dropdownMenuButton"
-          >
-            <li>
-              <a class="dropdown-item" href="#" id="food"
-                >Food (default)</a
-              >
-            </li>
-            <li>
-              <a class="dropdown-item" href="#" id="cafe">Cafe</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#" id="restaurant"
-                >Restaurant</a
-              >
-            </li>
-            <li><a class="dropdown-item" href="#" id="bar">Bar</a></li>
-            <li>
-              <a class="dropdown-item" href="#" id="coffeeshop"
-                >Coffeeshop</a
-              >
-            </li>
-            <li>
-              <a class="dropdown-item" href="#" id="dessert">Dessert</a>
-            </li>
-          </ul>
-        </div>
+
 
 
         <!-- map -->

@@ -144,4 +144,4 @@ APIs:
 
 (Issues)
 - Filter animation is chunky
-- Accidental placing of markers when clicking on map-control-panel
+- ~~Accidental placing of markers when clicking on map-control-panel~~
