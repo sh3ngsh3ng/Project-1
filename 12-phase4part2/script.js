@@ -91,6 +91,7 @@ document.querySelector("#distance").addEventListener('change', async function() 
 })
 
 
+// click placement marker
 map.on('click', function(e){
     if (geoFlag) {
         currentLocationLayer.clearLayers()
@@ -104,7 +105,7 @@ map.on('click', function(e){
     }
 })
 
-
+// mode switch event
 document.querySelector("#mode-switch").addEventListener("click", function() {
     let mode = this.checked //default = false
     if (!mode) {
@@ -114,14 +115,16 @@ document.querySelector("#mode-switch").addEventListener("click", function() {
         // filter move up
         document.querySelector("#recommend-btn-div").classList.remove("reco-btn-show")
         document.querySelector("#recommend-btn-div").classList.add("reco-btn-left")
+
     }
     if (mode) {
         document.querySelector("#switch-label").innerHTML = 'Mode: Recommend'
         document.querySelector("#search-bar-div").classList.add("search-bar-up")
         document.querySelector("#search-bar-div").classList.remove("search-bar-show")
-        // filter move down
         document.querySelector("#recommend-btn-div").classList.remove("reco-btn-left")
         document.querySelector("#recommend-btn-div").classList.add("reco-btn-show")
+        $("#filter-btn").show()
+        // document.querySelector("#filter-btn").removeAttribute("display")
     }
 })
 
