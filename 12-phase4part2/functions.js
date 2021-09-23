@@ -100,7 +100,7 @@ async function searchResultMarkers() {
         <div class="container">
         <div class="d-flex"><span class="pop-up-header">${venueName}</span></div>
         <div class="d-flex justify-content-center"> 
-        <button class="routing-btn" onclick="getRouting('${currentCoords}', '${venueCoords}')">Eat Here</button>
+        <button class="routing-btn" onclick="getRouting('${currentCoords}', '${venueCoords}')">Navigate</button>
         </div>
         </div>
         `, {
@@ -134,9 +134,12 @@ async function foodRecoMarkers() {
         let marker = L.marker(venueCoords, 
                             {icon: recommendationIcons[getCategoryKey()]})
         marker.bindPopup(`
-        <div>${venueName}</div> 
-        <div>${venueCoords}</div>
-        <button onclick="getRouting('${currentCoords}', '${venueCoords}')">Eat Here</button>
+        <div class="container">
+        <div class="d-flex"><span class="pop-up-header">${venueName}</span></div>
+        <div class="d-flex justify-content-center"> 
+        <button class="routing-btn" onclick="getRouting('${currentCoords}', '${venueCoords}')">Navigate</button>
+        </div>
+        </div>
         `)
         marker.addTo(foodSearchLayer)
     }
