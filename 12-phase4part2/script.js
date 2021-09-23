@@ -1,5 +1,5 @@
 let currentCoords = 0
-
+let geoFlag = false
 
 
 // start button transition to map
@@ -91,17 +91,19 @@ document.querySelector("#distance").addEventListener('change', async function() 
 })
 
 
+map.on('click', function(e){
+    if (geoFlag) {
+        currentLocationLayer.clearLayers()
+        foodSearchLayer.clearLayers()
+        routingLayer.clearLayers()
+        let lat = e.latlng.lat
+        let lng = e.latlng.lng
+        currentCoords = [lat, lng]
+        let marker = L.marker(currentCoords, {icon: locationMarkerIcon}).addTo(currentLocationLayer)
+        map.flyTo(currentCoords, 16)
+    }
+})
 
-// map.on('click', function(e){
-//     currentLocationLayer.clearLayers()
-//     foodSearchLayer.clearLayers()
-//     routingLayer.clearLayers()
-//     let lat = e.latlng.lat
-//     let lng = e.latlng.lng
-//     currentCoords = [lat, lng]
-//     let marker = L.marker(currentCoords, {icon: locationMarkerIcon}).addTo(currentLocationLayer)
-//     map.flyTo(currentCoords, 16)
-// })
 
 
 

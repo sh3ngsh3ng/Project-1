@@ -70,6 +70,7 @@ function flyToCurrentLocation() {
     // geolocation error function
     function error() {
         alert("Please click on the map to start")
+        geoFlag = true
     }    
     navigator.geolocation.getCurrentPosition(success, error)
 }
