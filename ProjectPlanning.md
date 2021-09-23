@@ -138,7 +138,7 @@ APIs:
     - Location Marker
     - Normal Search Markers
     - Recommendation Markers
-  - PopUp
+  - PopUps
     - Search Popups
     - Recommendation Popups
   - Radius Slider Bar
@@ -147,13 +147,13 @@ APIs:
   - Settings button
 - Style Contact Page
 
-## Phase 5: Design Web Application
+## Phase 5: Responsiveness
 
-## Phase 6: Responsiveness
+
+## Phase 6: Debug
+- Filter animation is chunky
+- ~~Accidental placing of markers when clicking on map-control-panel~~
 
 ## Final Phase: Deploy!
 
 
-(Issues)
-- Filter animation is chunky
-- ~~Accidental placing of markers when clicking on map-control-panel~~
