@@ -145,6 +145,18 @@ async function foodRecoMarkers() {
     }
 }
 
+// plot circle radius
+function radiusMarker() {
+    radiusLayer.clearLayers()
+    let circle = L.circle(currentCoords, {
+        'color': 'green',
+        'radius': getRadius(),
+        'fillColor': "lightgreen",
+        'fillOpacity': 0.5,
+    })
+    circle.addTo(radiusLayer)
+}
+
 
 // function to clean encoded string (removes backslash)
 function cleanStr(x) {

@@ -67,6 +67,7 @@ searchBtn.addEventListener('click', async function () {
     } else {
         alert("Please let us know what you want to eat!!")
     }
+    radiusMarker()
 })
 
 
@@ -76,6 +77,7 @@ recoBtn.addEventListener('click', async function() {
     foodSearchLayer.clearLayers()
     document.querySelector('#search-food-input').value = ""
     foodRecoMarkers()
+    radiusMarker()
 })
 
 
@@ -88,6 +90,7 @@ document.querySelector("#distance").addEventListener('change', async function() 
     } else {
         foodRecoMarkers()
     }
+    radiusMarker()
 })
 
 
@@ -103,6 +106,7 @@ map.on('click', function(e){
         let marker = L.marker(currentCoords, {icon: locationMarkerIcon}).addTo(currentLocationLayer)
         map.flyTo(currentCoords, 16)
     }
+    radiusMarker()
 })
 
 // mode switch event

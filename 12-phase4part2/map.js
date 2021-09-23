@@ -24,6 +24,10 @@ currentLocationLayer.addTo(map)
 let routingLayer = L.layerGroup()
 routingLayer.addTo(map)
 
+// radius marker layer
+let radiusLayer = L.layerGroup()
+radiusLayer.addTo(map)
+
 // location icon
 let locationMarkerIcon = L.icon({
     iconUrl: 'images/location2.png',
