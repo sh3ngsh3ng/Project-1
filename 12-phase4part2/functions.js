@@ -200,7 +200,12 @@ async function getRouting(startpoint, endpoint) {
     `)
 } 
 
+// function to clear all layers except currentLocationLayer and radiusLayer
 
+function clearAllLayers() {
+    foodSearchLayer.clearLayers()
+    routingLayer.clearLayers()
+}
 
 
 
