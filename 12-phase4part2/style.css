@@ -12,6 +12,13 @@ The CSS can be divided into 2 main parts:
 /* start page */
 #start-page {
   padding: 0;
+  margin: 0;
+  height:100vh;
+  background-image: url("images/food-background3.jpg");
+  background-color: red;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center 10%;
 }
 
 /* navbar */
@@ -31,13 +38,11 @@ The CSS can be divided into 2 main parts:
   z-index: -1;
   width: 100vw;
   height: 100vh;
-  /* background-size: contain; */
   opacity: 0.35;
 }
 
 /* start button */
 #start-btn {
-  width: 150px;
   border: black solid 3px;
   background-color: rgb(29, 211, 99);
   opacity: 0.8;
@@ -278,16 +283,55 @@ The CSS can be divided into 2 main parts:
 
 
 
+/* MEDIA QUERY */
+@media only screen and (max-width: 375px) {
+  #start-btn {
+    padding: 2px;
+    font-size: 10px;
+    width: 50px;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  #start-btn {
+    padding: 2px;
+    font-size: 10px;
+    width: 50px;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  #start-btn {
+    padding: 2px;
+    font-size: 10px;
+    width: 50px;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  #start-btn {
+    padding: 4px;
+    font-size: 15px;
+    width: 100px;
+  }
+
+}
+
+@media only screen and (min-width:1024px) {
+  #start-btn {
+    padding: 4px;
+    font-size: 20px;
+    width:150px;
+  }
+}
 
 
-
-
-
-
-
-
-
-
+@media only screen and (min-width: 1440px) {
+  #start-btn {
+    padding: 5px;
+    font-size: 25px;
+  }
+}
 
 
 
