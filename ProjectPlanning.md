@@ -163,6 +163,7 @@ APIs:
 - (when location disabled) checking and unchecking marker placement option results in leftover circle marker
 - leftover markers when changing mode (both ways)
 - back button doesn't remove previous markers and layers already placed
+- recommend button doesn't clear routing layer
 
 ## Final Phase: Deploy!
 
