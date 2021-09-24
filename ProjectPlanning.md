@@ -153,6 +153,8 @@ APIs:
 ## Phase 6: Debug
 - Filter animation is chunky
 - ~~Accidental placing of markers when clicking on map-control-panel~~
+- Changing settings for circle marker doesn't remove initial circle marker
+- Circle marker not showing at default (yes/no)
 
 ## Final Phase: Deploy!
 
