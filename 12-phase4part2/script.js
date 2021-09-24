@@ -141,7 +141,7 @@ document.querySelector("#mode-switch").addEventListener("click", function() {
         document.querySelector("#recommend-btn-div").classList.add("reco-btn-left")
         $("#filter-btn").hide("slow")
         $("#switch-label").animate({'opacity':0}, 500, function(){
-            $(this).html('Mode: Search').animate({'opacity':1}, 500)
+            $(this).html('Search').animate({'opacity':1}, 500)
         })
         // alternatively:
         // document.querySelector("#filter-btn").style.display = "none"
@@ -154,7 +154,7 @@ document.querySelector("#mode-switch").addEventListener("click", function() {
         document.querySelector("#recommend-btn-div").classList.add("reco-btn-show")
         $("#filter-btn").show("slow")
         $("#switch-label").animate({'opacity':0}, 500, function(){
-            $(this).html('Mode: Recommend').animate({'opacity':1}, 500)
+            $(this).html('Recommend').animate({'opacity':1}, 500)
         })
         // alternatively:
         // document.querySelector("#filter-btn").style.display = ""
