@@ -8,10 +8,6 @@ The CSS can be divided into 2 main parts:
 */
 
                                 /* Part 1: ELEMENTS */
-
-#main-div {
-  position: relative;
-}
                                /* START-PAGE ELEMENTS */
 /* start page */
 #start-page {
@@ -35,7 +31,8 @@ The CSS can be divided into 2 main parts:
   z-index: -1;
   width: 100vw;
   height: 100vh;
-  opacity: 0.75;
+  /* background-size: contain; */
+  opacity: 0.35;
 }
 
 /* start button */

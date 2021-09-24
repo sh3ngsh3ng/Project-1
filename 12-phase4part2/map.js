@@ -33,44 +33,44 @@ radiusLayer.addTo(map)
 // ICONS
 // location icon
 let locationMarkerIcon = L.icon({
-    iconUrl: 'images/location2.png',
+    iconUrl: 'images/icons/location.png',
     iconSize: [70, 70],
     iconAnchor: [35, 70],
 })
 
 // food icon
 let foodMarkerIcon = L.icon({
-    iconUrl: 'images/food.png',
+    iconUrl: 'images/icons/food.png',
     iconSize: [50,50],
 })
 
 // cafe icon
 let cafeMarkerIcon = L.icon({
-    iconUrl: 'images/cafe.png',
+    iconUrl: 'images/icons/cafe.png',
     iconSize: [40,40]
 })
 
 // restaurant icon
 let restaurantMarkerIcon = L.icon({
-    iconUrl: 'images/restaurant.png',
+    iconUrl: 'images/icons/restaurant.png',
     iconSize: [40,40]
 })
 
 // bar icon
 let barMarkerIcon = L.icon({
-    iconUrl: 'images/bar.png',
+    iconUrl: 'images/icons/bar.png',
     iconSize: [40,40]
 })
 
 // coffee icon
 let coffeeshopMarkerIcon = L.icon({
-    iconUrl: 'images/coffeeshop.png',
+    iconUrl: 'images/icons/coffeeshop.png',
     iconSize: [40,40]
 })
 
 // dessert icon
 let dessertMarkerIcon = L.icon({
-    iconUrl: 'images/dessert.png',
+    iconUrl: 'images/icons/dessert.png',
     iconSize: [50, 50]
 })
 
