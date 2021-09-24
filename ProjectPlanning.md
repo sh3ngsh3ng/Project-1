@@ -153,12 +153,16 @@ APIs:
 ## Phase 6: Debug
 - Filter animation is chunky
 - ~~Accidental placing of markers when clicking on map-control-panel~~
-- Changing settings for circle marker doesn't remove initial circle marker
-- Circle marker not showing at default (yes/no)
-- Location doesn't clear radius layer
-- Circle marker not switched off settings unchecked
+- ~~Changing settings for circle marker doesn't remove initial circle marker~~
+- ~~Circle marker not showing at default~~
+- ~~Location doesn't clear radius layer~~
+- ~~Circle marker not switched off when uncheck settings~~
 - ~~default radius not showing~~
 - ~~unchecking choose location marker doesn't remove the placed marker~~
+- need to disable click placement once route is established
+- (when location disabled) checking and unchecking marker placement option results in leftover circle marker
+- leftover markers when changing mode (both ways)
+- back button doesn't remove previous markers and layers already placed
 
 ## Final Phase: Deploy!
 
