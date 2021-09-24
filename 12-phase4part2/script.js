@@ -112,7 +112,7 @@ map.on('click', function(e){
     radiusMarker()
 })
 
-// settings: manual marker placement event
+// settings: manual marker placement event option
 document.querySelector("#checkbox2").addEventListener('click', function() {
     if (this.checked) {
         geoFlag = true
@@ -120,12 +120,12 @@ document.querySelector("#checkbox2").addEventListener('click', function() {
     } 
     if (!this.checked) {
         geoFlag = false
-        // clear layers function
+        currentLocationLayer.clearLayers()
         flyToCurrentLocation()
     }
 })
 
-// settings: remove circle marker
+// settings: remove circle marker option
 document.querySelector("#checkbox1").addEventListener('click', function() {
     radiusMarker()
 })
