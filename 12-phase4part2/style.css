@@ -12,7 +12,7 @@ The CSS can be divided into 2 main parts:
 #main-div {
   position: relative;
 }
-                              /* START-PAGE ELEMENTS */
+                               /* START-PAGE ELEMENTS */
 /* start page */
 #start-page {
   padding: 0;
@@ -55,7 +55,7 @@ The CSS can be divided into 2 main parts:
 }
 
 
-                                /* MAP-PAGE ELEMENTS*/
+                                  /* MAP-PAGE ELEMENTS*/
 /* map page */
 #map-page {
   padding: 0;
@@ -212,9 +212,21 @@ The CSS can be divided into 2 main parts:
   text-align: center;
 }
 
+/* settings button */
+#settings-div {
+  z-index: 1;
+  right: 0;
+  margin: 30px;
+}
 
+#settings-btn {
+  border-radius: 110px;
+  background-color: rgba(76, 83, 76, 0.329);
+}
 
-
+#settings-icon {
+  height: 20px;
+}
 
                               /* Part 2: ANIMATIONS */
 

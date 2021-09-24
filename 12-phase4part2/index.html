@@ -250,34 +250,23 @@
           </div>
         </div>
 
-        <!-- settings -->
-        <!-- <div class="container">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon" style="color:green"></span>
-          </button>
-        </div>
-        <div class="collapse" id="navbarToggleExternalContent">
-          <div class="bg-dark p-4">
-            <h5 class="text-white h4">Collapsed content</h5>
-            <span class="text-muted">Toggleable via the navbar brand.</span>
-          </div>
-        </div> -->
-        <div id="settings-btn" class="dropdown">
+        <!-- settings div-->
+        <div id="settings-div" class="dropdown position-absolute">
+          <!-- settings button -->
           <button
-            class="btn btn-secondary dropdown-toggle d-flex align-items-center"
+            class="btn dropdown-toggle d-flex align-items-center"
             type="button"
-            id="dropdownMenuButton"
+            id="settings-btn"
             data-bs-toggle="dropdown"
             aria-expanded="false"
-            style="height: 100%; background-color:lightgreen"
           >
             <img
-              id="settings-btn"
+              id="settings-icon"
               src="images/settings.png"
-              style="height: 20px"
             />
           </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <!-- dropdown list -->
+          <ul class="dropdown-menu" aria-labelledby="settings-btn">
             <li class="list-group-item">
               <input
                 class="form-check-input"
