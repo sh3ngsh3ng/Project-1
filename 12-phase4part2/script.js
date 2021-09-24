@@ -109,6 +109,17 @@ map.on('click', function(e){
     radiusMarker()
 })
 
+// manual marker placement event
+document.querySelector("#checkbox2").addEventListener('click', function() {
+    if (this.checked) {
+        geoFlag = true
+    } 
+    if (!this.checked) {
+        geoFlag = false
+    }
+})
+
+
 // mode switch event
 document.querySelector("#mode-switch").addEventListener("click", function() {
     let mode = this.checked //default = false

@@ -167,7 +167,7 @@ function radiusMarker() {
 }
 
 
-// function to clean encoded string (removes backslash)
+// function to clean encoded string (remove escape sequence)
 function cleanStr(x) {
     a = x.split('\\')
     b = a.join('\\\\')
