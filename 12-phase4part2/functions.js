@@ -66,12 +66,13 @@ function flyToCurrentLocation() {
         let currentLocationMarker = L.marker(currentCoords, {icon: locationMarkerIcon}).addTo(currentLocationLayer)
     
         map.flyTo(currentCoords, 16)
+        radiusMarker()
     }
     // geolocation error function
     function error() {
         alert("Please click on the map to start")
         geoFlag = true
-    }    
+    }
     navigator.geolocation.getCurrentPosition(success, error)
 }
   
@@ -145,7 +146,6 @@ async function foodRecoMarkers() {
     }
 }
 
-console.log(document.querySelector("#checkbox1").checked)
 
 // plot circle radius
 function radiusMarker() {
@@ -163,7 +163,6 @@ function radiusMarker() {
     } else {
         radiusLayer.clearLayers()
     }
-
 }
 
 

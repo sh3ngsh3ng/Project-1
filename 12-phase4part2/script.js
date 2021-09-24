@@ -7,9 +7,11 @@ document.querySelector("#start-btn").addEventListener('click', function() {
     document.querySelector("#start-page").classList.add("page-up")
     document.querySelector("#map-page").classList.remove("page-left")
     document.querySelector("#map-page").classList.add("page-show")
-    document.querySelector("#nav-bar-div").classList.add("nav-up")
+    document.querySelector("#nav-bar-div").classList.add("nav-up") 
     flyToCurrentLocation()
 })
+
+
 
 // back button to transition to start page
 document.querySelector("#back-btn").addEventListener('click', function() {
@@ -25,6 +27,7 @@ document.querySelector("#location-btn").addEventListener("click", function() {
     currentLocationLayer.clearLayers()
     foodSearchLayer.clearLayers()
     routingLayer.clearLayers()
+    radiusLayer.clearLayers()
     flyToCurrentLocation()
 })
 
@@ -109,16 +112,23 @@ map.on('click', function(e){
     radiusMarker()
 })
 
-// manual marker placement event
+// settings: manual marker placement event
 document.querySelector("#checkbox2").addEventListener('click', function() {
     if (this.checked) {
         geoFlag = true
+
     } 
     if (!this.checked) {
         geoFlag = false
+        // clear layers function
+        flyToCurrentLocation()
     }
 })
 
+// settings: remove circle marker
+document.querySelector("#checkbox1").addEventListener('click', function() {
+    radiusMarker()
+})
 
 // mode switch event
 document.querySelector("#mode-switch").addEventListener("click", function() {
