@@ -157,7 +157,7 @@ APIs:
 - Circle marker not showing at default (yes/no)
 - Location doesn't clear radius layer
 - Circle marker not switched off settings unchecked
-- default radius not showing
+- ~~default radius not showing~~
 - unchecking choose location marker doesn't remove the placed marker
 
 ## Final Phase: Deploy!
