@@ -66,6 +66,12 @@ The CSS can be divided into 2 main parts:
   top: 5vh;
 }
 
+#nav-bar-dropdown {
+  border-radius: 25px;
+  margin-right: 20px !important;
+  margin-left: 20px !important;
+  background-color:rgba(207, 214, 219, 0.801)
+}
 
 /* end of navbar */
 
