@@ -44,7 +44,7 @@ For more information, refer to the projectplanning.md file
 ## Plane 1: Strategy
 ### Target Audience:
 - Consumers
-  - The General Public
+  - The general public (non-foodie)
   - Foodie (a person with a particular interest in food)
 - Age + IT Literacy: Younger audience who are more tech savvy
 - Pain Points:
@@ -58,8 +58,8 @@ For more information, refer to the projectplanning.md file
   - Recommendations of good food around user's location
 
 ### The User Stories:
-- As a non-foodie, I want **convenience when searching for food** so that I don't have to spend time researching and worrying about what to eat!
-- As a foodie, I want to **find out what are the nice food/interesting places to eat** so that I can try them out!
+- As a user, I want **convenience when searching for food** so that I don't have to spend time researching and worrying about what to eat!
+- As a user, I want to **find out what are the nice food/interesting places to eat** so that I can try them out!
 
 ## Plane 2: Scope (Functions & Features)
 ### Functional:
