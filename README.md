@@ -13,7 +13,8 @@ The planning of project is divided into 6 phases:
 - Phase 4: Structuring & Styling
 - Phase 5: Responsiveness
 - Phase 6: Debug
-For more information, refer to the projectplanning.md
+
+For more information, refer to the projectplanning.md file
 
 # Technologies Used
 - HTML & CSS
@@ -25,11 +26,11 @@ For more information, refer to the projectplanning.md
     - for API calling (oneMap)
 - axios
     - for API calling (fourSquare)
+- Google Polyline Decoding 
 
 
-# UI/UX
-The 5 planes of UI/UX:
 
+# UI/UX (5 Planes)
 ## Plane 1: Strategy
 ### Target Audience:
 - Consumers
@@ -81,6 +82,7 @@ The 5 planes of UI/UX:
 ### Icons:
 
 
+
 # Mobile Responsiveness
 The strategy for mobile responsiveness is to size elements with ratio units (e.g. %, vh/vw, etc). Mobile responsive elements from bootstrap was also used where applicable.
 
@@ -95,6 +97,23 @@ Below are the devices that can be supported:
 - For the sizes smaller than 375px, elements can be adjusted to avoid overlapping.
 - For sizes larger than 1025px, elements do not overlap. But sizing of elements can be better adjusted.
 
+# Test Cases
+
+
+
+
+
 
 # Bugs
+As some functions/features interacts with one another, testing is done after the implementation of every function/feature. 
+
+For example, during the addition of Settings Menu, the two functions added (Radius Marker & Choose Location) interacted with many other features. E.g. previous markers placed were not cleared, doesn't work with location button, etc. The obvious bugs were patched before other functions are added.
+
+Below are some of the bugs that are unresolved:
+
+
+# 
+
+
+
 
