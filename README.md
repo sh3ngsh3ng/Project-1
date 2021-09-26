@@ -72,8 +72,11 @@ For more information, refer to the projectplanning.md file
 - Routing
     - show route
     - show estimated time
+- Refer to the following link for navigation:
+    - https://docs.google.com/presentation/d/1Cm3rBH1L73uFeR4W0letMNpHElTwNgAZpGLnGPSro_w/edit?usp=sharing
+
 ### Non-functional:
-- Mobile, tablet responsive
+- Mobile responsive
 
 ## Plane 3 & 4: Structure & Skeleton
 - All features are all within 3 clicks
@@ -115,7 +118,7 @@ Below are the devices that can be supported:
 Link to screen sizes view:
 - https://docs.google.com/presentation/d/19_yJY0TIJ8dx-SuCxX0KJDnHkZBysldYS733h6TCWeU/edit?usp=sharing
 
-### Note for other sizes:
+**Note for other sizes:**
 - For the sizes smaller than 375px, elements can be adjusted to avoid overlapping.
 - For sizes larger than 1024px, elements do not overlap. But sizing of elements can be better adjusted.
 
@@ -168,9 +171,9 @@ Nevertheless, mobile responsiveness was achieved, albeit more tediously. A very 
 - Addition of Cafe Hopping function
     - Another function that was conceptualize was the function to allow user to plan their cafe hopping journey using the app
 
-
 # Credits & Acknowledgements
 
 
-
 # Disclaimer
+
+
