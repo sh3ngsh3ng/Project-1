@@ -160,7 +160,7 @@
               >
                 Filter
               </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <ul class="dropdown-menu" id="filter-menu" aria-labelledby="dropdownMenuButton">
                 <li>
                   <a class="dropdown-item" href="#" id="food">Food (default)</a>
                 </li>
@@ -267,8 +267,8 @@
             />
           </button>
           <!-- dropdown list -->
-          <ul class="dropdown-menu" aria-labelledby="settings-btn" >
-            <li class="list-group-item">
+          <ul class="dropdown-menu" id="settings-menu" aria-labelledby="settings-btn" >
+            <li class="list-group-item settings-items">
               <input
                 id="checkbox1"
                 class="form-check-input"
@@ -279,15 +279,14 @@
               />
               Radius Marker
             </li>
-            <li class="list-group-item">
+            <li class="list-group-item settings-items">
               <input
                 id ="checkbox2"
                 class="form-check-input me-1"
                 type="checkbox"
                 value=""
                 aria-label="..."
-              />
-              Choose Location
+              />Choose Location
             </li>
           </ul>
         </div>

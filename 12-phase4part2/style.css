@@ -277,8 +277,6 @@ The CSS can be divided into 2 main parts:
 }
 
 /* MEDIA QUERY */
-
-
 @media only screen and (min-width: 375px) {
   /* start-page */
   #start-btn {
@@ -302,26 +300,47 @@ The CSS can be divided into 2 main parts:
   #settings-div {
     margin: 10px;
   }
+
+
+  /* start of settings menu */
   #settings-btn {
     padding: 3px;
   }
-  .list-group-item {
-    font-size: 8px;
-    width: 20vw;
-    height: 40px;
-  }
-  ul.dropdown-menu.show {
+  #settings-menu {
     min-width: unset;
     padding:0;
     height: 80px;
     width: 20vw;
   }
+  .settings-items {
+    font-size: 8px;
+    width: 20vw;
+    height: 40px;
+  }
+
+  /* end of settings menu */
+  
+
+  /* start of filter menu */
   #dropdownMenuButton {
     font-size: 10px;
   }
+
+  .dropdown-item {
+    font-size: 8px;
+    padding: 2px;
+  }
+
+  #filter-menu {
+    min-width:unset;
+    width: 18vw;
+  }
+  /* end of filter menu */
+
   #switch-label {
     font-size: 10px;
   }
+
   #mode-switch {
     height: 10px;
     width: 20px;
@@ -354,12 +373,8 @@ The CSS can be divided into 2 main parts:
 }
 
 
-
-
-
-
 @media only screen and (min-width: 768px) {
-  /* start-page */
+  /* START-PAGE */
   #start-btn {
     padding: 10px;
     font-size: 20px;
@@ -368,13 +383,46 @@ The CSS can be divided into 2 main parts:
     background-position: center 50%;
   }
 
-  /* map-page */
+  /* MAP-PAGE */
+
+
+  #switch-label {
+    font-size: 12px;
+  }
+
+  /* start of settings menu */
+  .settings-items {
+    font-size: 8px;
+    width: 15vw;
+    height: 30px;
+  }
+  #settings-menu {
+    min-width: unset;
+    padding:0;
+    height: 60px;
+    width: 15vw;
+  }
+  /* end of settings menu */
+
+  /* start of filter menu */
   #dropdownMenuButton {
     font-size: 10px;
   }
 
-  #switch-label {
+  .dropdown-item {
     font-size: 12px;
+    padding: 2px;
+  }
+
+  #filter-menu {
+    min-width:unset;
+    width: 12vw;
+  }
+  /* end of filter menu */
+
+
+  #switch-label {
+    font-size: 10px;
   }
 
   #mode-switch {
@@ -382,14 +430,9 @@ The CSS can be divided into 2 main parts:
     width: 25px;
   }
 
-  #distance-slider {
-    width: 40vw;
-  }
-
   #submit-btn-icon {
     height: 12px;
   }
-
 
   #dist-slider-display {
     font-size: 12px;
@@ -407,20 +450,7 @@ The CSS can be divided into 2 main parts:
     margin: 20px;
   }
 
-  .list-group-item {
-    font-size: 8px;
-    width: 15vw;
-    height: 30px;
-  }
-  ul.dropdown-menu.show {
-    min-width: unset;
-    padding:0;
-    height: 60px;
-    width: 15vw;
-  }
-  #dropdownMenuButton {
-    font-size: 10px;
-  }
+
 
 }
 
@@ -437,10 +467,25 @@ The CSS can be divided into 2 main parts:
   }
 
   /* map-page */
-  #distance-slider {
-    width: 40vw;
+
+  /* start of settings menu */
+  #settings-menu {
+    min-width: unset;
+    padding:0;
+    height: 80px;
+    width: 15vw;
   }
+  .settings-items {
+    font-size: 12px;
+    width: 15vw;
+    height: 40px;
+  }
+  /* end of settings menu */
 }
+
+
+
+
 
 @media only screen and (min-width: 1440px) {
   #start-btn {
@@ -450,6 +495,14 @@ The CSS can be divided into 2 main parts:
 
   #start-page {
     background-position: center 10%;
+  }
+
+
+  #settings-div {
+    margin: 10px;
+  }
+  #settings-btn {
+    padding: 3px;
   }
 }
 
