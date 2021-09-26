@@ -16,8 +16,29 @@ The CSS can be divided into 2 main parts:
   height: 100vh;
   background-image: url("images/start-background2.jpg");
   background-repeat: no-repeat;
+  box-shadow: inset 0 0 0 2000px rgba(19, 15, 17, 0.3);
 }
 
+#start-display-div {
+  position:absolute;
+  top: 42%;
+  left: 10%;
+}
+
+.start-text {
+  color: white;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+  font-size: 50px;
+}
+
+#start-display-div2 {
+  display: none;
+}
+
+#start-btn-div {
+  top: 75vh;
+}
 
 /* navbar-div */
 #nav-bar-div {
@@ -287,7 +308,9 @@ The CSS can be divided into 2 main parts:
   #brand-icon {
     height: 30px;
     opacity: 1;
+    filter: grayscale(40%)
   }
+
 
   /* map-page */
   .leaflet-control-zoom {
@@ -385,6 +408,29 @@ The CSS can be divided into 2 main parts:
     background-position: 40% 40%;
   }
 
+#start-display-div {
+  display: flex;
+}
+
+.start-text {
+  margin-left: 15px;
+}
+
+#start-display-div2 {
+  position: absolute;
+  display: unset;
+  top: 50%;
+  left: 20%;
+}
+
+.start-text2 {
+  font-size: 20px;
+  color: white;
+  font-weight: 10;
+  opacity: 0.7;
+  margin-top: 10px;
+}
+
   /* MAP-PAGE */
 
 
@@ -469,6 +515,24 @@ The CSS can be divided into 2 main parts:
     background-position: 30% 40%;
   }
 
+  #start-display-div {
+    left: 5%;
+    top: 40%
+  }
+
+  .start-text {
+    font-size: 80px;
+  }
+
+  #start-display-div2{
+    top: 50%;
+    left: 20%
+  }
+
+  .start-text2 {
+    font-size: 30px;
+    margin-top: 20px;
+  }
   /* map-page */
 
   /* start of settings menu */
