@@ -165,17 +165,25 @@ Making the application mobile responsive was one of the most challenging. The in
 
 **A mobile first strategy should have been adopted.**
 
-Nevertheless, mobile responsiveness was achieved, albeit more tediously. A very expensive lesson!
+Nevertheless, mobile responsiveness was achieved, albeit more tediously. A very expensive and valuable lesson!
 
 
 # Possible Improvements:
 - Ensure better mobile responsiveness for more screen sizes
 - Addition of Cafe Hopping function
     - Another function that was conceptualize was the function to allow user to plan their cafe hopping journey using the app
+- Addition of Tutorial Page
+- Addition of Contact Us page
 
 # Credits & Acknowledgements
+I would like to acknowledge the lead instructor Mr Paul, teaching assistant Sam and all my classmates for providing guidance and emotional support in this project.
+
+I would also like to personally thank Google and Stackoverflow for their 24/7 help.
+
+// tech
+// flaticon
 
 
 # Disclaimer
-
+The project is for educational purposes only. Other than the idea/concept of the project, all media files and technologies used in this project belongs to their respective owners and I do not claim any right over them. 
 
