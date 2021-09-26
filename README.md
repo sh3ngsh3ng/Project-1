@@ -1,10 +1,10 @@
 # Eat What?
 ## Introduction
-Do you spend too much time deciding on what to eat that your 1 hour lunch/dinner break became 30 minutes snack time? Or do you need help finding 
+Do you spend too much time deciding on what to eat that your 1 hour lunch/dinner break became 30 minutes snack time? Or do you need recommendations on what is good around you?
 
-Eat What? helps you locate your food cravings that are within walking distance (500m). The application is also capable of recommending you places to eat.
 
-Eat What? provides convenience of food finding within walkable distance
+## Rationale
+Eat What? provides convenience of food finding within walkable distance. You can search for a particular food within range and also get recommendation from the application!
 
 
 
