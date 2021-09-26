@@ -172,8 +172,8 @@ Nevertheless, mobile responsiveness was achieved, albeit more tediously. A very 
 - Ensure better mobile responsiveness for more screen sizes
 - Addition of Cafe Hopping function
     - Another function that was conceptualize was the function to allow user to plan their cafe hopping journey using the app
-- Addition of Tutorial Page
-- Addition of Contact Us page
+- Addition of Tutorial Page (not yet started)
+- Addition of Contact Us page (uncompleted)
 
 # Credits & Acknowledgements
 I would like to acknowledge the lead instructor Mr Paul, teaching assistant Sam and all my classmates for providing guidance and emotional support in this project.
