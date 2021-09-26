@@ -1,4 +1,8 @@
 # Eat What?
+<div align="center">
+<img src="12-phase4part2v2/images/laptop-view.PNG" style="width:450px;">
+</div>
+
 ## Introduction
 Do you have cravings for a particular food from time to time? Do you spend too much time deciding on what to eat that your 1 hour lunch/dinner break became a 30 minutes snack time instead? Or do you need recommendations on what is good around you?
 
@@ -53,7 +57,6 @@ For more information, refer to the projectplanning.md file
 
 ## Plane 2: Scope
 ### Functional:
-![Image of Interface](./images/start-background.jng)
 - Search for a particular food near me
 - Recommendations of food near me
 - Adjusting distance (walkable) for search
