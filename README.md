@@ -1,8 +1,12 @@
 # Eat What?
-awfeawef
+## Introduction
 Do you spend too much time deciding on what to eat that your 1 hour lunch/dinner break became 30 minutes snack time? Or do you need help finding 
 
 Eat What? helps you locate your food cravings that are within walking distance (500m). The application is also capable of recommending you places to eat.
+
+Eat What? provides convenience of food finding within walkable distance
+
+
 
 
 # Planning of Project
@@ -51,7 +55,7 @@ For more information, refer to the projectplanning.md file
 - As a non-foodie, I want **convenience when searching for food** so that I don't have to spend time researching and worrying about what to eat!
 - As a foodie, I want to **find out what are the nice food/interesting places to eat** so that I can try them out!
 
-## Plane 2: Scope
+## Plane 2: Scope (Features & Functions)
 ### Functional:
 - Search for a particular food near me
 - Recommendations of food near me
@@ -83,7 +87,9 @@ For more information, refer to the projectplanning.md file
 - As a picture speaks a thousand words, a food related background image was used to fit the theme of the application
 
 ### Fonts:
-- 
+- Font Colour: White is used in the start-page (landing page) as to give a contrast to the darkish classy feels
+- Font Sizes are adjusted based on screen sizes
+- Typography
 
 ### Icons:
 Icons used are related to the function/features. All results yielding from the filter function have icons that matches the category. I.e. Cafe icon for cafe results, restaurant icons for restaurant results
@@ -149,6 +155,7 @@ Nevertheless, mobile responsiveness was achieved, albeit more tediously. A very 
     - Another function that was conceptualize was the function to allow user to plan their cafe hopping journey using the app
 
 
+# Credits & Acknowledgements
 
 
 
