@@ -168,6 +168,7 @@ APIs:
 - leftover markers when changing mode (both ways)
 - back button doesn't remove previous markers and layers already placed
 - recommend button doesn't clear routing layer
+- (26/09/2021) routing function suddenly not working!?
 
 ## Final Phase: Deploy!
 
