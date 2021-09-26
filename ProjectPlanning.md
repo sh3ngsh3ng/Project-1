@@ -1,11 +1,12 @@
-# Project Planning (Project Title-WIP)
+# Project Planning (Eat What?)
 
 - Phase 1: Research on available data & technology
 - Phase 2: UI/UX Planning
 - Phase 3: Functionality (make sure it works as intended)
 - Phase 4: Structuring & Styling
 - Phase 5: Responsiveness
-- Final Phase: Deploy!
+- Phase 6: Debug
+- Deploy!
 
 ## Phase 1: Research on available data & technology
 
@@ -170,6 +171,6 @@ APIs:
 - recommend button doesn't clear routing layer
 - (26/09/2021) routing function suddenly not working!?
 
-## Final Phase: Deploy!
+## Deploy!
 
 
