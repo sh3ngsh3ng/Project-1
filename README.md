@@ -73,15 +73,24 @@ For more information, refer to the projectplanning.md file
 
 ## Plane 5: Surface
 ### Colours:
-
+- A somewhat dark theme was used to give off a classy feels to the application.
+- Examples:
+    - Greyish colours was chosen for many of the elements such as Navbar, navbar dropdown, etc
+    - Blackish filter was also used on the background image
+- Clickable buttons such as the "START" button and others that yield results (search/recommend) are given a greenish colour to make it more pleasant and clickable
 
 ### Images:
+- As a picture speaks a thousand words, a food related background image was used to fit the theme of the application
 
 ### Fonts:
+- 
 
 ### Icons:
+Icons used are related to the function/features. All results yielding from the filter function have icons that matches the category. I.e. Cafe icon for cafe results, restaurant icons for restaurant results
 
+For the results from functions, coloured icons are used to make the application more pleasing. Icons chosen are to somewhat have a same theme/feels. 
 
+Other functions such as back button, settings, etc uses icons that are commonly known. E.g. gear icon for settings, back arrow for back button, thumbs up icon for recommendations.
 
 # Mobile Responsiveness
 The strategy for mobile responsiveness is to size elements with ratio units (e.g. %, vh/vw, etc). Mobile responsive elements from bootstrap was also used where applicable.
@@ -112,7 +121,33 @@ For example, during the addition of Settings Menu, the two functions added (Radi
 Below are some of the bugs that are unresolved:
 
 
-# 
+# Challenges Faced
+### Challenge 1:
+As more functions/features are added, the possible variations/scenarios increases. Particularly challenging functions/features are:
+- Geolocation
+    - Have to make sure all the functions accounts for both type of users (allow/disallow geolocation)
+- Slider Bar
+    - Affects all results accordingly (e.g. radius marker, food search results, recommendation results)
+- Settings Menu
+    - Radius Marker
+        - Switching on and off
+    - Choosing Location (Ping Dropping)
+        - Keeping track of current location
+        - Linking ping's location with API
+
+### Challenge 2:
+Making the application mobile responsive was one of the most challenging. The initial strategy (design with laptop sizing first using mobile responsive units, elements, etc) adopted was not the best. The lack of foresight, knowledge and experience lead to this mistake. 
+
+**A mobile first strategy should have been adopted.**
+
+Nevertheless, mobile responsiveness was achieved, albeit more tediously. A very expensive lesson!
+
+
+# Possible Improvements:
+- Ensure better mobile responsiveness for more screen sizes
+- Addition of Cafe Hopping function
+    - Another function that was conceptualize was the function to allow user to plan their cafe hopping journey using the app
+
 
 
 
