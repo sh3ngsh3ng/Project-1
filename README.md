@@ -1,13 +1,10 @@
 # Eat What?
 ## Introduction
-Do you spend too much time deciding on what to eat that your 1 hour lunch/dinner break became 30 minutes snack time? Or do you need recommendations on what is good around you?
+Do you have cravings for a particular food from time to time? Do you spend too much time deciding on what to eat that your 1 hour lunch/dinner break became a 30 minutes snack time instead? Or do you need recommendations on what is good around you?
 
+Eat What? provides convenience of food finding within walkable distance. You can search for a particular food as well as get recommendations of what's good near you too!
 
-## Rationale
-Eat What? provides convenience of food finding within walkable distance. You can search for a particular food within range and also get recommendation from the application!
-
-
-
+So the next time your friend ask you "eat what?", refer them to the link!
 
 # Planning of Project
 The planning of project is divided into 6 phases:
