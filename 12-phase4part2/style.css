@@ -47,12 +47,7 @@ The CSS can be divided into 2 main parts:
   top: 75vh;
 }
 
-/* navbar-div */
-#nav-bar-div {
-  top: 5vh;
-}
-
-/* navbar */
+/* start of navbar */
 #nav-bar {
   box-shadow: 0px 0px 1px 3px #837070;
   border-radius: 25px;
@@ -62,6 +57,16 @@ The CSS can be divided into 2 main parts:
   margin-right: 20px !important;
   margin-left: 20px !important;
 }
+
+#nav-bar-div {
+  top: 5vh;
+}
+
+#offcanvasNavbar {
+  width: 40vw;
+}
+
+/* end of navbar */
 
 /* start button */
 #start-btn {
@@ -547,6 +552,11 @@ The CSS can be divided into 2 main parts:
     font-size: 30px;
     margin-top: 20px;
   }
+
+  #offcanvasNavbar {
+    width: 30vw;
+  }
+
   /* map-page */
 
   /* start of settings menu */
