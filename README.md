@@ -10,6 +10,12 @@ Eat What? provides convenience of food finding within walkable distance. You can
 
 So the next time your friend ask you "eat what?", refer them to the link!
 
+Quickstart: 
+- Application link:
+    - (not yet deployed)
+- Navigation of application:
+    - https://docs.google.com/presentation/d/1Cm3rBH1L73uFeR4W0letMNpHElTwNgAZpGLnGPSro_w/edit?usp=sharing
+
 # Planning of Project
 The planning of project is divided into 6 phases:
 - Phase 1: Research
@@ -105,6 +111,9 @@ Below are the devices that can be supported:
 - 375px - Medium Mobile (E.g. Iphones 6 to X)
 - 768px - Tablets (E.g. IPad)
 - 1024px - Laptop
+
+Link to view the screen sizes:
+- https://docs.google.com/presentation/d/19_yJY0TIJ8dx-SuCxX0KJDnHkZBysldYS733h6TCWeU/edit?usp=sharing
 
 ### Note for other sizes:
 - For the sizes smaller than 375px, elements can be adjusted to avoid overlapping.
