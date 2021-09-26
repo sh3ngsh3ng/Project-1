@@ -16,7 +16,13 @@ The CSS can be divided into 2 main parts:
   height: 100vh;
   background-image: url("images/start-background2.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   box-shadow: inset 0 0 0 2000px rgba(19, 15, 17, 0.3);
+}
+
+#brand-icon {
+  height: 30px;
+  filter: grayscale(70%)
 }
 
 #start-display-div {
@@ -72,6 +78,9 @@ The CSS can be divided into 2 main parts:
   background-color: lightgreen !important;
   cursor: pointer;
 }
+
+
+
 
 /* MAP-PAGE ELEMENTS*/
 /* map page */
@@ -305,12 +314,6 @@ The CSS can be divided into 2 main parts:
     background-position: 55% 5%;
   }
 
-  #brand-icon {
-    height: 30px;
-    opacity: 1;
-    filter: grayscale(40%)
-  }
-
 
   /* map-page */
   .leaflet-control-zoom {
@@ -406,6 +409,7 @@ The CSS can be divided into 2 main parts:
   }
   #start-page {
     background-position: 40% 40%;
+    background-size: 1500px;
   }
 
 #start-display-div {
@@ -511,7 +515,6 @@ The CSS can be divided into 2 main parts:
   }
 
   #start-page {
-    background-size: 1500px;
     background-position: 30% 40%;
   }
 
@@ -525,7 +528,7 @@ The CSS can be divided into 2 main parts:
   }
 
   #start-display-div2{
-    top: 50%;
+    top: 48%;
     left: 20%
   }
 
