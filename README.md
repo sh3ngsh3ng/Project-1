@@ -124,7 +124,14 @@ As some functions/features interacts with one another, testing is done after the
 
 For example, during the addition of Settings Menu, the two functions added (Radius Marker & Choose Location) interacted with many other features. E.g. previous markers placed were not cleared, doesn't work with location button, etc. The obvious bugs were patched before other functions are added.
 
-Below are some of the bugs that are unresolved:
+For the bugs encountered during the whole project, refer to projectplanning.md.
+
+Below are some of the unresolved bugs:
+-
+-
+-
+
+
 
 
 # Challenges Faced

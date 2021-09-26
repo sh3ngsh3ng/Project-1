@@ -74,7 +74,8 @@ APIs:
 
 
 ### 5) Surface
-- On hold
+- ~~On hold~~
+- Refer to readme file
 
 ## Phase 3: Functionality
 ### Geolocation:
@@ -88,11 +89,11 @@ APIs:
 - ~~Set-up Foursquare API to search for food + recommendation~~
 - ~~Link user's input to search function~~
 - ~~Add markers for results~~
-- Add in details for search & recommendation results:
+- ~~Add in details for search & recommendation results:~~
   - Name
   - Address
   - Distance(?)
-- Mode Switch button to toggle between both function
+- ~~Mode Switch button to toggle between both function~~
 ### Filtering Function
 **Filter function affects both recommendation and food search results**
 - ~~Add a dropdown to filter by category~~
@@ -114,7 +115,7 @@ APIs:
 - ~~To add time for polyline~~
 - To add link to google directions for more specific directions.
 - Set a minimum time (close locations will give 0 minutes because of math.floor)
-- (issue) routing does not work sometimes if the coordinates from 4square api doesn't meet requirements for routing api
+
 ### (on hold) Cafe Hopping
 - Single Web Application
 - Function to add to itinerary
@@ -132,8 +133,8 @@ APIs:
   - navbar
   - start button
 - Style Map-Page
-  - ~~Current Location Marker Icon~~
-  - ~~Marker Icons~~
+  - Current Location Marker Icon
+  - Marker Icons
     - Location Marker
     - Normal Search Markers
     - Recommendation Markers
@@ -144,7 +145,7 @@ APIs:
   - Mode Switch
   - Back button
   - Settings button
-- Style Contact Page
+- Style Contact Page (on hold)
 
 ## Phase 5: Responsiveness
 - Mobile XS
@@ -154,7 +155,7 @@ APIs:
 - Laptop XL
 
 ## Phase 6: Debug
-- Filter animation is chunky
+- ~~Filter animation is chunky~~
 - ~~Accidental placing of markers when clicking on map-control-panel~~
 - ~~Changing settings for circle marker doesn't remove initial circle marker~~
 - ~~Circle marker not showing at default~~
@@ -168,6 +169,7 @@ APIs:
 - back button doesn't remove previous markers and layers already placed
 - recommend button doesn't clear routing layer
 - (26/09/2021) routing function suddenly not working!?
+- Routing does not work sometimes if the coordinates from 4square api doesn't meet requirements for routing api
 
 ## Deploy!
 
