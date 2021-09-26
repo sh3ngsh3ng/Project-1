@@ -6,9 +6,9 @@
 ## Introduction
 Do you have cravings for a particular food from time to time? Do you spend too much time deciding on what to eat that your 1 hour lunch/dinner break became a 30 minutes snack time instead? Or do you need recommendations on what is good around you?
 
-Eat What? provides convenience of food finding within walkable distance. You can search for a particular food as well as get recommendations of what's good near you too!
+**Eat What?** provides convenience of food finding within walkable distance. You can search for a particular food as well as get recommendations of what's good near you too!
 
-So the next time your friend ask you "eat what?", refer them to the link!
+So the next time your friend ask you "eat what?", refer them to us!
 
 Quickstart: 
 - Application link:
@@ -37,7 +37,7 @@ For more information, refer to the projectplanning.md file
     - for API calling (oneMap)
 - axios
     - for API calling (fourSquare)
-- Google Polyline Decoding 
+- Google Polyline Decoder to decode routing from oneMAP api
 
 
 # The 5 Planes of UI/UX
@@ -83,14 +83,14 @@ For more information, refer to the projectplanning.md file
 
 ## Plane 5: Surface
 ### Colours:
-- A somewhat dark theme was used to give off a classy feels to the application.
-- Examples:
-    - Greyish colours was chosen for many of the elements such as Navbar, navbar dropdown, etc
-    - Blackish filter was also used on the background image
-- Clickable buttons such as the "START" button and others that yield results (search/recommend) are given a greenish colour to make it more pleasant and clickable
+- A somewhat darkish theme was used to give off a "classy" feels to the application.
+    - Examples:
+        - Greyish colours was chosen for many of the elements such as Navbar, navbar dropdown, etc
+        - Grayscale filter was also used on the background image
+- Clickable buttons such as the "START" button and buttons that yield results (search/recommend) are given a greenish colour to make it more pleasant and clickable
 
 ### Images:
-- As a picture speaks a thousand words, a food related background image was used to fit the theme of the application
+- As a picture speaks a thousand words, a food related background image was used to fit the theme of the application.
 
 ### Fonts:
 - Font Colour: White is used in the start-page (landing page) as to give a contrast to the darkish classy feels
@@ -105,19 +105,19 @@ For more information, refer to the projectplanning.md file
 # Mobile Responsiveness
 The strategy for mobile responsiveness is to size elements with ratio units (e.g. %, vh/vw, etc). Mobile responsive elements from bootstrap was also used where applicable.
 
-Due to the constraints of time and poor choice of strategy, mobile responsiveness does not cater for all range of device.
+Due to the constraints of time and choice of strategy, mobile responsiveness does not cater for all range of device.
 
 Below are the devices that can be supported:
 - 375px - Medium Mobile (E.g. Iphones 6 to X)
 - 768px - Tablets (E.g. IPad)
 - 1024px - Laptop
 
-Link to view the screen sizes:
+Link to screen sizes view:
 - https://docs.google.com/presentation/d/19_yJY0TIJ8dx-SuCxX0KJDnHkZBysldYS733h6TCWeU/edit?usp=sharing
 
 ### Note for other sizes:
 - For the sizes smaller than 375px, elements can be adjusted to avoid overlapping.
-- For sizes larger than 1025px, elements do not overlap. But sizing of elements can be better adjusted.
+- For sizes larger than 1024px, elements do not overlap. But sizing of elements can be better adjusted.
 
 # Test Cases
 
@@ -173,3 +173,4 @@ Nevertheless, mobile responsiveness was achieved, albeit more tediously. A very 
 
 
 
+# Disclaimer
