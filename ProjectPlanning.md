@@ -39,11 +39,9 @@ APIs:
   - Not sure what to eat, indecisive.
   - May be unfamiliar with the place. E.g. User's first time in the area.
   - Might have "cravings" for a certain type of food.
-  - Might have diet restrictions. E.g. halal, vegetarian, vega, etc.
 - Needs:
   - Information on food around user's location
     - Dining types: Restaurants, cafes, bars, etc
-    - Dietary: Halal, vegetarian, etc
     - Certain Type of Food: Chicken rice, Laksa, etc
   - Recommendations of good food around user's location
 
