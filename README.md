@@ -1,6 +1,6 @@
 # Eat What?
 <div align="center">
-<img src="12-phase4part2v2/images/laptop-view.PNG" style="width:450px;">
+<img src="12-phase4part2v2/images/laptop-view.PNG" style="width:500px;">
 </div>
 
 ## Introduction
@@ -34,7 +34,7 @@ For more information, refer to the projectplanning.md file
 - Google Polyline Decoding 
 
 
-# UI/UX (5 Planes)
+# The 5 Planes of UI/UX
 ## Plane 1: Strategy
 ### Target Audience:
 - Consumers
@@ -51,7 +51,7 @@ For more information, refer to the projectplanning.md file
     - Certain Type of Food: Chicken rice, Laksa, etc
   - Recommendations of good food around user's location
 
-#### The User Stories:
+### The User Stories:
 - As a non-foodie, I want **convenience when searching for food** so that I don't have to spend time researching and worrying about what to eat!
 - As a foodie, I want to **find out what are the nice food/interesting places to eat** so that I can try them out!
 
@@ -92,11 +92,9 @@ For more information, refer to the projectplanning.md file
 - Typography
 
 ### Icons:
-Icons used are related to the function/features. All results yielding from the filter function have icons that matches the category. I.e. Cafe icon for cafe results, restaurant icons for restaurant results
-
-For the results from functions, coloured icons are used to make the application more pleasing. Icons chosen are to somewhat have a same theme/feels. 
-
-Other functions such as back button, settings, etc uses icons that are commonly known. E.g. gear icon for settings, back arrow for back button, thumbs up icon for recommendations.
+- Icons used are related to the function/features. All results yielding from the filter function have icons that matches the category. I.e. Cafe icon for cafe results, restaurant icons for restaurant results
+- For the results from functions, coloured icons are used to make the application more pleasing. Icons chosen are to somewhat have a same theme/feels. 
+- Other functions such as back button, settings, etc uses icons that are commonly known. E.g. gear icon for settings, back arrow for back button, thumbs up icon for recommendations.
 
 # Mobile Responsiveness
 The strategy for mobile responsiveness is to size elements with ratio units (e.g. %, vh/vw, etc). Mobile responsive elements from bootstrap was also used where applicable.
