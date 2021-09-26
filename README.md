@@ -10,7 +10,7 @@ Do you have cravings for a particular food from time to time? Do you spend too m
 
 So the next time your friend ask you "eat what?", refer them to us!
 
-Quickstart: 
+### Quickstart
 - Application link:
     - (not yet deployed)
 - Navigation of application:
@@ -61,17 +61,19 @@ For more information, refer to the projectplanning.md file
 - As a non-foodie, I want **convenience when searching for food** so that I don't have to spend time researching and worrying about what to eat!
 - As a foodie, I want to **find out what are the nice food/interesting places to eat** so that I can try them out!
 
-## Plane 2: Scope
+## Plane 2: Scope (Functions & Features)
 ### Functional:
 - Search for a particular food near me
 - Recommendations of food near me
 - Adjusting distance (walkable) for search
 - Filter function
     - restaurants, bars, cafes
-- Option to select location
 - Routing
     - show route
     - show estimated time
+- Option to remove radius marker
+- Option to select location
+- Reposition Button
 - Refer to the following link for navigation:
     - https://docs.google.com/presentation/d/1Cm3rBH1L73uFeR4W0letMNpHElTwNgAZpGLnGPSro_w/edit?usp=sharing
 
@@ -137,8 +139,8 @@ For example, during the addition of Settings Menu, the two functions added (Radi
 For the bugs encountered during the whole project, refer to projectplanning.md.
 
 Below are some of the unresolved bugs:
--
--
+- Radius and api results from food search
+- 
 -
 
 
