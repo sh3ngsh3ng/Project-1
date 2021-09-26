@@ -28,31 +28,32 @@
     class="container-fluid"
     style="position: absolute; z-index: 20"
     >
-    <nav class="navbar navbar-light" id="nav-bar">
-      <div class="container-fluid">
-        <!-- brand logo -->
-        <a class="navbar-brand" href="#">
-          <img id="brand-icon" src="images/icons/brand.png" href="index.html">
-        </a>
-        <!-- hamburger icon -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <nav class="navbar navbar-light" id="nav-bar">
+        <div class="container-fluid">
+          <!-- brand logo -->
+          <a class="navbar-brand" href="#">
+            <img id="brand-icon" src="images/icons/brand.png" href="index.html">
+          </a>
+          <!-- hamburger icon -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="p-4" id="nav-bar-dropdown">
+          <h5 class="h4">Menu</h5>
+          <h6 class="text-muted">Get Started</h6>
+          <h6 class="text-muted">Contact Us</h6>
+          <h6 class="text-muted">About Me</h6>
+        </div>
       </div>
-    </nav>
-    <div class="collapse" id="navbarToggleExternalContent">
-      <div class="p-4" id="nav-bar-dropdown">
-        <h5 class="h4">Menu</h5>
-        <h6 class="text-muted">Get Started</h6>
-        <h6 class="text-muted">Contact Us</h6>
-        <h6 class="text-muted">About Me</h6>
-      </div>
-    </div>
     </div>
     
-
+    <!-- main body -->
     <div id="main-div" class="position-relative">
-      <!-- start-page -->
+
+      <!-- start of start-page -->
       <div id="start-page" class="container-fluid position-absolute">
         <!-- start-btn -->
         <div id="start-btn-div" class="container-fluid position-absolute">
@@ -71,7 +72,9 @@
           <h2 class="start-text2">Can't decide? Let us help!</h2>
         </div>
       </div>
-      <!-- map-page -->
+      <!-- end of start-page -->
+
+      <!-- start of map-page -->
       <div id="map-page" class="container-fluid position-absolute page-left">
         <!-- search bar-->
         <div id="search-bar-div" class="position-absolute container-fluid">
@@ -250,6 +253,8 @@
         <!-- map -->
         <div id="map"></div>
       </div>
+      <!-- end of map-page -->
+      
     </div>
 
     <!-- axios -->
