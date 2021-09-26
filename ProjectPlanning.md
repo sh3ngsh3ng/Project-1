@@ -148,7 +148,11 @@ APIs:
 - Style Contact Page
 
 ## Phase 5: Responsiveness
-
+- Mobile XS
+- ~~Mobile: 375px~~
+- ~~Tablet: 768px~~
+- ~~Laptop: 1024px~~
+- Laptop XL
 
 ## Phase 6: Debug
 - Filter animation is chunky

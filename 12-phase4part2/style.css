@@ -15,8 +15,6 @@ The CSS can be divided into 2 main parts:
   margin: 0;
   height: 100vh;
   background-image: url("images/start-background2.jpg");
-  background-color: red;
-  background-size: 2000px;
   background-repeat: no-repeat;
 }
 
@@ -284,7 +282,7 @@ The CSS can be divided into 2 main parts:
     font-size: 20px;
   }
   #start-page {
-    background-position: center 60%;
+    background-position: 60% 8%;
   }
 
   /* map-page */
@@ -380,7 +378,7 @@ The CSS can be divided into 2 main parts:
     font-size: 20px;
   }
   #start-page {
-    background-position: center 50%;
+    background-position: 40% 40%;
   }
 
   /* MAP-PAGE */
@@ -463,7 +461,8 @@ The CSS can be divided into 2 main parts:
   }
 
   #start-page {
-    background-position: center 30%;
+    background-size: 1500px;
+    background-position: 30% 40%;
   }
 
   /* map-page */
@@ -473,11 +472,11 @@ The CSS can be divided into 2 main parts:
     min-width: unset;
     padding:0;
     height: 80px;
-    width: 15vw;
+    width: 14vw;
   }
   .settings-items {
     font-size: 12px;
-    width: 15vw;
+    width: 14vw;
     height: 40px;
   }
   /* end of settings menu */
@@ -494,7 +493,8 @@ The CSS can be divided into 2 main parts:
   }
 
   #start-page {
-    background-position: center 10%;
+    background-size: 2000px;
+    background-position: 30% 10%;
   }
 
 
