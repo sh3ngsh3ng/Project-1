@@ -7,38 +7,35 @@ The CSS can be divided into 2 main parts:
   2) Animations
 */
 
-                                /* Part 1: ELEMENTS */
-                               /* START-PAGE ELEMENTS */
+/* Part 1: ELEMENTS */
+/* START-PAGE ELEMENTS */
 /* start page */
 #start-page {
   padding: 0;
   margin: 0;
-  height:100vh;
-  background-image: url("images/food-background3.jpg");
+  height: 100vh;
+  background-image: url("images/start-background2.jpg");
   background-color: red;
-  background-size: auto;
+  background-size: 2000px;
   background-repeat: no-repeat;
-  background-position: center 10%;
+}
+
+
+/* navbar-div */
+#nav-bar-div {
+  top: 5vh;
 }
 
 /* navbar */
 #nav-bar {
   box-shadow: 0px 0px 1px 3px #aaaaaa;
   border-radius: 25px;
-  background-color: rgb(196, 186, 186)!important;
-  margin-top: 20px !important;
+  background-color: rgb(196, 186, 186) !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
   margin-right: 20px !important;
   margin-left: 20px !important;
   opacity: 0.8;
-}
-
-/* background image */
-#bg-image {
-  position: absolute;
-  z-index: -1;
-  width: 100vw;
-  height: 100vh;
-  opacity: 0.35;
 }
 
 /* start button */
@@ -47,17 +44,18 @@ The CSS can be divided into 2 main parts:
   background-color: rgb(29, 211, 99);
   opacity: 0.8;
   border-radius: 20px;
+  /* height: 10vh !important;
+  width: 30vw !important; */
 }
 
 #start-btn:hover {
   transition: 0.3s;
   box-shadow: 0px 0px 1px 8px #aaaaaa;
-  background-color: lightgreen!important;
+  background-color: lightgreen !important;
   cursor: pointer;
 }
 
-
-                                  /* MAP-PAGE ELEMENTS*/
+/* MAP-PAGE ELEMENTS*/
 /* map page */
 #map-page {
   padding: 0;
@@ -97,7 +95,7 @@ The CSS can be divided into 2 main parts:
 #submit-btn:hover {
   transition: 0.3s;
   box-shadow: 0px 0px 1px 3px #aaaaaa;
-  background-color: lightgreen!important;
+  background-color: lightgreen !important;
   cursor: pointer;
 }
 
@@ -108,8 +106,8 @@ The CSS can be divided into 2 main parts:
 }
 
 #distance-slider {
-  margin:0 20px 0 0;
-  width: 30vw; 
+  margin: 0 20px 0 0;
+  width: 30vw;
   background-color: rgb(99, 141, 175);
   opacity: 0.6;
   border-radius: 20px;
@@ -123,7 +121,6 @@ The CSS can be divided into 2 main parts:
   background-color: rgba(90, 108, 187, 0.548);
   border-radius: 10px;
 }
-
 
 /* current location button */
 #location-btn {
@@ -184,7 +181,7 @@ The CSS can be divided into 2 main parts:
 #recommend-btn:hover {
   transition: 0.3s;
   box-shadow: 0px 0px 1px 8px #aaaaaa;
-  background-color: lightgreen!important;
+  background-color: lightgreen !important;
   cursor: pointer;
 }
 
@@ -230,7 +227,7 @@ The CSS can be divided into 2 main parts:
   height: 20px;
 }
 
-                              /* Part 2: ANIMATIONS */
+/* Part 2: ANIMATIONS */
 
 /* page animations */
 .page-show {
@@ -253,124 +250,210 @@ The CSS can be divided into 2 main parts:
 /* navbar animations */
 .nav-up {
   transition: 2s;
-  transform: translateY(-100%);
+  transform: translateY(-200%);
   transition-timing-function: ease;
 }
 
 /* search bar animations */
 .search-bar-up {
   transition: 2s;
-  transform: translateY(-500%)
+  transform: translateY(-500%);
 }
 
 .search-bar-show {
-  transition:2s;
-  transform: translateY(0)
+  transition: 2s;
+  transform: translateY(0);
 }
 
 /* recommend btn animations */
 .reco-btn-left {
   transition: 1s;
-  transform: translateX(-100%)
+  transform: translateX(-100%);
 }
 
 .reco-btn-show {
   transition: 1s;
-  transform: translateX(0)
+  transform: translateX(0);
 }
-
-
-
-
 
 /* MEDIA QUERY */
-@media only screen and (max-width: 375px) {
-  #start-btn {
-    padding: 2px;
-    margin: 0;
-    font-size: 10px;
-    width: 50px;
-  }
-
-  #start-page {
-    background-position: center 60%;
-  }
-
-  .leaflet-top {
-    display: none;
-  }
-
-
-  #settings-div {
-    margin: 10px;
-
-  }
-
-  #settings-btn {
-    padding:3px;
-  }
-  
-  #switch-label {
-    font-size: 10px;
-  }
-}
-
 
 
 @media only screen and (min-width: 375px) {
+  /* start-page */
   #start-btn {
-    padding: 3px;
-    font-size: 10px;
-    width: 50px;
+    padding: 5px;
+    font-size: 20px;
   }
-
   #start-page {
     background-position: center 60%;
   }
 
+  /* map-page */
+  .leaflet-control-zoom {
+    display: none;
+  }
+  .leaflet-control-attribution.leaflet-control {
+    display:none;
+  }
+  #search-food-input {
+    width: 55vw;
+  }
+  #settings-div {
+    margin: 10px;
+  }
+  #settings-btn {
+    padding: 3px;
+  }
+  .list-group-item {
+    font-size: 8px;
+    width: 20vw;
+    height: 40px;
+  }
+  ul.dropdown-menu.show {
+    min-width: unset;
+    padding:0;
+    height: 80px;
+    width: 20vw;
+  }
+  #dropdownMenuButton {
+    font-size: 10px;
+  }
+  #switch-label {
+    font-size: 10px;
+  }
+  #mode-switch {
+    height: 10px;
+    width: 20px;
+  }
+
+  #distance-slider {
+    width: 40vw;
+  } 
+
+  #submit-btn-icon {
+    height: 12px;
+  }
+
+  #dist-slider-display {
+    font-size: 10px;
+  }
+
+  #recommend-icon {
+    height: 20px;
+  }
+
+  #back-btn {
+    margin: 10px;
+  }
+
+  #location-btn {
+    margin: 10px;
+  }
 
 }
 
 
 
 
-@media only screen and (min-width:768px) {
+
+
+@media only screen and (min-width: 768px) {
+  /* start-page */
   #start-btn {
-    padding: 2px;
-    font-size: 15px;
-    width: 100px;
+    padding: 10px;
+    font-size: 20px;
   }
   #start-page {
     background-position: center 50%;
   }
+
+  /* map-page */
+  #dropdownMenuButton {
+    font-size: 10px;
+  }
+
+  #switch-label {
+    font-size: 12px;
+  }
+
+  #mode-switch {
+    height: 12px;
+    width: 25px;
+  }
+
+  #distance-slider {
+    width: 40vw;
+  }
+
+  #submit-btn-icon {
+    height: 12px;
+  }
+
+
+  #dist-slider-display {
+    font-size: 12px;
+  }
+
+  #recommend-icon {
+    height: 30px;
+  }
+
+  #back-btn {
+    margin: 20px;
+  }
+
+  #location-btn {
+    margin: 20px;
+  }
+
+  .list-group-item {
+    font-size: 8px;
+    width: 15vw;
+    height: 30px;
+  }
+  ul.dropdown-menu.show {
+    min-width: unset;
+    padding:0;
+    height: 60px;
+    width: 15vw;
+  }
+  #dropdownMenuButton {
+    font-size: 10px;
+  }
+
 }
 
 
-
-@media only screen and (min-width:1024px) {
+@media only screen and (min-width: 1024px) {
+  /* start-page */
   #start-btn {
-    padding: 4px;
-    font-size: 25px;
-    width:150px;
+    padding: 10px;
+    font-size: 30px;
   }
 
   #start-page {
     background-position: center 30%;
   }
+
+  /* map-page */
+  #distance-slider {
+    width: 40vw;
+  }
 }
-
-
 
 @media only screen and (min-width: 1440px) {
   #start-btn {
-    padding: 0;
-    font-size: 25px;
+    padding: 10;
+    font-size: 35px;
   }
 
   #start-page {
     background-position: center 10%;
   }
 }
+
+
 
 
 
@@ -390,16 +473,6 @@ The CSS can be divided into 2 main parts:
 
 } */
 
-
-
-
-
-
-
-
-
-
-
 /* not priority */
 /* contact page (message icon) */
 #message-icon {
@@ -407,15 +480,3 @@ The CSS can be divided into 2 main parts:
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-

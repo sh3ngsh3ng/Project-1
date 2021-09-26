@@ -106,9 +106,9 @@
       <!-- start-page -->
       <div id="start-page" class="container-fluid position-absolute">
         <!-- start-btn -->
-        <div class="container-fluid position-absolute"  style="top:45vh">
+        <div class="container-fluid position-absolute"  style="top:80vh">
           <div class="d-flex justify-content-center">
-            <a class="btn btn-lg" id="start-btn" style="height:5vh;">
+            <a class="btn btn-lg" id="start-btn">
               START
             </a>
           </div>
@@ -126,7 +126,7 @@
             <!-- search input -->
             <input type="text" id="search-food-input" value="chicken rice" />
             <!-- search submit button -->
-            <button id="submit-btn">
+            <button id="submit-btn" class="d-flex align-items-center">
               <img id="submit-btn-icon" src="images/search.png" />
             </button>
           </div>
@@ -198,7 +198,7 @@
                 id="distance"
                 oninput="this.nextElementSibling.value = (this.value * 50 + 250) + 'm'"
               />
-              <output style="z-index: 1234; margin-left: 5px">400m</output>
+              <output id="dist-slider-display" style="z-index: 1234; margin-left: 5px">400m</output>
             </div>
             <!-- switch button -->
             <div id="mode-switch-div" class="d-flex align-items-center">
@@ -236,7 +236,7 @@
 
         <!-- current location button -->
         <button id="location-btn" type="button" class="button">
-          <img src="images/gps-icon.png" alt="" width="25" height="25" />
+          <img id="location-icon" src="images/gps-icon.png" alt="" width="25" height="25" />
         </button>
 
         <!-- recommend button -->
@@ -245,7 +245,7 @@
           class="container-fluid position-absolute reco-btn-left"
         >
           <div class="d-flex justify-content-center">
-            <button type="button" id="recommend-btn">
+            <button type="button" id="recommend-btn" class="d-flex align-items-center">
               <img id="recommend-icon" src="images/thumbsup.png" />
             </button>
           </div>
@@ -267,7 +267,7 @@
             />
           </button>
           <!-- dropdown list -->
-          <ul class="dropdown-menu" aria-labelledby="settings-btn">
+          <ul class="dropdown-menu" aria-labelledby="settings-btn" >
             <li class="list-group-item">
               <input
                 id="checkbox1"

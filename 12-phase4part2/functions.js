@@ -170,6 +170,7 @@ function radiusMarker() {
 function cleanStr(x) {
     a = x.split('\\')
     b = a.join('\\\\')
+    console.log(b)
     return b
 }
 
