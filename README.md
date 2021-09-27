@@ -102,7 +102,7 @@ For more information, refer to the projectplanning.md file
 - Recommendations of food near me
 - Adjusting distance (walkable) for search
 - Filter function
-    - restaurants, bars, cafes
+    - restaurants, bars, cafes, coffeeshop, dessert
 - Routing
     - show route
     - show estimated time
