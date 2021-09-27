@@ -132,10 +132,7 @@ Link to screen sizes view:
 - For sizes larger than 1024px, elements do not overlap. But sizing of elements can be better adjusted.
 
 # Test Cases
-
-
-
-
+Test cases can be found in the following link: https://docs.google.com/document/d/15mLwuPeZV9SA_2QC3s1Arrp7cIlNIdYXdebQtecfQR4/edit?usp=sharing
 
 
 # Bugs
@@ -146,11 +143,8 @@ For example, during the addition of Settings Menu, the two functions added (Radi
 For the bugs encountered during the whole project, refer to projectplanning.md.
 
 Below are some of the unresolved bugs:
-- Radius and api results from food search
-- 
--
-
-
+- Search results of food from fourSquare API displays further than the input distance. This results in some search results lying outside of the radius marker
+- Not all Lat Lng coordinates from fourSquare API can be routed via the routing API. Some coordinates are not in the correct format (WGS84) for the routing API to return the route geometry
 
 
 # Challenges Faced
@@ -183,13 +177,13 @@ Nevertheless, mobile responsiveness was achieved, albeit more tediously. A very 
 - Addition of Contact Us page (uncompleted)
 
 # Credits & Acknowledgements
-I would like to acknowledge the lead instructor Mr Paul, teaching assistant Sam and all my classmates for providing guidance and emotional support in this project.
+I would like to acknowledge the lead instructor Mr Paul, teaching assistant Sam and all my classmates for providing guidance and emotional support during the duration of this project.
 
-I would also like to personally thank Google and Stackoverflow for their 24/7 help.
+All icon images are sourced from flaticon.com. Authors of the icons are as listed: Freepik, Eucalyp, iconixar, bqlqn.
 
-// tech
-// flaticon
+Background image is sourced from: https://wallpaperaccess.com/french-food
 
+Last but not least, I would like to thank Google and StackOverflow for their unwavering 24/7 support. 
 
 # Disclaimer
 The project is for educational purposes only. Other than the idea/concept of the project, all media files and technologies used in this project belongs to their respective owners and I do not claim any right over them. 
