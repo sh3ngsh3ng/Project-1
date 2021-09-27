@@ -8,7 +8,7 @@ Do you have cravings for a particular food from time to time? Do you spend too m
 
 **Eat What?** provides convenience of food finding within walkable distance. You can search for a particular food as well as get recommendations of what's good near you too!
 
-So the next time your friend ask you "eat what?", refer them to us!
+The next time when "eat what?" come across your mind, let us help!
 
 ### Quickstart
 - Application link:
