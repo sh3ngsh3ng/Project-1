@@ -64,12 +64,17 @@ For more information, refer to the projectplanning.md file
     - Certain Type of Food: Chicken rice, Laksa, etc
   - Recommendations of good food around user's location
 
+### Organisation Goals:
+- To share the love of food with all our users. Connecting their taste buds/palates with the wonderful food that they crave or have yet to discover.
+- To develop a tool that will provide resolve all, if not majority, of the pain points of the target audience.
+
 ### The User Stories:
 - As a user, I want to **search for a particular food that is within walkable distance (500m)** so that I can save time and fulfil the craving!
 - As a user, I want to **be recommended nice food near me that I can try** so that I can enjoy the good food!
 - As a user, I want to **find out what are the interesting recommended places such as bars/restaurants/cafe/coffeeshop/dessert place to visit** so that I visit them and try them out!
 - As a user, I want to **find out how to find my way towards my search and recommended results destination** so that I have no problem finding my way there!
 - As a user, I want to know **the estimated time it takes me for me to reach the search and recommended results destination** so that I can make a more informed decision on whether to choose that location.
+
 
 
 ## Plane 2: Scope (Functions & Features)
@@ -87,6 +92,8 @@ For more information, refer to the projectplanning.md file
 - Reposition Button
 - Refer to the following link for User Guide:
     - https://docs.google.com/presentation/d/1Cm3rBH1L73uFeR4W0letMNpHElTwNgAZpGLnGPSro_w/edit?usp=sharing
+
+**Each function 
 
 ### Non-functional:
 - Mobile responsive
@@ -141,7 +148,7 @@ Below is the link to the screen sizes view:
 - For the sizes smaller than 375px, elements can be adjusted to avoid overlapping.
 
 # Test Cases
-Testing is done using test cases. The two main testing area is on the two main functions - Searching for food & Recommending. 
+Testing is done using test cases. The two main testing area is on the two main functions - **Searching for food** & **Recommending Food/Places** in order to meet the acceptance criteria of the user stories.
 
 Test cases can be found in the following link: https://docs.google.com/document/d/15mLwuPeZV9SA_2QC3s1Arrp7cIlNIdYXdebQtecfQR4/edit?usp=sharing
 
