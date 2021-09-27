@@ -53,6 +53,8 @@ For more information, refer to the projectplanning.md file
 - Bootstrap (v 5.1)
     - Navbar
     - Dropdown menus
+    - Slider Bar
+    - Switch
 - LeafletJS (map)
 - APIs
     - fourSquare search (GET)
