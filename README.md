@@ -8,7 +8,7 @@ Do you have cravings for a particular food from time to time? Do you spend too m
 
 **Eat What?** provides convenience of food finding within walkable distance. You can search for a particular food as well as get recommendations of what's good near you too!
 
-Let us help make your meal times more convenient and enjoyable!
+Let us help you make your meal times more convenient and enjoyable!
 
 
 ### Quickstart
@@ -160,6 +160,8 @@ As more functions/features are added, the possible variations/scenarios increase
     - Choosing Location (Ping Dropping)
         - Keeping track of current location
         - Linking ping's location with API
+- Routing API
+    - Understanding how the 
 
 ### Challenge 2:
 Making the application mobile responsive was one of the most challenging. The initial strategy (design with laptop sizing first using mobile responsive units, elements, etc) adopted was not the best. The lack of foresight, knowledge and experience lead to this mistake. 
