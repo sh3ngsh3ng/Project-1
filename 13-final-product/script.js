@@ -2,7 +2,7 @@ let currentCoords = 0
 let geoFlag = false // flag
 
 
-// start button transition to map
+// start button transition to map event
 document.querySelector("#start-btn").addEventListener('click', function() {
     document.querySelector("#start-page").classList.add("page-up")
     document.querySelector("#map-page").classList.remove("page-left")
@@ -13,7 +13,7 @@ document.querySelector("#start-btn").addEventListener('click', function() {
 
 
 
-// back button to transition to start page
+// back button to transition to start page event
 document.querySelector("#back-btn").addEventListener('click', function() {
     foodSearchLayer.clearLayers()
     routingLayer.clearLayers()
@@ -54,7 +54,7 @@ document.querySelectorAll(".dropdown-item").forEach(item => {
         function capitalizeFirst(string) {
             return string.charAt(0).toUpperCase() + string.slice(1)
         }
-
+        // changing the inner HTML after category chosen
         let ddBtn = document.querySelector("#dropdownMenuButton")
         ddBtn.innerHTML = capitalizeFirst(item.id)
         categoryValue = categoryObj[item.id]
