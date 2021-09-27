@@ -13,8 +13,8 @@ Let us help you make your meal times more convenient and enjoyable!
 
 ### Quickstart
 - Application link:
-    - (not yet deployed)
-- Navigation of application:
+    - https://sh3ngsh3ng.github.io/Project-1/
+- User Guide of application:
     - https://docs.google.com/presentation/d/1Cm3rBH1L73uFeR4W0letMNpHElTwNgAZpGLnGPSro_w/edit?usp=sharing
 
 # Planning of Project
@@ -65,8 +65,12 @@ For more information, refer to the projectplanning.md file
   - Recommendations of good food around user's location
 
 ### The User Stories:
-- As a user, I want **convenience when searching for food** so that I don't have to spend time researching and worrying about what to eat!
-- As a user, I want to **find out what are the nice food/interesting places to eat** so that I can try them out!
+- As a user, I want to **search for a particular food that is within walkable distance (500m)** so that I can save time and fulfil the craving!
+- As a user, I want to **be recommended nice food near me that I can try** so that I can enjoy the good food!
+- As a user, I want to **find out what are the interesting recommended places such as bars/restaurants/cafe/coffeeshop/dessert place to visit** so that I visit them and try them out!
+- As a user, I want to **find out how to find my way towards my search and recommended results destination** so that I have no problem finding my way there!
+- As a user, I want to know **the estimated time it takes me for me to reach the search and recommended results destination** so that I can make a more informed decision on whether to choose that location.
+
 
 ## Plane 2: Scope (Functions & Features)
 ### Functional:
@@ -81,7 +85,7 @@ For more information, refer to the projectplanning.md file
 - Option to remove radius marker
 - Option to select location
 - Reposition Button
-- Refer to the following link for navigation:
+- Refer to the following link for User Guide:
     - https://docs.google.com/presentation/d/1Cm3rBH1L73uFeR4W0letMNpHElTwNgAZpGLnGPSro_w/edit?usp=sharing
 
 ### Non-functional:
@@ -120,16 +124,21 @@ The strategy for mobile responsiveness is to size elements with ratio units (e.g
 Due to the constraints of time and choice of strategy, mobile responsiveness does not cater for all range of device.
 
 Below are the devices that can be supported:
-- 375px - Medium Mobile (E.g. Iphones 6 to X)
-- 768px - Tablets (E.g. IPad)
-- 1024px - Laptop
+- Mobile M (375) to Mobile L (425)
+- iPhone 6/7/8
+- iPhone 6/7/8 Plus
+- iPhone X
+- Tablet (768)
+- iPad 
+- Surface Duo
+- Laptop (1024 x 760)
+- Laptop (1440 x 1036)
 
-Link to screen sizes view:
+Below is the link to the screen sizes view:
 - https://docs.google.com/presentation/d/19_yJY0TIJ8dx-SuCxX0KJDnHkZBysldYS733h6TCWeU/edit?usp=sharing
 
 **Note for other sizes:**
 - For the sizes smaller than 375px, elements can be adjusted to avoid overlapping.
-- For sizes larger than 1024px, elements do not overlap. But sizing of elements can be better adjusted.
 
 # Test Cases
 Testing is done using test cases. The two main testing area is on the two main functions - Searching for food & Recommending. 
