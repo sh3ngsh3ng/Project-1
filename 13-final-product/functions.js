@@ -10,8 +10,8 @@ async function getToken() {
         "url"  : oneMap_API_BASE_URL + "/privateapi/auth/post/getToken", 
         "data" : 
                 {
-                  "email": "swtan001@gmail.com", 
-                  "password": "Sampass01!"
+                    "email": "swtan001@gmail.com", 
+                    "password": "Sampass01!"
                 }, 
         "async" : "true"
     }

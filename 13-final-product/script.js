@@ -12,7 +12,6 @@ document.querySelector("#start-btn").addEventListener('click', function() {
 })
 
 
-
 // back button to transition to start page event
 document.querySelector("#back-btn").addEventListener('click', function() {
     foodSearchLayer.clearLayers()

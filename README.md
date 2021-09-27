@@ -132,6 +132,8 @@ Link to screen sizes view:
 - For sizes larger than 1024px, elements do not overlap. But sizing of elements can be better adjusted.
 
 # Test Cases
+Testing is done using test cases. The two main testing area is on the two main functions - Searching for food & Recommending. 
+
 Test cases can be found in the following link: https://docs.google.com/document/d/15mLwuPeZV9SA_2QC3s1Arrp7cIlNIdYXdebQtecfQR4/edit?usp=sharing
 
 
