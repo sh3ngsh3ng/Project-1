@@ -17,15 +17,15 @@ Let us help you make your meal times more convenient and enjoyable!
 
 <p align="center" style="font-weight:bold">Start Page</p>
 <div align="center">
-<img src="images/laptop-view.PNG" style="width:300px;">
+<img src="images/laptop-view.PNG" style="width:400px;">
 </div>
 <p align="center" style="font-weight:bold">Map Page (Search Mode)</p>
 <div align="center">
-<img src="images/laptop-view.PNG" style="width:300px;">
+<img src="images/map-search-mode.PNG" style="width:400px;">
 </div>
 <p align="center" style="font-weight:bold">Map Page (Recommend Mode)</p>
 <div align="center">
-<img src="images/laptop-view.PNG" style="width:300px;">
+<img src="images/map-reco-mode.PNG" style="width:400px;">
 </div>
 
 ## Quickstart
@@ -111,8 +111,6 @@ For more information, refer to the projectplanning.md file
 - Reposition Button
 - Refer to the following link for User Guide:
     - https://docs.google.com/presentation/d/1Cm3rBH1L73uFeR4W0letMNpHElTwNgAZpGLnGPSro_w/edit?usp=sharing
-
-**Each function 
 
 ### Non-functional:
 - Mobile responsive
