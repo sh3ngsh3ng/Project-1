@@ -1,6 +1,6 @@
 # Eat What?
 <div align="center">
-<img src="12-phase4part2v2/images/laptop-view.PNG" style="width:500px;">
+<img src="13-final-product/images/laptop-view.PNG" style="width:500px;">
 </div>
 
 ## Introduction
