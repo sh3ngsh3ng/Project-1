@@ -72,6 +72,7 @@ function flyToCurrentLocation() {
     function error() {
         alert("Please click on the map to start")
         geoFlag = true
+        document.querySelector("#checkbox2").checked = true
     }
     navigator.geolocation.getCurrentPosition(success, error)
 }
@@ -202,7 +203,6 @@ async function getRouting(startpoint, endpoint) {
 } 
 
 // function to clear all layers except currentLocationLayer and radiusLayer
-
 function clearAllLayers() {
     foodSearchLayer.clearLayers()
     routingLayer.clearLayers()

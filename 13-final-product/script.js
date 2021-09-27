@@ -15,6 +15,8 @@ document.querySelector("#start-btn").addEventListener('click', function() {
 
 // back button to transition to start page
 document.querySelector("#back-btn").addEventListener('click', function() {
+    foodSearchLayer.clearLayers()
+    routingLayer.clearLayers()
     document.querySelector("#start-page").classList.remove("page-up")
     document.querySelector("#start-page").classList.add("page-show")
     document.querySelector("#map-page").classList.add("page-left")
@@ -64,6 +66,7 @@ document.querySelectorAll(".dropdown-item").forEach(item => {
 let searchBtn = document.querySelector("#submit-btn")
 searchBtn.addEventListener('click', async function () {
     foodSearchLayer.clearLayers()
+    routingLayer.clearLayers()
     let userInput = document.querySelector("#search-food-input").value
     if (userInput) {
         searchResultMarkers()
@@ -78,6 +81,7 @@ searchBtn.addEventListener('click', async function () {
 let recoBtn = document.querySelector("#recommend-btn")
 recoBtn.addEventListener('click', async function() {
     foodSearchLayer.clearLayers()
+    routingLayer.clearLayers()
     document.querySelector('#search-food-input').value = ""
     foodRecoMarkers()
     radiusMarker()
@@ -98,6 +102,7 @@ document.querySelector("#distance").addEventListener('change', async function() 
 
 
 // click placement marker
+// markers can only be placed when geoFlag = true
 map.on('click', function(e){
     if (geoFlag) {
         currentLocationLayer.clearLayers()
@@ -121,6 +126,8 @@ document.querySelector("#checkbox2").addEventListener('click', function() {
     if (!this.checked) {
         geoFlag = false
         currentLocationLayer.clearLayers()
+        radiusLayer.clearLayers()
+        foodSearchLayer.clearLayers()
         flyToCurrentLocation()
     }
 })

@@ -164,11 +164,11 @@ APIs:
 - ~~default radius not showing~~
 - ~~unchecking choose location marker doesn't remove the placed marker~~
 - need to disable click placement once route is established
-- (when location disabled) checking and unchecking marker placement option results in leftover circle marker
-- leftover markers when changing mode (both ways)
-- back button doesn't remove previous markers and layers already placed
-- recommend button doesn't clear routing layer
-- (26/09/2021) routing function suddenly not working!?
+- ~~(when location disabled) checking and unchecking marker placement option results in leftover circle marker~~
+- ~~leftover markers when changing mode (both ways)~~
+- ~~back button doesn't remove previous markers and layers already placed~~
+- ~~recommend button doesn't clear routing layer~~
+- ~~(26/09/2021) routing function suddenly not working!?~~
 - Routing does not work sometimes if the coordinates from 4square api doesn't meet requirements for routing api
 
 ## Deploy!
