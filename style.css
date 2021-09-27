@@ -633,25 +633,3 @@ The CSS can be divided into 2 main parts:
 
 
 
-
-
-
-
-/* if enough time */
-
-/* @media only screen and (min-width: 425px) {
-  #start-btn {
-    padding: 2px;
-    font-size: 10px;
-    width: 50px;
-  }
-
-} */
-
-/* not priority */
-/* contact page (message icon) */
-#message-icon {
-  width: 100px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
