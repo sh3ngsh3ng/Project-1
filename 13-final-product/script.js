@@ -139,7 +139,8 @@ document.querySelector("#checkbox1").addEventListener('click', function() {
 
 // mode switch event
 document.querySelector("#mode-switch").addEventListener("click", function() {
-    clearAllLayers()
+    foodSearchLayer.clearLayers()
+    routingLayer.clearLayers()
     let mode = this.checked //default = false
     if (!mode) {
         document.querySelector("#search-bar-div").classList.remove("search-bar-up")
