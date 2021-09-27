@@ -1,6 +1,6 @@
 # Project: Eat What?
 <div align="center">
-<img src="13-final-product/images/laptop-view.PNG" style="width:500px;">
+<img src="images/laptop-view.PNG" style="width:500px;">
 </div>
 
 ## Introduction
@@ -8,14 +8,33 @@ Do you have cravings for a particular food from time to time? Do you spend too m
 
 **Eat What?** provides convenience of food finding within walkable distance. You can search for a particular food as well as get recommendations of what's good near you too!
 
+
 Let us help you make your meal times more convenient and enjoyable!
 
 
-### Quickstart
+## First Look
+**Eat What?** can be divided into the start-page (landing page) and map page. The map page has two modes - search and recommend.
+
+<p align="center" style="font-weight:bold">Start Page</p>
+<div align="center">
+<img src="images/laptop-view.PNG" style="width:300px;">
+</div>
+<p align="center" style="font-weight:bold">Map Page (Search Mode)</p>
+<div align="center">
+<img src="images/laptop-view.PNG" style="width:300px;">
+</div>
+<p align="center" style="font-weight:bold">Map Page (Recommend Mode)</p>
+<div align="center">
+<img src="images/laptop-view.PNG" style="width:300px;">
+</div>
+
+## Quickstart
 - Application link:
     - https://sh3ngsh3ng.github.io/Project-1/
 - User Guide of application:
     - https://docs.google.com/presentation/d/1Cm3rBH1L73uFeR4W0letMNpHElTwNgAZpGLnGPSro_w/edit?usp=sharing
+
+
 
 # Planning of Project
 The planning of project is divided into 6 phases:
