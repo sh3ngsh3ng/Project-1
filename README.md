@@ -118,7 +118,7 @@ For more information, refer to the projectplanning.md file
 ### Fonts:
 - Font Colour: White is used in the start-page (landing page) as to give a contrast to the darkish classy feels
 - Font Sizes are adjusted based on screen sizes
-- Typography
+- Typography: As the web application does not use much of words, the main fonts that were styled was the "Eat What?" found in the front page. Serif was used as it is typically used in header and has the tradition/respectable/reliable feel. Which is beneficial for us to associate our brand name with. Furthermore, Georgia was chosen as it confers the formal and assertive mood that ties in with the classy feels the front page is going for.
 
 ### Icons:
 - Icons used are related to the function/features. All results yielding from the filter function have icons that matches the category. I.e. Cafe icon for cafe results, restaurant icons for restaurant results
@@ -189,12 +189,13 @@ Making the application mobile responsive was one of the most challenging. The in
 Nevertheless, mobile responsiveness was achieved, albeit more tediously. A very expensive and valuable lesson!
 
 
-# Possible Improvements:
-- Ensure better mobile responsiveness for more screen sizes
+# Incomplete + Possible Improvements:
+- (incomplete) Ensure better mobile responsiveness for the smallest screen size.
+- (incomplete) Link pages in the navbar are deactivated as the pages are not ready.
+- (incomplete) Tutorial Page 
+- (incomplete) Contact Us page
 - Addition of Cafe Hopping function
     - Another function that was conceptualize was the function to allow user to plan their cafe hopping journey using the app
-- Addition of Tutorial Page (not yet started)
-- Addition of Contact Us page (uncompleted)
 
 # Credits & Acknowledgements
 I would like to acknowledge the lead instructor Mr Paul, teaching assistant Sam and all my classmates for providing guidance and emotional support during the duration of this project.
