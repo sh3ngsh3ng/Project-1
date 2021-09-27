@@ -1,4 +1,4 @@
-# Eat What?
+# Project: Eat What?
 <div align="center">
 <img src="13-final-product/images/laptop-view.PNG" style="width:500px;">
 </div>
@@ -8,7 +8,8 @@ Do you have cravings for a particular food from time to time? Do you spend too m
 
 **Eat What?** provides convenience of food finding within walkable distance. You can search for a particular food as well as get recommendations of what's good near you too!
 
-The next time when "eat what?" come across your mind, let us help!
+Let us help make your meal times more convenient and enjoyable!
+
 
 ### Quickstart
 - Application link:
@@ -31,9 +32,15 @@ For more information, refer to the projectplanning.md file
 - HTML & CSS
 - Javascript
 - Bootstrap (v 5.1)
+    - Navbar
+    - Dropdown menus
 - LeafletJS (map)
+- APIs
+    - fourSquare search (GET)
+    - fourSquare recommend (GET)
+    - oneMap routing (GET & POST)
 - JQuery 
-    - elements manipulation (animations, etc)
+    - elements manipulation (animations, adding & removal of DOM)
     - for API calling (oneMap)
 - axios
     - for API calling (fourSquare)
@@ -134,7 +141,7 @@ Link to screen sizes view:
 # Bugs
 As some functions/features interacts with one another, testing is done after the implementation of every function/feature. 
 
-For example, during the addition of Settings Menu, the two functions added (Radius Marker & Choose Location) interacted with many other features. E.g. previous markers placed were not cleared, doesn't work with location button, etc. The obvious bugs were patched before other functions are added.
+For example, during the addition of Settings Menu, the two functions added (Radius Marker & Choose Location) interacted with many other features. I.e. previous markers from search results placed were not cleared when settings were toggled, the toggles doesn't work with location button, etc. The obvious bugs were patched before other functions are added to the application.
 
 For the bugs encountered during the whole project, refer to projectplanning.md.
 
