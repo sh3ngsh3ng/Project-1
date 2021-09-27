@@ -221,6 +221,8 @@ All icon images are sourced from flaticon.com. Authors of the icons are as liste
 
 Background image is sourced from: https://wallpaperaccess.com/french-food
 
+Special thanks to Jan Pieter Waagmeester for the plugin to decode the google polyline. Words cannot express the elation when I got the routing function to work.
+
 Last but not least, I would like to thank Google and StackOverflow for their unwavering 24/7 support. 
 
 # Disclaimer
